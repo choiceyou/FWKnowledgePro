@@ -10,9 +10,9 @@
 		524E1FF8D0ACE3ADBAAAFBB8 /* Pods_FWKnowledgePro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */; };
 		AF56305D256DE6F500F61828 /* CMAllDataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF56305C256DE6F500F61828 /* CMAllDataListViewController.m */; };
 		AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF5630B7256E041400F61828 /* Model.xcdatamodeld */; };
-		AF5630CE256E069100F61828 /* Student2+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5630CC256E069100F61828 /* Student2+CoreDataClass.m */; };
-		AF5630CF256E069100F61828 /* Student2+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5630CD256E069100F61828 /* Student2+CoreDataProperties.m */; };
-		AF5630DE256E07D400F61828 /* CDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5630DD256E07D400F61828 /* CDHomeViewController.m */; };
+		AF5630F2256E475D00F61828 /* CDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5630ED256E475D00F61828 /* CDHomeViewController.m */; };
+		AF5630F3256E475D00F61828 /* Student2+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5630EE256E475D00F61828 /* Student2+CoreDataProperties.m */; };
+		AF5630F4256E475D00F61828 /* Student2+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5630EF256E475D00F61828 /* Student2+CoreDataClass.m */; };
 		AF5A872A256CB55C00F3243D /* CMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5A8729256CB55C00F3243D /* CMHomeViewController.m */; };
 		AF5B8309256C8F6500FACDFC /* UserTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8303256C8F6500FACDFC /* UserTestModel.m */; };
 		AF5B830A256C8F6500FACDFC /* StudentTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8304256C8F6500FACDFC /* StudentTestModel.m */; };
@@ -64,12 +64,12 @@
 		AF56305B256DE6F500F61828 /* CMAllDataListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAllDataListViewController.h; sourceTree = "<group>"; };
 		AF56305C256DE6F500F61828 /* CMAllDataListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAllDataListViewController.m; sourceTree = "<group>"; };
 		AF5630B8256E041400F61828 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		AF5630CA256E069100F61828 /* Student2+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student2+CoreDataProperties.h"; sourceTree = "<group>"; };
-		AF5630CB256E069100F61828 /* Student2+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student2+CoreDataClass.h"; sourceTree = "<group>"; };
-		AF5630CC256E069100F61828 /* Student2+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student2+CoreDataClass.m"; sourceTree = "<group>"; };
-		AF5630CD256E069100F61828 /* Student2+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student2+CoreDataProperties.m"; sourceTree = "<group>"; };
-		AF5630DC256E07D400F61828 /* CDHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDHomeViewController.h; sourceTree = "<group>"; };
-		AF5630DD256E07D400F61828 /* CDHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDHomeViewController.m; sourceTree = "<group>"; };
+		AF5630EC256E475D00F61828 /* Student2+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student2+CoreDataClass.h"; sourceTree = "<group>"; };
+		AF5630ED256E475D00F61828 /* CDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHomeViewController.m; sourceTree = "<group>"; };
+		AF5630EE256E475D00F61828 /* Student2+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student2+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AF5630EF256E475D00F61828 /* Student2+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student2+CoreDataClass.m"; sourceTree = "<group>"; };
+		AF5630F0256E475D00F61828 /* Student2+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student2+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AF5630F1256E475D00F61828 /* CDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHomeViewController.h; sourceTree = "<group>"; };
 		AF5A8728256CB55C00F3243D /* CMHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMHomeViewController.h; sourceTree = "<group>"; };
 		AF5A8729256CB55C00F3243D /* CMHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMHomeViewController.m; sourceTree = "<group>"; };
 		AF5B8303256C8F6500FACDFC /* UserTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTestModel.m; sourceTree = "<group>"; };
@@ -164,17 +164,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		AF5630BD256E04A900F61828 /* CoreData */ = {
+		AF5630EB256E475D00F61828 /* CoreDataTest */ = {
 			isa = PBXGroup;
 			children = (
-				AF5630CB256E069100F61828 /* Student2+CoreDataClass.h */,
-				AF5630CC256E069100F61828 /* Student2+CoreDataClass.m */,
-				AF5630CA256E069100F61828 /* Student2+CoreDataProperties.h */,
-				AF5630CD256E069100F61828 /* Student2+CoreDataProperties.m */,
-				AF5630DC256E07D400F61828 /* CDHomeViewController.h */,
-				AF5630DD256E07D400F61828 /* CDHomeViewController.m */,
+				AF5630F1256E475D00F61828 /* CDHomeViewController.h */,
+				AF5630ED256E475D00F61828 /* CDHomeViewController.m */,
+				AF5630EC256E475D00F61828 /* Student2+CoreDataClass.h */,
+				AF5630EF256E475D00F61828 /* Student2+CoreDataClass.m */,
+				AF5630F0256E475D00F61828 /* Student2+CoreDataProperties.h */,
+				AF5630EE256E475D00F61828 /* Student2+CoreDataProperties.m */,
 			);
-			path = CoreData;
+			path = CoreDataTest;
 			sourceTree = "<group>";
 		};
 		AF5B8302256C8F6500FACDFC /* Model */ = {
@@ -318,7 +318,7 @@
 		AF5BE4E1256BC2340028EB6E /* DataPersistence */ = {
 			isa = PBXGroup;
 			children = (
-				AF5630BD256E04A900F61828 /* CoreData */,
+				AF5630EB256E475D00F61828 /* CoreDataTest */,
 				AF5B8302256C8F6500FACDFC /* Model */,
 				AF5BE4EC256BC2340028EB6E /* ClassManagerSystem */,
 				AF5BE4E2256BC2340028EB6E /* DataPersistenceViewController.h */,
@@ -528,16 +528,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF5630DE256E07D400F61828 /* CDHomeViewController.m in Sources */,
 				AF5B8324256C90B800FACDFC /* RunLoopTestViewController.m in Sources */,
 				AF5B832A256C916A00FACDFC /* FWDataBaseManager.m in Sources */,
 				AF5BE4AE256BBD540028EB6E /* AppDelegate.m in Sources */,
 				AF5B831F256C90B800FACDFC /* GCDTestViewController.m in Sources */,
+				AF5630F2256E475D00F61828 /* CDHomeViewController.m in Sources */,
 				AF5BE4C4256BBE600028EB6E /* FWBaseTableViewController.m in Sources */,
 				AF5A872A256CB55C00F3243D /* CMHomeViewController.m in Sources */,
 				AF56305D256DE6F500F61828 /* CMAllDataListViewController.m in Sources */,
+				AF5630F4256E475D00F61828 /* Student2+CoreDataClass.m in Sources */,
 				AF5BE4F6256BC2350028EB6E /* DataPersistenceViewController.m in Sources */,
-				AF5630CE256E069100F61828 /* Student2+CoreDataClass.m in Sources */,
 				AF5BE4F7256BC2350028EB6E /* FMDBTestViewController.m in Sources */,
 				AF5B8321256C90B800FACDFC /* BlockTestViewController.m in Sources */,
 				AF5B831E256C90B800FACDFC /* MSAlgorithmViewController.m in Sources */,
@@ -551,7 +551,7 @@
 				AF5BE4B4256BBDB30028EB6E /* HomeViewController.m in Sources */,
 				AF5B8322256C90B800FACDFC /* NSOperationTestViewController.m in Sources */,
 				AF5B830A256C8F6500FACDFC /* StudentTestModel.m in Sources */,
-				AF5630CF256E069100F61828 /* Student2+CoreDataProperties.m in Sources */,
+				AF5630F3256E475D00F61828 /* Student2+CoreDataProperties.m in Sources */,
 				AF5BE4F1256BC2350028EB6E /* SQLiteTestViewController.m in Sources */,
 				AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */,
 				AF5BE4F5256BC2350028EB6E /* KeyChainTestViewController.m in Sources */,
