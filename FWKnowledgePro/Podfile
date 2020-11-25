@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'FWKnowledgePro' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # ================== 主流三方库 ===================
+  # 网络请求：https://github.com/AFNetworking/AFNetworking
+  pod 'AFNetworking'
+  
+  # DB：https://github.com/ccgus/fmdb
+  pod 'FMDB'
+
+end
