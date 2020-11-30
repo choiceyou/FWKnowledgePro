@@ -13,6 +13,10 @@
 #import "DogFactory.h"
 #import "DomesticAnimalFactory.h"
 #import "WildAnimalFactory.h"
+#import "Zoo.h"
+#import "WildlifePark.h"
+#import "Iterator.h"
+#import "Monkey.h"
 
 
 // 重用标识符
@@ -42,11 +46,11 @@ static NSString *const kModeName = @"modeName";
         @{
             kTypeName : @"面向对象五个基本原则(SOLID) + 1条法则",
             kModeName : @[
-                    @"单一职责原则（Single Responsibility Principle）：一个类应该只有一个发生变化的原因",
-                    @"开闭原则（Open Closed Principle）：软件中的对象（类，模块，函数等）应该对于扩展是开放的，但是对于修改是封闭的",
+                    @"单一职责原则（Single Responsibility Principle）：一个类有且仅有一个职责，只有一个引起它变化的原因",
+                    @"开闭原则（Open Closed Principle）：软件中的对象（类，模块，函数等）应该对于扩展是开放的，但是对于修改是封闭的。具体来说就是你应该通过扩展来实现变化，而不是通过修改原有的代码来实现变化",
                     @"里氏替换原则（Liskov Substitution Principle）：派生类（子类）对象可以在程序中代替其基类（超类）对象",
                     @"接口隔离原则（Interface Segregation Principle）：客户端不应该依赖它不需要的接口。一个类对另一个类的依赖应该建立在最小的接口上",
-                    @"依赖倒置原则（Dependence Inversion Principle）：程序要依赖于抽象接口，不要依赖于具体实现",
+                    @"依赖倒置原则（Dependence Inversion Principle）：程序要依赖于抽象接口，不要依赖具体的实现",
                     @"迪米特法则（Law of Demeter）又叫作最少知识原则（The Least Knowledge Principle）：一个类对于其他类知道的越少越好，就是说一个对象应当对其他对象有尽可能少的了解,只和朋友通信，不和陌生人说话",
             ]
         },
@@ -184,7 +188,27 @@ static NSString *const kModeName = @"modeName";
                 break;
         }
     } else if (indexPath.section == 2) {
-        
+        switch (indexPath.row) {
+            case 0: {
+                Zoo *zoo = [[Zoo alloc] init];
+                Iterator *iterator = [zoo createIterator];
+                while ([iterator hasNext]) {
+                    Monkey *monkey = [iterator next];
+                    NSLog(@"======monkey1:%@, %f", monkey.sex, monkey.weight);
+                }
+                
+                WildlifePark *wlPark = [[WildlifePark alloc] init];
+                Iterator *iterator2 = [wlPark createIterator];
+                while ([iterator2 hasNext]) {
+                    Monkey *monkey = [iterator2 next];
+                    NSLog(@"======monkey2:%@, %f", monkey.sex, monkey.weight);
+                }
+            }
+                break;
+                
+            default:
+                break;
+        }
     } else if (indexPath.section == 3) {
         
     }

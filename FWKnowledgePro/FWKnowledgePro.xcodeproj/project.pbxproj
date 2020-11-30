@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		524E1FF8D0ACE3ADBAAAFBB8 /* Pods_FWKnowledgePro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */; };
+		AF52D1DA2574F83400E13A6D /* WildlifeParkIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */; };
 		AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF5630B7256E041400F61828 /* Model.xcdatamodeld */; };
 		AF56322F256F969B00F61828 /* RunLoopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563202256F969B00F61828 /* RunLoopTestViewController.m */; };
 		AF563230256F969B00F61828 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563205256F969B00F61828 /* BlockTestViewController.m */; };
@@ -59,6 +60,11 @@
 		AF6ADE9625748E1B00FBED46 /* WildAnimalFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE9525748E1B00FBED46 /* WildAnimalFactory.m */; };
 		AF6ADE9F25748EA000FBED46 /* WildDog.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE9E25748EA000FBED46 /* WildDog.m */; };
 		AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADEA425748EAF00FBED46 /* WildCat.m */; };
+		AF6ADEAD2574E01C00FBED46 /* Zoo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADEAC2574E01C00FBED46 /* Zoo.m */; };
+		AF6ADEB62574E05A00FBED46 /* WildlifePark.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADEB52574E05A00FBED46 /* WildlifePark.m */; };
+		AF6ADEBC2574E14D00FBED46 /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADEBB2574E14D00FBED46 /* Monkey.m */; };
+		AF6ADF072574E75F00FBED46 /* ZooIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADF062574E75F00FBED46 /* ZooIterator.m */; };
+		AF6ADF132574EAF000FBED46 /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADF122574EAF000FBED46 /* Iterator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +86,9 @@
 
 /* Begin PBXFileReference section */
 		72FB8F3DDE2EAD5F61852F6B /* Pods-FWKnowledgePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWKnowledgePro.debug.xcconfig"; path = "Target Support Files/Pods-FWKnowledgePro/Pods-FWKnowledgePro.debug.xcconfig"; sourceTree = "<group>"; };
+		AF52D1D82574F83400E13A6D /* WildlifeParkIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WildlifeParkIterator.h; sourceTree = "<group>"; };
+		AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WildlifeParkIterator.m; sourceTree = "<group>"; };
+		AF52D1E12574FB4500E13A6D /* MyParkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyParkProtocol.h; sourceTree = "<group>"; };
 		AF5630B8256E041400F61828 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		AF563200256F969B00F61828 /* NSThreadTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadTestViewController.h; sourceTree = "<group>"; };
 		AF563201256F969B00F61828 /* NetTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTestViewController.h; sourceTree = "<group>"; };
@@ -187,6 +196,17 @@
 		AF6ADE9E25748EA000FBED46 /* WildDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildDog.m; sourceTree = "<group>"; };
 		AF6ADEA325748EAF00FBED46 /* WildCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WildCat.h; sourceTree = "<group>"; };
 		AF6ADEA425748EAF00FBED46 /* WildCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildCat.m; sourceTree = "<group>"; };
+		AF6ADEAA2574DEFA00FBED46 /* IteratorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IteratorProtocol.h; sourceTree = "<group>"; };
+		AF6ADEAB2574E01C00FBED46 /* Zoo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zoo.h; sourceTree = "<group>"; };
+		AF6ADEAC2574E01C00FBED46 /* Zoo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Zoo.m; sourceTree = "<group>"; };
+		AF6ADEB42574E05A00FBED46 /* WildlifePark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WildlifePark.h; sourceTree = "<group>"; };
+		AF6ADEB52574E05A00FBED46 /* WildlifePark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildlifePark.m; sourceTree = "<group>"; };
+		AF6ADEBA2574E14D00FBED46 /* Monkey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
+		AF6ADEBB2574E14D00FBED46 /* Monkey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Monkey.m; sourceTree = "<group>"; };
+		AF6ADF052574E75F00FBED46 /* ZooIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZooIterator.h; sourceTree = "<group>"; };
+		AF6ADF062574E75F00FBED46 /* ZooIterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZooIterator.m; sourceTree = "<group>"; };
+		AF6ADF112574EAF000FBED46 /* Iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Iterator.h; sourceTree = "<group>"; };
+		AF6ADF122574EAF000FBED46 /* Iterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Iterator.m; sourceTree = "<group>"; };
 		CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWKnowledgePro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4A85BC7664EC07AC610233 /* Pods-FWKnowledgePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWKnowledgePro.release.xcconfig"; path = "Target Support Files/Pods-FWKnowledgePro/Pods-FWKnowledgePro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -309,12 +329,13 @@
 		AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */ = {
 			isa = PBXGroup;
 			children = (
-				AF56345F2570F8E200F61828 /* AbstractFactory(抽象工厂模式) */,
-				AF56330D2570D7F800F61828 /* FactoryMethod(工厂模式) */,
-				AF5632ED2570AF0F00F61828 /* Prototype(原型模式) */,
-				AF5632F62570AF0F00F61828 /* Singleton(单例模式) */,
 				AF563247256F971300F61828 /* DPHomeViewController.h */,
 				AF563248256F971300F61828 /* DPHomeViewController.m */,
+				AF56345F2570F8E200F61828 /* AbstractFactory(抽象工厂模式) */,
+				AF56330D2570D7F800F61828 /* FactoryMethod(工厂模式) */,
+				AF6ADEA92574DC2100FBED46 /* Iterator(迭代器) */,
+				AF5632ED2570AF0F00F61828 /* Prototype(原型模式) */,
+				AF5632F62570AF0F00F61828 /* Singleton(单例模式) */,
 			);
 			path = "DesignPatterns(设计模式)";
 			sourceTree = "<group>";
@@ -465,11 +486,11 @@
 		AF5BE4AB256BBD540028EB6E /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				AF5BE4B2256BBDB30028EB6E /* HomeViewController.h */,
+				AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */,
 				AF5631FF256F969B00F61828 /* Comprehensive(综合) */,
 				AF56320E256F969B00F61828 /* DataPersistence(数据持久化) */,
 				AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */,
-				AF5BE4B2256BBDB30028EB6E /* HomeViewController.h */,
-				AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -491,6 +512,27 @@
 				AF5BE4C3256BBE600028EB6E /* FWBaseTableViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		AF6ADEA92574DC2100FBED46 /* Iterator(迭代器) */ = {
+			isa = PBXGroup;
+			children = (
+				AF6ADEAA2574DEFA00FBED46 /* IteratorProtocol.h */,
+				AF52D1E12574FB4500E13A6D /* MyParkProtocol.h */,
+				AF6ADEAB2574E01C00FBED46 /* Zoo.h */,
+				AF6ADEAC2574E01C00FBED46 /* Zoo.m */,
+				AF6ADEB42574E05A00FBED46 /* WildlifePark.h */,
+				AF6ADEB52574E05A00FBED46 /* WildlifePark.m */,
+				AF6ADEBA2574E14D00FBED46 /* Monkey.h */,
+				AF6ADEBB2574E14D00FBED46 /* Monkey.m */,
+				AF6ADF112574EAF000FBED46 /* Iterator.h */,
+				AF6ADF122574EAF000FBED46 /* Iterator.m */,
+				AF6ADF052574E75F00FBED46 /* ZooIterator.h */,
+				AF6ADF062574E75F00FBED46 /* ZooIterator.m */,
+				AF52D1D82574F83400E13A6D /* WildlifeParkIterator.h */,
+				AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */,
+			);
+			path = "Iterator(迭代器)";
 			sourceTree = "<group>";
 		};
 		C100CC4F10CB64D4C5318E06 /* Frameworks */ = {
@@ -673,6 +715,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6ADEBC2574E14D00FBED46 /* Monkey.m in Sources */,
 				AF563237256F969C00F61828 /* CDHomeViewController.m in Sources */,
 				AF56341C2570EC4300F61828 /* DogFactory.m in Sources */,
 				AF5633022570AF0F00F61828 /* PrototypePersonDeepCopy.m in Sources */,
@@ -697,6 +740,7 @@
 				AF563242256F969C00F61828 /* StudentTestModel.m in Sources */,
 				AF56323A256F969C00F61828 /* KeyChainTestViewController.m in Sources */,
 				AF5BE4AD256BBD540028EB6E /* SceneDelegate.m in Sources */,
+				AF6ADF072574E75F00FBED46 /* ZooIterator.m in Sources */,
 				AF56322F256F969B00F61828 /* RunLoopTestViewController.m in Sources */,
 				AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */,
 				AF563234256F969B00F61828 /* MSAlgorithmViewController.m in Sources */,
@@ -711,10 +755,14 @@
 				AF563239256F969C00F61828 /* Student2+CoreDataClass.m in Sources */,
 				AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */,
 				AF563231256F969B00F61828 /* NSThreadTestViewController.m in Sources */,
+				AF6ADEB62574E05A00FBED46 /* WildlifePark.m in Sources */,
 				AF56323F256F969C00F61828 /* FWDataBaseManager.m in Sources */,
 				AF5633012570AF0F00F61828 /* PrototypeJob.m in Sources */,
+				AF6ADF132574EAF000FBED46 /* Iterator.m in Sources */,
 				AF6ADE9625748E1B00FBED46 /* WildAnimalFactory.m in Sources */,
+				AF6ADEAD2574E01C00FBED46 /* Zoo.m in Sources */,
 				AF563236256F969C00F61828 /* SQLiteTestViewController.m in Sources */,
+				AF52D1DA2574F83400E13A6D /* WildlifeParkIterator.m in Sources */,
 				AF563241256F969C00F61828 /* UserTestModel.m in Sources */,
 				AF563238256F969C00F61828 /* Student2+CoreDataProperties.m in Sources */,
 				AF5633052570AF0F00F61828 /* Singleton.m in Sources */,
