@@ -6,10 +6,13 @@ target 'FWKnowledgePro' do
   use_frameworks!
 
   # ================== 主流三方库 ===================
-  # 网络请求：https://github.com/AFNetworking/AFNetworking
+  # https://github.com/AFNetworking/AFNetworking
   pod 'AFNetworking'
   
-  # DB：https://github.com/ccgus/fmdb
+  # https://github.com/ccgus/fmdb
   pod 'FMDB'
+  
+  # https://github.com/ibireme/YYCache
+  pod 'YYCache'
 
 end

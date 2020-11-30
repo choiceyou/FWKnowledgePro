@@ -19,6 +19,7 @@
 #import "RunLoopTestViewController.h"
 #import "NetTestViewController.h"
 #import "DataPersistenceViewController.h"
+#import "DPHomeViewController.h"
 
 @interface HomeViewController ()
 
@@ -45,6 +46,8 @@
         @"RunLoop",
         @"网络相关",
         @"数据持久化",
+        @"架构模式",
+        @"设计模式",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -110,6 +113,9 @@
             
         }
             break;
+        case 13: {
+            tmpVC = [[DPHomeViewController alloc] init];
+        }
             
         default:
             break;

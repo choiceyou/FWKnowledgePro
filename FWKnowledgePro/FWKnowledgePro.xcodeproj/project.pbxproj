@@ -8,23 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		524E1FF8D0ACE3ADBAAAFBB8 /* Pods_FWKnowledgePro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */; };
-		AF56305D256DE6F500F61828 /* CMAllDataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF56305C256DE6F500F61828 /* CMAllDataListViewController.m */; };
 		AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF5630B7256E041400F61828 /* Model.xcdatamodeld */; };
-		AF5630F2256E475D00F61828 /* CDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5630ED256E475D00F61828 /* CDHomeViewController.m */; };
-		AF5630F3256E475D00F61828 /* Student2+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5630EE256E475D00F61828 /* Student2+CoreDataProperties.m */; };
-		AF5630F4256E475D00F61828 /* Student2+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5630EF256E475D00F61828 /* Student2+CoreDataClass.m */; };
-		AF5A872A256CB55C00F3243D /* CMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5A8729256CB55C00F3243D /* CMHomeViewController.m */; };
-		AF5B8309256C8F6500FACDFC /* UserTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8303256C8F6500FACDFC /* UserTestModel.m */; };
-		AF5B830A256C8F6500FACDFC /* StudentTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8304256C8F6500FACDFC /* StudentTestModel.m */; };
-		AF5B830B256C8F6500FACDFC /* ClassTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8305256C8F6500FACDFC /* ClassTestModel.m */; };
-		AF5B831E256C90B800FACDFC /* MSAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8310256C90B700FACDFC /* MSAlgorithmViewController.m */; };
-		AF5B831F256C90B800FACDFC /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8312256C90B800FACDFC /* GCDTestViewController.m */; };
-		AF5B8320256C90B800FACDFC /* NetTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8314256C90B800FACDFC /* NetTestViewController.m */; };
-		AF5B8321256C90B800FACDFC /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8319256C90B800FACDFC /* BlockTestViewController.m */; };
-		AF5B8322256C90B800FACDFC /* NSOperationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B831A256C90B800FACDFC /* NSOperationTestViewController.m */; };
-		AF5B8323256C90B800FACDFC /* NSThreadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B831B256C90B800FACDFC /* NSThreadTestViewController.m */; };
-		AF5B8324256C90B800FACDFC /* RunLoopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B831D256C90B800FACDFC /* RunLoopTestViewController.m */; };
-		AF5B832A256C916A00FACDFC /* FWDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B8329256C916A00FACDFC /* FWDataBaseManager.m */; };
+		AF56322F256F969B00F61828 /* RunLoopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563202256F969B00F61828 /* RunLoopTestViewController.m */; };
+		AF563230256F969B00F61828 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563205256F969B00F61828 /* BlockTestViewController.m */; };
+		AF563231256F969B00F61828 /* NSThreadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563207256F969B00F61828 /* NSThreadTestViewController.m */; };
+		AF563232256F969B00F61828 /* NetTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563208256F969B00F61828 /* NetTestViewController.m */; };
+		AF563233256F969B00F61828 /* NSOperationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563209256F969B00F61828 /* NSOperationTestViewController.m */; };
+		AF563234256F969B00F61828 /* MSAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF56320B256F969B00F61828 /* MSAlgorithmViewController.m */; };
+		AF563235256F969C00F61828 /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF56320D256F969B00F61828 /* GCDTestViewController.m */; };
+		AF563236256F969C00F61828 /* SQLiteTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563210256F969B00F61828 /* SQLiteTestViewController.m */; };
+		AF563237256F969C00F61828 /* CDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563213256F969B00F61828 /* CDHomeViewController.m */; };
+		AF563238256F969C00F61828 /* Student2+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563214256F969B00F61828 /* Student2+CoreDataProperties.m */; };
+		AF563239256F969C00F61828 /* Student2+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563215256F969B00F61828 /* Student2+CoreDataClass.m */; };
+		AF56323A256F969C00F61828 /* KeyChainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563219256F969B00F61828 /* KeyChainTestViewController.m */; };
+		AF56323B256F969C00F61828 /* DataPersistenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF56321B256F969B00F61828 /* DataPersistenceViewController.m */; };
+		AF56323C256F969C00F61828 /* CMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF56321E256F969B00F61828 /* CMHomeViewController.m */; };
+		AF56323D256F969C00F61828 /* CMAllDataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF56321F256F969B00F61828 /* CMAllDataListViewController.m */; };
+		AF56323E256F969C00F61828 /* CMClassStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563221256F969B00F61828 /* CMClassStudentViewController.m */; };
+		AF56323F256F969C00F61828 /* FWDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563223256F969B00F61828 /* FWDataBaseManager.m */; };
+		AF563240256F969C00F61828 /* FMDBTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563225256F969B00F61828 /* FMDBTestViewController.m */; };
+		AF563241256F969C00F61828 /* UserTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563227256F969B00F61828 /* UserTestModel.m */; };
+		AF563242256F969C00F61828 /* StudentTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563228256F969B00F61828 /* StudentTestModel.m */; };
+		AF563243256F969C00F61828 /* ClassTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563229256F969B00F61828 /* ClassTestModel.m */; };
+		AF563249256F971300F61828 /* DPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563248256F971300F61828 /* DPHomeViewController.m */; };
+		AF5632FF2570AF0F00F61828 /* PrototypePersonShallowCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5632F22570AF0F00F61828 /* PrototypePersonShallowCopy.m */; };
+		AF5633002570AF0F00F61828 /* PrototypePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5632F32570AF0F00F61828 /* PrototypePerson.m */; };
+		AF5633012570AF0F00F61828 /* PrototypeJob.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5632F42570AF0F00F61828 /* PrototypeJob.m */; };
+		AF5633022570AF0F00F61828 /* PrototypePersonDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5632F52570AF0F00F61828 /* PrototypePersonDeepCopy.m */; };
+		AF5633032570AF0F00F61828 /* NSObject+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5632F72570AF0F00F61828 /* NSObject+Singleton.m */; };
+		AF5633042570AF0F00F61828 /* HMSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5632F82570AF0F00F61828 /* HMSingleton.m */; };
+		AF5633052570AF0F00F61828 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5632FC2570AF0F00F61828 /* Singleton.m */; };
+		AF5633062570AF0F00F61828 /* SingletonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5632FE2570AF0F00F61828 /* SingletonTest.m */; };
+		AF5633792570DFFF00F61828 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5633782570DFFF00F61828 /* Cat.m */; };
+		AF5634102570EB3500F61828 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = AF56340F2570EB3500F61828 /* Dog.m */; };
+		AF56341C2570EC4300F61828 /* DogFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF56341B2570EC4300F61828 /* DogFactory.m */; };
+		AF5634222570EC5800F61828 /* CatFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5634212570EC5800F61828 /* CatFactory.m */; };
 		AF5BE45F256BB98F0028EB6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5BE45E256BB98F0028EB6E /* Assets.xcassets */; };
 		AF5BE462256BB98F0028EB6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5BE460256BB98F0028EB6E /* LaunchScreen.storyboard */; };
 		AF5BE465256BB98F0028EB6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE464256BB98F0028EB6E /* main.m */; };
@@ -35,11 +53,12 @@
 		AF5BE4B4256BBDB30028EB6E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */; };
 		AF5BE4BB256BBE4C0028EB6E /* FWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4BA256BBE4C0028EB6E /* FWBaseViewController.m */; };
 		AF5BE4C4256BBE600028EB6E /* FWBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4C3256BBE600028EB6E /* FWBaseTableViewController.m */; };
-		AF5BE4F1256BC2350028EB6E /* SQLiteTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4E3256BC2340028EB6E /* SQLiteTestViewController.m */; };
-		AF5BE4F5256BC2350028EB6E /* KeyChainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4E8256BC2340028EB6E /* KeyChainTestViewController.m */; };
-		AF5BE4F6256BC2350028EB6E /* DataPersistenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4EB256BC2340028EB6E /* DataPersistenceViewController.m */; };
-		AF5BE4F7256BC2350028EB6E /* FMDBTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4EE256BC2340028EB6E /* FMDBTestViewController.m */; };
-		AF8A82AB256D119500AB1167 /* CMClassStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8A82AA256D119500AB1167 /* CMClassStudentViewController.m */; };
+		AF6ADE812574862A00FBED46 /* DomesticAnimalFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE802574862A00FBED46 /* DomesticAnimalFactory.m */; };
+		AF6ADE8A2574886800FBED46 /* DomesticDog.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE892574886800FBED46 /* DomesticDog.m */; };
+		AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE8F2574887800FBED46 /* DomesticCat.m */; };
+		AF6ADE9625748E1B00FBED46 /* WildAnimalFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE9525748E1B00FBED46 /* WildAnimalFactory.m */; };
+		AF6ADE9F25748EA000FBED46 /* WildDog.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE9E25748EA000FBED46 /* WildDog.m */; };
+		AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADEA425748EAF00FBED46 /* WildCat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,39 +80,77 @@
 
 /* Begin PBXFileReference section */
 		72FB8F3DDE2EAD5F61852F6B /* Pods-FWKnowledgePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWKnowledgePro.debug.xcconfig"; path = "Target Support Files/Pods-FWKnowledgePro/Pods-FWKnowledgePro.debug.xcconfig"; sourceTree = "<group>"; };
-		AF56305B256DE6F500F61828 /* CMAllDataListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAllDataListViewController.h; sourceTree = "<group>"; };
-		AF56305C256DE6F500F61828 /* CMAllDataListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAllDataListViewController.m; sourceTree = "<group>"; };
 		AF5630B8256E041400F61828 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		AF5630EC256E475D00F61828 /* Student2+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student2+CoreDataClass.h"; sourceTree = "<group>"; };
-		AF5630ED256E475D00F61828 /* CDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHomeViewController.m; sourceTree = "<group>"; };
-		AF5630EE256E475D00F61828 /* Student2+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student2+CoreDataProperties.m"; sourceTree = "<group>"; };
-		AF5630EF256E475D00F61828 /* Student2+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student2+CoreDataClass.m"; sourceTree = "<group>"; };
-		AF5630F0256E475D00F61828 /* Student2+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student2+CoreDataProperties.h"; sourceTree = "<group>"; };
-		AF5630F1256E475D00F61828 /* CDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHomeViewController.h; sourceTree = "<group>"; };
-		AF5A8728256CB55C00F3243D /* CMHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMHomeViewController.h; sourceTree = "<group>"; };
-		AF5A8729256CB55C00F3243D /* CMHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMHomeViewController.m; sourceTree = "<group>"; };
-		AF5B8303256C8F6500FACDFC /* UserTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTestModel.m; sourceTree = "<group>"; };
-		AF5B8304256C8F6500FACDFC /* StudentTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTestModel.m; sourceTree = "<group>"; };
-		AF5B8305256C8F6500FACDFC /* ClassTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTestModel.m; sourceTree = "<group>"; };
-		AF5B8306256C8F6500FACDFC /* UserTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTestModel.h; sourceTree = "<group>"; };
-		AF5B8307256C8F6500FACDFC /* StudentTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTestModel.h; sourceTree = "<group>"; };
-		AF5B8308256C8F6500FACDFC /* ClassTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTestModel.h; sourceTree = "<group>"; };
-		AF5B8310256C90B700FACDFC /* MSAlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAlgorithmViewController.m; sourceTree = "<group>"; };
-		AF5B8311256C90B800FACDFC /* NSOperationTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationTestViewController.h; sourceTree = "<group>"; };
-		AF5B8312256C90B800FACDFC /* GCDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
-		AF5B8313256C90B800FACDFC /* BlockTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTestViewController.h; sourceTree = "<group>"; };
-		AF5B8314256C90B800FACDFC /* NetTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetTestViewController.m; sourceTree = "<group>"; };
-		AF5B8315256C90B800FACDFC /* GCDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
-		AF5B8316256C90B800FACDFC /* MSAlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAlgorithmViewController.h; sourceTree = "<group>"; };
-		AF5B8317256C90B800FACDFC /* NetTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTestViewController.h; sourceTree = "<group>"; };
-		AF5B8318256C90B800FACDFC /* RunLoopTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopTestViewController.h; sourceTree = "<group>"; };
-		AF5B8319256C90B800FACDFC /* BlockTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTestViewController.m; sourceTree = "<group>"; };
-		AF5B831A256C90B800FACDFC /* NSOperationTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationTestViewController.m; sourceTree = "<group>"; };
-		AF5B831B256C90B800FACDFC /* NSThreadTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadTestViewController.m; sourceTree = "<group>"; };
-		AF5B831C256C90B800FACDFC /* NSThreadTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadTestViewController.h; sourceTree = "<group>"; };
-		AF5B831D256C90B800FACDFC /* RunLoopTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopTestViewController.m; sourceTree = "<group>"; };
-		AF5B8328256C916900FACDFC /* FWDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWDataBaseManager.h; sourceTree = "<group>"; };
-		AF5B8329256C916A00FACDFC /* FWDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWDataBaseManager.m; sourceTree = "<group>"; };
+		AF563200256F969B00F61828 /* NSThreadTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadTestViewController.h; sourceTree = "<group>"; };
+		AF563201256F969B00F61828 /* NetTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTestViewController.h; sourceTree = "<group>"; };
+		AF563202256F969B00F61828 /* RunLoopTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopTestViewController.m; sourceTree = "<group>"; };
+		AF563203256F969B00F61828 /* NSOperationTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationTestViewController.h; sourceTree = "<group>"; };
+		AF563204256F969B00F61828 /* GCDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
+		AF563205256F969B00F61828 /* BlockTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTestViewController.m; sourceTree = "<group>"; };
+		AF563206256F969B00F61828 /* MSAlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAlgorithmViewController.h; sourceTree = "<group>"; };
+		AF563207256F969B00F61828 /* NSThreadTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadTestViewController.m; sourceTree = "<group>"; };
+		AF563208256F969B00F61828 /* NetTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetTestViewController.m; sourceTree = "<group>"; };
+		AF563209256F969B00F61828 /* NSOperationTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationTestViewController.m; sourceTree = "<group>"; };
+		AF56320A256F969B00F61828 /* RunLoopTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopTestViewController.h; sourceTree = "<group>"; };
+		AF56320B256F969B00F61828 /* MSAlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAlgorithmViewController.m; sourceTree = "<group>"; };
+		AF56320C256F969B00F61828 /* BlockTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTestViewController.h; sourceTree = "<group>"; };
+		AF56320D256F969B00F61828 /* GCDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
+		AF56320F256F969B00F61828 /* DataPersistenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPersistenceViewController.h; sourceTree = "<group>"; };
+		AF563210256F969B00F61828 /* SQLiteTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteTestViewController.m; sourceTree = "<group>"; };
+		AF563212256F969B00F61828 /* Student2+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student2+CoreDataClass.h"; sourceTree = "<group>"; };
+		AF563213256F969B00F61828 /* CDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHomeViewController.m; sourceTree = "<group>"; };
+		AF563214256F969B00F61828 /* Student2+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student2+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AF563215256F969B00F61828 /* Student2+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student2+CoreDataClass.m"; sourceTree = "<group>"; };
+		AF563216256F969B00F61828 /* Student2+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student2+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AF563217256F969B00F61828 /* CDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHomeViewController.h; sourceTree = "<group>"; };
+		AF563218256F969B00F61828 /* FMDBTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBTestViewController.h; sourceTree = "<group>"; };
+		AF563219256F969B00F61828 /* KeyChainTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainTestViewController.m; sourceTree = "<group>"; };
+		AF56321A256F969B00F61828 /* SQLiteTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteTestViewController.h; sourceTree = "<group>"; };
+		AF56321B256F969B00F61828 /* DataPersistenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPersistenceViewController.m; sourceTree = "<group>"; };
+		AF56321D256F969B00F61828 /* CMClassStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMClassStudentViewController.h; sourceTree = "<group>"; };
+		AF56321E256F969B00F61828 /* CMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMHomeViewController.m; sourceTree = "<group>"; };
+		AF56321F256F969B00F61828 /* CMAllDataListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMAllDataListViewController.m; sourceTree = "<group>"; };
+		AF563220256F969B00F61828 /* FWDataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWDataBaseManager.h; sourceTree = "<group>"; };
+		AF563221256F969B00F61828 /* CMClassStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMClassStudentViewController.m; sourceTree = "<group>"; };
+		AF563222256F969B00F61828 /* CMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHomeViewController.h; sourceTree = "<group>"; };
+		AF563223256F969B00F61828 /* FWDataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWDataBaseManager.m; sourceTree = "<group>"; };
+		AF563224256F969B00F61828 /* CMAllDataListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMAllDataListViewController.h; sourceTree = "<group>"; };
+		AF563225256F969B00F61828 /* FMDBTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBTestViewController.m; sourceTree = "<group>"; };
+		AF563227256F969B00F61828 /* UserTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTestModel.m; sourceTree = "<group>"; };
+		AF563228256F969B00F61828 /* StudentTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTestModel.m; sourceTree = "<group>"; };
+		AF563229256F969B00F61828 /* ClassTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassTestModel.m; sourceTree = "<group>"; };
+		AF56322A256F969B00F61828 /* UserTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTestModel.h; sourceTree = "<group>"; };
+		AF56322B256F969B00F61828 /* StudentTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTestModel.h; sourceTree = "<group>"; };
+		AF56322C256F969B00F61828 /* ClassTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTestModel.h; sourceTree = "<group>"; };
+		AF56322D256F969B00F61828 /* KeyChainTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainTestViewController.h; sourceTree = "<group>"; };
+		AF563247256F971300F61828 /* DPHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPHomeViewController.h; sourceTree = "<group>"; };
+		AF563248256F971300F61828 /* DPHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPHomeViewController.m; sourceTree = "<group>"; };
+		AF5632EE2570AF0F00F61828 /* PrototypePersonShallowCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypePersonShallowCopy.h; sourceTree = "<group>"; };
+		AF5632EF2570AF0F00F61828 /* PrototypePerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypePerson.h; sourceTree = "<group>"; };
+		AF5632F02570AF0F00F61828 /* PrototypeJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeJob.h; sourceTree = "<group>"; };
+		AF5632F12570AF0F00F61828 /* PrototypePersonDeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypePersonDeepCopy.h; sourceTree = "<group>"; };
+		AF5632F22570AF0F00F61828 /* PrototypePersonShallowCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypePersonShallowCopy.m; sourceTree = "<group>"; };
+		AF5632F32570AF0F00F61828 /* PrototypePerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypePerson.m; sourceTree = "<group>"; };
+		AF5632F42570AF0F00F61828 /* PrototypeJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeJob.m; sourceTree = "<group>"; };
+		AF5632F52570AF0F00F61828 /* PrototypePersonDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypePersonDeepCopy.m; sourceTree = "<group>"; };
+		AF5632F72570AF0F00F61828 /* NSObject+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Singleton.m"; sourceTree = "<group>"; };
+		AF5632F82570AF0F00F61828 /* HMSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSingleton.m; sourceTree = "<group>"; };
+		AF5632F92570AF0F00F61828 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		AF5632FA2570AF0F00F61828 /* SingletonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonTest.h; sourceTree = "<group>"; };
+		AF5632FB2570AF0F00F61828 /* NSObject+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Singleton.h"; sourceTree = "<group>"; };
+		AF5632FC2570AF0F00F61828 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		AF5632FD2570AF0F00F61828 /* HMSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
+		AF5632FE2570AF0F00F61828 /* SingletonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonTest.m; sourceTree = "<group>"; };
+		AF56333E2570D97F00F61828 /* AnimalProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimalProtocol.h; sourceTree = "<group>"; };
+		AF5633772570DFFF00F61828 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		AF5633782570DFFF00F61828 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		AF56340E2570EB3500F61828 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		AF56340F2570EB3500F61828 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		AF56341A2570EC4300F61828 /* DogFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogFactory.h; sourceTree = "<group>"; };
+		AF56341B2570EC4300F61828 /* DogFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogFactory.m; sourceTree = "<group>"; };
+		AF5634202570EC5800F61828 /* CatFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatFactory.h; sourceTree = "<group>"; };
+		AF5634212570EC5800F61828 /* CatFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatFactory.m; sourceTree = "<group>"; };
+		AF5634262570EEB900F61828 /* FactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryProtocol.h; sourceTree = "<group>"; };
 		AF5BE44F256BB98D0028EB6E /* FWKnowledgePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FWKnowledgePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5BE45E256BB98F0028EB6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF5BE461256BB98F0028EB6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,16 +172,21 @@
 		AF5BE4BA256BBE4C0028EB6E /* FWBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBaseViewController.m; sourceTree = "<group>"; };
 		AF5BE4C2256BBE600028EB6E /* FWBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWBaseTableViewController.h; sourceTree = "<group>"; };
 		AF5BE4C3256BBE600028EB6E /* FWBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBaseTableViewController.m; sourceTree = "<group>"; };
-		AF5BE4E2256BC2340028EB6E /* DataPersistenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPersistenceViewController.h; sourceTree = "<group>"; };
-		AF5BE4E3256BC2340028EB6E /* SQLiteTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteTestViewController.m; sourceTree = "<group>"; };
-		AF5BE4E5256BC2340028EB6E /* FMDBTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBTestViewController.h; sourceTree = "<group>"; };
-		AF5BE4E8256BC2340028EB6E /* KeyChainTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainTestViewController.m; sourceTree = "<group>"; };
-		AF5BE4EA256BC2340028EB6E /* SQLiteTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteTestViewController.h; sourceTree = "<group>"; };
-		AF5BE4EB256BC2340028EB6E /* DataPersistenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataPersistenceViewController.m; sourceTree = "<group>"; };
-		AF5BE4EE256BC2340028EB6E /* FMDBTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBTestViewController.m; sourceTree = "<group>"; };
-		AF5BE4EF256BC2340028EB6E /* KeyChainTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainTestViewController.h; sourceTree = "<group>"; };
-		AF8A82A9256D119500AB1167 /* CMClassStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMClassStudentViewController.h; sourceTree = "<group>"; };
-		AF8A82AA256D119500AB1167 /* CMClassStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMClassStudentViewController.m; sourceTree = "<group>"; };
+		AF6ADE7C2574845D00FBED46 /* AbstractAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractAnimal.h; sourceTree = "<group>"; };
+		AF6ADE7D2574847A00FBED46 /* AbstractDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractDog.h; sourceTree = "<group>"; };
+		AF6ADE7E2574848D00FBED46 /* AbstractCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractCat.h; sourceTree = "<group>"; };
+		AF6ADE7F2574862A00FBED46 /* DomesticAnimalFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomesticAnimalFactory.h; sourceTree = "<group>"; };
+		AF6ADE802574862A00FBED46 /* DomesticAnimalFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomesticAnimalFactory.m; sourceTree = "<group>"; };
+		AF6ADE882574886800FBED46 /* DomesticDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomesticDog.h; sourceTree = "<group>"; };
+		AF6ADE892574886800FBED46 /* DomesticDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomesticDog.m; sourceTree = "<group>"; };
+		AF6ADE8E2574887800FBED46 /* DomesticCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomesticCat.h; sourceTree = "<group>"; };
+		AF6ADE8F2574887800FBED46 /* DomesticCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DomesticCat.m; sourceTree = "<group>"; };
+		AF6ADE9425748E1B00FBED46 /* WildAnimalFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WildAnimalFactory.h; sourceTree = "<group>"; };
+		AF6ADE9525748E1B00FBED46 /* WildAnimalFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildAnimalFactory.m; sourceTree = "<group>"; };
+		AF6ADE9D25748EA000FBED46 /* WildDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WildDog.h; sourceTree = "<group>"; };
+		AF6ADE9E25748EA000FBED46 /* WildDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildDog.m; sourceTree = "<group>"; };
+		AF6ADEA325748EAF00FBED46 /* WildCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WildCat.h; sourceTree = "<group>"; };
+		AF6ADEA425748EAF00FBED46 /* WildCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WildCat.m; sourceTree = "<group>"; };
 		CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWKnowledgePro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4A85BC7664EC07AC610233 /* Pods-FWKnowledgePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWKnowledgePro.release.xcconfig"; path = "Target Support Files/Pods-FWKnowledgePro/Pods-FWKnowledgePro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,51 +226,166 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		AF5630EB256E475D00F61828 /* CoreDataTest */ = {
+		AF5631FF256F969B00F61828 /* Comprehensive(综合) */ = {
 			isa = PBXGroup;
 			children = (
-				AF5630F1256E475D00F61828 /* CDHomeViewController.h */,
-				AF5630ED256E475D00F61828 /* CDHomeViewController.m */,
-				AF5630EC256E475D00F61828 /* Student2+CoreDataClass.h */,
-				AF5630EF256E475D00F61828 /* Student2+CoreDataClass.m */,
-				AF5630F0256E475D00F61828 /* Student2+CoreDataProperties.h */,
-				AF5630EE256E475D00F61828 /* Student2+CoreDataProperties.m */,
+				AF56320C256F969B00F61828 /* BlockTestViewController.h */,
+				AF563205256F969B00F61828 /* BlockTestViewController.m */,
+				AF563204256F969B00F61828 /* GCDTestViewController.h */,
+				AF56320D256F969B00F61828 /* GCDTestViewController.m */,
+				AF563206256F969B00F61828 /* MSAlgorithmViewController.h */,
+				AF56320B256F969B00F61828 /* MSAlgorithmViewController.m */,
+				AF563201256F969B00F61828 /* NetTestViewController.h */,
+				AF563208256F969B00F61828 /* NetTestViewController.m */,
+				AF563203256F969B00F61828 /* NSOperationTestViewController.h */,
+				AF563209256F969B00F61828 /* NSOperationTestViewController.m */,
+				AF563200256F969B00F61828 /* NSThreadTestViewController.h */,
+				AF563207256F969B00F61828 /* NSThreadTestViewController.m */,
+				AF56320A256F969B00F61828 /* RunLoopTestViewController.h */,
+				AF563202256F969B00F61828 /* RunLoopTestViewController.m */,
+			);
+			path = "Comprehensive(综合)";
+			sourceTree = "<group>";
+		};
+		AF56320E256F969B00F61828 /* DataPersistence(数据持久化) */ = {
+			isa = PBXGroup;
+			children = (
+				AF56321C256F969B00F61828 /* ClassManagerSystem */,
+				AF563211256F969B00F61828 /* CoreDataTest */,
+				AF563226256F969B00F61828 /* Model */,
+				AF56320F256F969B00F61828 /* DataPersistenceViewController.h */,
+				AF56321B256F969B00F61828 /* DataPersistenceViewController.m */,
+				AF563218256F969B00F61828 /* FMDBTestViewController.h */,
+				AF563225256F969B00F61828 /* FMDBTestViewController.m */,
+				AF56322D256F969B00F61828 /* KeyChainTestViewController.h */,
+				AF563219256F969B00F61828 /* KeyChainTestViewController.m */,
+				AF56321A256F969B00F61828 /* SQLiteTestViewController.h */,
+				AF563210256F969B00F61828 /* SQLiteTestViewController.m */,
+			);
+			path = "DataPersistence(数据持久化)";
+			sourceTree = "<group>";
+		};
+		AF563211256F969B00F61828 /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				AF563217256F969B00F61828 /* CDHomeViewController.h */,
+				AF563213256F969B00F61828 /* CDHomeViewController.m */,
+				AF563212256F969B00F61828 /* Student2+CoreDataClass.h */,
+				AF563215256F969B00F61828 /* Student2+CoreDataClass.m */,
+				AF563216256F969B00F61828 /* Student2+CoreDataProperties.h */,
+				AF563214256F969B00F61828 /* Student2+CoreDataProperties.m */,
 			);
 			path = CoreDataTest;
 			sourceTree = "<group>";
 		};
-		AF5B8302256C8F6500FACDFC /* Model */ = {
+		AF56321C256F969B00F61828 /* ClassManagerSystem */ = {
 			isa = PBXGroup;
 			children = (
-				AF5B8308256C8F6500FACDFC /* ClassTestModel.h */,
-				AF5B8305256C8F6500FACDFC /* ClassTestModel.m */,
-				AF5B8307256C8F6500FACDFC /* StudentTestModel.h */,
-				AF5B8304256C8F6500FACDFC /* StudentTestModel.m */,
-				AF5B8306256C8F6500FACDFC /* UserTestModel.h */,
-				AF5B8303256C8F6500FACDFC /* UserTestModel.m */,
+				AF563224256F969B00F61828 /* CMAllDataListViewController.h */,
+				AF56321F256F969B00F61828 /* CMAllDataListViewController.m */,
+				AF56321D256F969B00F61828 /* CMClassStudentViewController.h */,
+				AF563221256F969B00F61828 /* CMClassStudentViewController.m */,
+				AF563222256F969B00F61828 /* CMHomeViewController.h */,
+				AF56321E256F969B00F61828 /* CMHomeViewController.m */,
+				AF563220256F969B00F61828 /* FWDataBaseManager.h */,
+				AF563223256F969B00F61828 /* FWDataBaseManager.m */,
+			);
+			path = ClassManagerSystem;
+			sourceTree = "<group>";
+		};
+		AF563226256F969B00F61828 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF56322C256F969B00F61828 /* ClassTestModel.h */,
+				AF563229256F969B00F61828 /* ClassTestModel.m */,
+				AF56322B256F969B00F61828 /* StudentTestModel.h */,
+				AF563228256F969B00F61828 /* StudentTestModel.m */,
+				AF56322A256F969B00F61828 /* UserTestModel.h */,
+				AF563227256F969B00F61828 /* UserTestModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		AF5B830F256C909700FACDFC /* Comprehensive */ = {
+		AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */ = {
 			isa = PBXGroup;
 			children = (
-				AF5B8313256C90B800FACDFC /* BlockTestViewController.h */,
-				AF5B8319256C90B800FACDFC /* BlockTestViewController.m */,
-				AF5B8315256C90B800FACDFC /* GCDTestViewController.h */,
-				AF5B8312256C90B800FACDFC /* GCDTestViewController.m */,
-				AF5B8316256C90B800FACDFC /* MSAlgorithmViewController.h */,
-				AF5B8310256C90B700FACDFC /* MSAlgorithmViewController.m */,
-				AF5B8317256C90B800FACDFC /* NetTestViewController.h */,
-				AF5B8314256C90B800FACDFC /* NetTestViewController.m */,
-				AF5B8311256C90B800FACDFC /* NSOperationTestViewController.h */,
-				AF5B831A256C90B800FACDFC /* NSOperationTestViewController.m */,
-				AF5B831C256C90B800FACDFC /* NSThreadTestViewController.h */,
-				AF5B831B256C90B800FACDFC /* NSThreadTestViewController.m */,
-				AF5B8318256C90B800FACDFC /* RunLoopTestViewController.h */,
-				AF5B831D256C90B800FACDFC /* RunLoopTestViewController.m */,
+				AF56345F2570F8E200F61828 /* AbstractFactory(抽象工厂模式) */,
+				AF56330D2570D7F800F61828 /* FactoryMethod(工厂模式) */,
+				AF5632ED2570AF0F00F61828 /* Prototype(原型模式) */,
+				AF5632F62570AF0F00F61828 /* Singleton(单例模式) */,
+				AF563247256F971300F61828 /* DPHomeViewController.h */,
+				AF563248256F971300F61828 /* DPHomeViewController.m */,
 			);
-			path = Comprehensive;
+			path = "DesignPatterns(设计模式)";
+			sourceTree = "<group>";
+		};
+		AF5632ED2570AF0F00F61828 /* Prototype(原型模式) */ = {
+			isa = PBXGroup;
+			children = (
+				AF5632EF2570AF0F00F61828 /* PrototypePerson.h */,
+				AF5632F32570AF0F00F61828 /* PrototypePerson.m */,
+				AF5632F02570AF0F00F61828 /* PrototypeJob.h */,
+				AF5632F42570AF0F00F61828 /* PrototypeJob.m */,
+				AF5632F12570AF0F00F61828 /* PrototypePersonDeepCopy.h */,
+				AF5632F52570AF0F00F61828 /* PrototypePersonDeepCopy.m */,
+				AF5632EE2570AF0F00F61828 /* PrototypePersonShallowCopy.h */,
+				AF5632F22570AF0F00F61828 /* PrototypePersonShallowCopy.m */,
+			);
+			path = "Prototype(原型模式)";
+			sourceTree = "<group>";
+		};
+		AF5632F62570AF0F00F61828 /* Singleton(单例模式) */ = {
+			isa = PBXGroup;
+			children = (
+				AF5632F92570AF0F00F61828 /* Singleton.h */,
+				AF5632FC2570AF0F00F61828 /* Singleton.m */,
+				AF5632FD2570AF0F00F61828 /* HMSingleton.h */,
+				AF5632F82570AF0F00F61828 /* HMSingleton.m */,
+				AF5632FB2570AF0F00F61828 /* NSObject+Singleton.h */,
+				AF5632F72570AF0F00F61828 /* NSObject+Singleton.m */,
+				AF5632FA2570AF0F00F61828 /* SingletonTest.h */,
+				AF5632FE2570AF0F00F61828 /* SingletonTest.m */,
+			);
+			path = "Singleton(单例模式)";
+			sourceTree = "<group>";
+		};
+		AF56330D2570D7F800F61828 /* FactoryMethod(工厂模式) */ = {
+			isa = PBXGroup;
+			children = (
+				AF56333E2570D97F00F61828 /* AnimalProtocol.h */,
+				AF5633772570DFFF00F61828 /* Cat.h */,
+				AF5633782570DFFF00F61828 /* Cat.m */,
+				AF56340E2570EB3500F61828 /* Dog.h */,
+				AF56340F2570EB3500F61828 /* Dog.m */,
+				AF5634262570EEB900F61828 /* FactoryProtocol.h */,
+				AF5634202570EC5800F61828 /* CatFactory.h */,
+				AF5634212570EC5800F61828 /* CatFactory.m */,
+				AF56341A2570EC4300F61828 /* DogFactory.h */,
+				AF56341B2570EC4300F61828 /* DogFactory.m */,
+			);
+			path = "FactoryMethod(工厂模式)";
+			sourceTree = "<group>";
+		};
+		AF56345F2570F8E200F61828 /* AbstractFactory(抽象工厂模式) */ = {
+			isa = PBXGroup;
+			children = (
+				AF6ADE7C2574845D00FBED46 /* AbstractAnimal.h */,
+				AF6ADE7D2574847A00FBED46 /* AbstractDog.h */,
+				AF6ADE7E2574848D00FBED46 /* AbstractCat.h */,
+				AF6ADE7F2574862A00FBED46 /* DomesticAnimalFactory.h */,
+				AF6ADE802574862A00FBED46 /* DomesticAnimalFactory.m */,
+				AF6ADE882574886800FBED46 /* DomesticDog.h */,
+				AF6ADE892574886800FBED46 /* DomesticDog.m */,
+				AF6ADE8E2574887800FBED46 /* DomesticCat.h */,
+				AF6ADE8F2574887800FBED46 /* DomesticCat.m */,
+				AF6ADE9425748E1B00FBED46 /* WildAnimalFactory.h */,
+				AF6ADE9525748E1B00FBED46 /* WildAnimalFactory.m */,
+				AF6ADE9D25748EA000FBED46 /* WildDog.h */,
+				AF6ADE9E25748EA000FBED46 /* WildDog.m */,
+				AF6ADEA325748EAF00FBED46 /* WildCat.h */,
+				AF6ADEA425748EAF00FBED46 /* WildCat.m */,
+			);
+			path = "AbstractFactory(抽象工厂模式)";
 			sourceTree = "<group>";
 		};
 		AF5BE446256BB98D0028EB6E = {
@@ -288,8 +465,9 @@
 		AF5BE4AB256BBD540028EB6E /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				AF5B830F256C909700FACDFC /* Comprehensive */,
-				AF5BE4E1256BC2340028EB6E /* DataPersistence */,
+				AF5631FF256F969B00F61828 /* Comprehensive(综合) */,
+				AF56320E256F969B00F61828 /* DataPersistence(数据持久化) */,
+				AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */,
 				AF5BE4B2256BBDB30028EB6E /* HomeViewController.h */,
 				AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */,
 			);
@@ -313,39 +491,6 @@
 				AF5BE4C3256BBE600028EB6E /* FWBaseTableViewController.m */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		AF5BE4E1256BC2340028EB6E /* DataPersistence */ = {
-			isa = PBXGroup;
-			children = (
-				AF5630EB256E475D00F61828 /* CoreDataTest */,
-				AF5B8302256C8F6500FACDFC /* Model */,
-				AF5BE4EC256BC2340028EB6E /* ClassManagerSystem */,
-				AF5BE4E2256BC2340028EB6E /* DataPersistenceViewController.h */,
-				AF5BE4EB256BC2340028EB6E /* DataPersistenceViewController.m */,
-				AF5BE4E5256BC2340028EB6E /* FMDBTestViewController.h */,
-				AF5BE4EE256BC2340028EB6E /* FMDBTestViewController.m */,
-				AF5BE4EF256BC2340028EB6E /* KeyChainTestViewController.h */,
-				AF5BE4E8256BC2340028EB6E /* KeyChainTestViewController.m */,
-				AF5BE4EA256BC2340028EB6E /* SQLiteTestViewController.h */,
-				AF5BE4E3256BC2340028EB6E /* SQLiteTestViewController.m */,
-			);
-			path = DataPersistence;
-			sourceTree = "<group>";
-		};
-		AF5BE4EC256BC2340028EB6E /* ClassManagerSystem */ = {
-			isa = PBXGroup;
-			children = (
-				AF5B8328256C916900FACDFC /* FWDataBaseManager.h */,
-				AF5B8329256C916A00FACDFC /* FWDataBaseManager.m */,
-				AF5A8728256CB55C00F3243D /* CMHomeViewController.h */,
-				AF5A8729256CB55C00F3243D /* CMHomeViewController.m */,
-				AF8A82A9256D119500AB1167 /* CMClassStudentViewController.h */,
-				AF8A82AA256D119500AB1167 /* CMClassStudentViewController.m */,
-				AF56305B256DE6F500F61828 /* CMAllDataListViewController.h */,
-				AF56305C256DE6F500F61828 /* CMAllDataListViewController.m */,
-			);
-			path = ClassManagerSystem;
 			sourceTree = "<group>";
 		};
 		C100CC4F10CB64D4C5318E06 /* Frameworks */ = {
@@ -528,34 +673,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF5B8324256C90B800FACDFC /* RunLoopTestViewController.m in Sources */,
-				AF5B832A256C916A00FACDFC /* FWDataBaseManager.m in Sources */,
+				AF563237256F969C00F61828 /* CDHomeViewController.m in Sources */,
+				AF56341C2570EC4300F61828 /* DogFactory.m in Sources */,
+				AF5633022570AF0F00F61828 /* PrototypePersonDeepCopy.m in Sources */,
+				AF5633002570AF0F00F61828 /* PrototypePerson.m in Sources */,
+				AF5633062570AF0F00F61828 /* SingletonTest.m in Sources */,
+				AF6ADE8A2574886800FBED46 /* DomesticDog.m in Sources */,
 				AF5BE4AE256BBD540028EB6E /* AppDelegate.m in Sources */,
-				AF5B831F256C90B800FACDFC /* GCDTestViewController.m in Sources */,
-				AF5630F2256E475D00F61828 /* CDHomeViewController.m in Sources */,
+				AF563243256F969C00F61828 /* ClassTestModel.m in Sources */,
+				AF5634222570EC5800F61828 /* CatFactory.m in Sources */,
+				AF563230256F969B00F61828 /* BlockTestViewController.m in Sources */,
 				AF5BE4C4256BBE600028EB6E /* FWBaseTableViewController.m in Sources */,
-				AF5A872A256CB55C00F3243D /* CMHomeViewController.m in Sources */,
-				AF56305D256DE6F500F61828 /* CMAllDataListViewController.m in Sources */,
-				AF5630F4256E475D00F61828 /* Student2+CoreDataClass.m in Sources */,
-				AF5BE4F6256BC2350028EB6E /* DataPersistenceViewController.m in Sources */,
-				AF5BE4F7256BC2350028EB6E /* FMDBTestViewController.m in Sources */,
-				AF5B8321256C90B800FACDFC /* BlockTestViewController.m in Sources */,
-				AF5B831E256C90B800FACDFC /* MSAlgorithmViewController.m in Sources */,
+				AF563235256F969C00F61828 /* GCDTestViewController.m in Sources */,
 				AF5BE4BB256BBE4C0028EB6E /* FWBaseViewController.m in Sources */,
+				AF6ADE812574862A00FBED46 /* DomesticAnimalFactory.m in Sources */,
+				AF5633792570DFFF00F61828 /* Cat.m in Sources */,
+				AF563249256F971300F61828 /* DPHomeViewController.m in Sources */,
+				AF6ADE9F25748EA000FBED46 /* WildDog.m in Sources */,
+				AF56323C256F969C00F61828 /* CMHomeViewController.m in Sources */,
+				AF563232256F969B00F61828 /* NetTestViewController.m in Sources */,
+				AF563240256F969C00F61828 /* FMDBTestViewController.m in Sources */,
+				AF5633032570AF0F00F61828 /* NSObject+Singleton.m in Sources */,
+				AF563242256F969C00F61828 /* StudentTestModel.m in Sources */,
+				AF56323A256F969C00F61828 /* KeyChainTestViewController.m in Sources */,
 				AF5BE4AD256BBD540028EB6E /* SceneDelegate.m in Sources */,
-				AF5B8320256C90B800FACDFC /* NetTestViewController.m in Sources */,
-				AF5B8323256C90B800FACDFC /* NSThreadTestViewController.m in Sources */,
-				AF5B8309256C8F6500FACDFC /* UserTestModel.m in Sources */,
+				AF56322F256F969B00F61828 /* RunLoopTestViewController.m in Sources */,
+				AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */,
+				AF563234256F969B00F61828 /* MSAlgorithmViewController.m in Sources */,
+				AF56323D256F969C00F61828 /* CMAllDataListViewController.m in Sources */,
+				AF563233256F969B00F61828 /* NSOperationTestViewController.m in Sources */,
+				AF56323B256F969C00F61828 /* DataPersistenceViewController.m in Sources */,
 				AF5BE465256BB98F0028EB6E /* main.m in Sources */,
-				AF8A82AB256D119500AB1167 /* CMClassStudentViewController.m in Sources */,
+				AF5633042570AF0F00F61828 /* HMSingleton.m in Sources */,
+				AF56323E256F969C00F61828 /* CMClassStudentViewController.m in Sources */,
+				AF5634102570EB3500F61828 /* Dog.m in Sources */,
+				AF5632FF2570AF0F00F61828 /* PrototypePersonShallowCopy.m in Sources */,
+				AF563239256F969C00F61828 /* Student2+CoreDataClass.m in Sources */,
+				AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */,
+				AF563231256F969B00F61828 /* NSThreadTestViewController.m in Sources */,
+				AF56323F256F969C00F61828 /* FWDataBaseManager.m in Sources */,
+				AF5633012570AF0F00F61828 /* PrototypeJob.m in Sources */,
+				AF6ADE9625748E1B00FBED46 /* WildAnimalFactory.m in Sources */,
+				AF563236256F969C00F61828 /* SQLiteTestViewController.m in Sources */,
+				AF563241256F969C00F61828 /* UserTestModel.m in Sources */,
+				AF563238256F969C00F61828 /* Student2+CoreDataProperties.m in Sources */,
+				AF5633052570AF0F00F61828 /* Singleton.m in Sources */,
 				AF5BE4B4256BBDB30028EB6E /* HomeViewController.m in Sources */,
-				AF5B8322256C90B800FACDFC /* NSOperationTestViewController.m in Sources */,
-				AF5B830A256C8F6500FACDFC /* StudentTestModel.m in Sources */,
-				AF5630F3256E475D00F61828 /* Student2+CoreDataProperties.m in Sources */,
-				AF5BE4F1256BC2350028EB6E /* SQLiteTestViewController.m in Sources */,
 				AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */,
-				AF5BE4F5256BC2350028EB6E /* KeyChainTestViewController.m in Sources */,
-				AF5B830B256C8F6500FACDFC /* ClassTestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

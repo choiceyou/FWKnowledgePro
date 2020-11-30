@@ -38,6 +38,7 @@
         @"FMDB（数据库）",
         @"FMDB实践（学生管理）",
         @"Core Data",
+        @"YYCache"
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
