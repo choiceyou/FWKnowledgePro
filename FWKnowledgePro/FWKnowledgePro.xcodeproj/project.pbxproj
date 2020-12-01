@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		524E1FF8D0ACE3ADBAAAFBB8 /* Pods_FWKnowledgePro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */; };
+		AF3864FB2575E95C001D295F /* ObserverTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3864FA2575E95C001D295F /* ObserverTestViewController.m */; };
+		AF3865042575EA51001D295F /* ObservedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3865032575EA51001D295F /* ObservedModel.m */; };
+		AF38651525762A04001D295F /* MITVSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38651425762A04001D295F /* MITVSystem.m */; };
+		AF38651B25762AB5001D295F /* HUAWEITVSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38651A25762AB5001D295F /* HUAWEITVSystem.m */; };
+		AF38652125762B3F001D295F /* AbstractTVSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38652025762B3F001D295F /* AbstractTVSystem.m */; };
+		AF38652725762D43001D295F /* SimpleTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38652625762D43001D295F /* SimpleTVControl.m */; };
+		AF38652D25762D7B001D295F /* MultifunctionTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38652C25762D7B001D295F /* MultifunctionTVControl.m */; };
 		AF52D1DA2574F83400E13A6D /* WildlifeParkIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */; };
 		AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF5630B7256E041400F61828 /* Model.xcdatamodeld */; };
 		AF56322F256F969B00F61828 /* RunLoopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563202256F969B00F61828 /* RunLoopTestViewController.m */; };
@@ -86,6 +93,21 @@
 
 /* Begin PBXFileReference section */
 		72FB8F3DDE2EAD5F61852F6B /* Pods-FWKnowledgePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWKnowledgePro.debug.xcconfig"; path = "Target Support Files/Pods-FWKnowledgePro/Pods-FWKnowledgePro.debug.xcconfig"; sourceTree = "<group>"; };
+		AF3864F92575E95C001D295F /* ObserverTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserverTestViewController.h; sourceTree = "<group>"; };
+		AF3864FA2575E95C001D295F /* ObserverTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserverTestViewController.m; sourceTree = "<group>"; };
+		AF3865022575EA51001D295F /* ObservedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObservedModel.h; sourceTree = "<group>"; };
+		AF3865032575EA51001D295F /* ObservedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObservedModel.m; sourceTree = "<group>"; };
+		AF38650F2576280F001D295F /* AbstractTVProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractTVProtocol.h; sourceTree = "<group>"; };
+		AF38651325762A04001D295F /* MITVSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MITVSystem.h; sourceTree = "<group>"; };
+		AF38651425762A04001D295F /* MITVSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MITVSystem.m; sourceTree = "<group>"; };
+		AF38651925762AB5001D295F /* HUAWEITVSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUAWEITVSystem.h; sourceTree = "<group>"; };
+		AF38651A25762AB5001D295F /* HUAWEITVSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUAWEITVSystem.m; sourceTree = "<group>"; };
+		AF38651F25762B3F001D295F /* AbstractTVSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractTVSystem.h; sourceTree = "<group>"; };
+		AF38652025762B3F001D295F /* AbstractTVSystem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractTVSystem.m; sourceTree = "<group>"; };
+		AF38652525762D43001D295F /* SimpleTVControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTVControl.h; sourceTree = "<group>"; };
+		AF38652625762D43001D295F /* SimpleTVControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTVControl.m; sourceTree = "<group>"; };
+		AF38652B25762D7B001D295F /* MultifunctionTVControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultifunctionTVControl.h; sourceTree = "<group>"; };
+		AF38652C25762D7B001D295F /* MultifunctionTVControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultifunctionTVControl.m; sourceTree = "<group>"; };
 		AF52D1D82574F83400E13A6D /* WildlifeParkIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WildlifeParkIterator.h; sourceTree = "<group>"; };
 		AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WildlifeParkIterator.m; sourceTree = "<group>"; };
 		AF52D1E12574FB4500E13A6D /* MyParkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyParkProtocol.h; sourceTree = "<group>"; };
@@ -246,6 +268,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AF3864F82575E937001D295F /* Observer(观察者模式) */ = {
+			isa = PBXGroup;
+			children = (
+				AF3864F92575E95C001D295F /* ObserverTestViewController.h */,
+				AF3864FA2575E95C001D295F /* ObserverTestViewController.m */,
+				AF3865022575EA51001D295F /* ObservedModel.h */,
+				AF3865032575EA51001D295F /* ObservedModel.m */,
+			);
+			path = "Observer(观察者模式)";
+			sourceTree = "<group>";
+		};
+		AF38650E257627CE001D295F /* Bridge(桥接模式) */ = {
+			isa = PBXGroup;
+			children = (
+				AF38650F2576280F001D295F /* AbstractTVProtocol.h */,
+				AF38651325762A04001D295F /* MITVSystem.h */,
+				AF38651425762A04001D295F /* MITVSystem.m */,
+				AF38651925762AB5001D295F /* HUAWEITVSystem.h */,
+				AF38651A25762AB5001D295F /* HUAWEITVSystem.m */,
+				AF38651F25762B3F001D295F /* AbstractTVSystem.h */,
+				AF38652025762B3F001D295F /* AbstractTVSystem.m */,
+				AF38652525762D43001D295F /* SimpleTVControl.h */,
+				AF38652625762D43001D295F /* SimpleTVControl.m */,
+				AF38652B25762D7B001D295F /* MultifunctionTVControl.h */,
+				AF38652C25762D7B001D295F /* MultifunctionTVControl.m */,
+			);
+			path = "Bridge(桥接模式)";
+			sourceTree = "<group>";
+		};
 		AF5631FF256F969B00F61828 /* Comprehensive(综合) */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +383,8 @@
 				AF563247256F971300F61828 /* DPHomeViewController.h */,
 				AF563248256F971300F61828 /* DPHomeViewController.m */,
 				AF56345F2570F8E200F61828 /* AbstractFactory(抽象工厂模式) */,
+				AF38650E257627CE001D295F /* Bridge(桥接模式) */,
+				AF3864F82575E937001D295F /* Observer(观察者模式) */,
 				AF56330D2570D7F800F61828 /* FactoryMethod(工厂模式) */,
 				AF6ADEA92574DC2100FBED46 /* Iterator(迭代器) */,
 				AF5632ED2570AF0F00F61828 /* Prototype(原型模式) */,
@@ -719,7 +772,9 @@
 				AF563237256F969C00F61828 /* CDHomeViewController.m in Sources */,
 				AF56341C2570EC4300F61828 /* DogFactory.m in Sources */,
 				AF5633022570AF0F00F61828 /* PrototypePersonDeepCopy.m in Sources */,
+				AF38651525762A04001D295F /* MITVSystem.m in Sources */,
 				AF5633002570AF0F00F61828 /* PrototypePerson.m in Sources */,
+				AF38652725762D43001D295F /* SimpleTVControl.m in Sources */,
 				AF5633062570AF0F00F61828 /* SingletonTest.m in Sources */,
 				AF6ADE8A2574886800FBED46 /* DomesticDog.m in Sources */,
 				AF5BE4AE256BBD540028EB6E /* AppDelegate.m in Sources */,
@@ -731,17 +786,21 @@
 				AF5BE4BB256BBE4C0028EB6E /* FWBaseViewController.m in Sources */,
 				AF6ADE812574862A00FBED46 /* DomesticAnimalFactory.m in Sources */,
 				AF5633792570DFFF00F61828 /* Cat.m in Sources */,
+				AF3864FB2575E95C001D295F /* ObserverTestViewController.m in Sources */,
 				AF563249256F971300F61828 /* DPHomeViewController.m in Sources */,
 				AF6ADE9F25748EA000FBED46 /* WildDog.m in Sources */,
 				AF56323C256F969C00F61828 /* CMHomeViewController.m in Sources */,
 				AF563232256F969B00F61828 /* NetTestViewController.m in Sources */,
 				AF563240256F969C00F61828 /* FMDBTestViewController.m in Sources */,
 				AF5633032570AF0F00F61828 /* NSObject+Singleton.m in Sources */,
+				AF38652125762B3F001D295F /* AbstractTVSystem.m in Sources */,
 				AF563242256F969C00F61828 /* StudentTestModel.m in Sources */,
 				AF56323A256F969C00F61828 /* KeyChainTestViewController.m in Sources */,
 				AF5BE4AD256BBD540028EB6E /* SceneDelegate.m in Sources */,
 				AF6ADF072574E75F00FBED46 /* ZooIterator.m in Sources */,
+				AF38651B25762AB5001D295F /* HUAWEITVSystem.m in Sources */,
 				AF56322F256F969B00F61828 /* RunLoopTestViewController.m in Sources */,
+				AF3865042575EA51001D295F /* ObservedModel.m in Sources */,
 				AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */,
 				AF563234256F969B00F61828 /* MSAlgorithmViewController.m in Sources */,
 				AF56323D256F969C00F61828 /* CMAllDataListViewController.m in Sources */,
@@ -752,6 +811,7 @@
 				AF56323E256F969C00F61828 /* CMClassStudentViewController.m in Sources */,
 				AF5634102570EB3500F61828 /* Dog.m in Sources */,
 				AF5632FF2570AF0F00F61828 /* PrototypePersonShallowCopy.m in Sources */,
+				AF38652D25762D7B001D295F /* MultifunctionTVControl.m in Sources */,
 				AF563239256F969C00F61828 /* Student2+CoreDataClass.m in Sources */,
 				AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */,
 				AF563231256F969B00F61828 /* NSThreadTestViewController.m in Sources */,

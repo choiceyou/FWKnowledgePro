@@ -17,6 +17,11 @@
 #import "WildlifePark.h"
 #import "Iterator.h"
 #import "Monkey.h"
+#import "ObserverTestViewController.h"
+#import "SimpleTVControl.h"
+#import "MultifunctionTVControl.h"
+#import "MITVSystem.h"
+#import "HUAWEITVSystem.h"
 
 
 // 重用标识符
@@ -205,12 +210,52 @@ static NSString *const kModeName = @"modeName";
                 }
             }
                 break;
+            case 1: {
+                ObserverTestViewController *tmpVC = [[ObserverTestViewController alloc] init];
+                [self.navigationController pushViewController:tmpVC animated:YES];
+            }
+                break;
                 
             default:
                 break;
         }
     } else if (indexPath.section == 3) {
-        
+        switch (indexPath.row) {
+            case 0: {
+                
+            }
+                break;
+            case 1: {
+                
+            }
+                break;
+            case 2: {
+                
+            }
+                break;
+            case 3: {
+                
+            }
+                break;
+            case 4: {
+                
+            }
+                break;
+            case 5: {
+                MITVSystem *miTVSystem = [[MITVSystem alloc] init];
+                HUAWEITVSystem *hwTVSystem = [[HUAWEITVSystem alloc] init];
+                
+                SimpleTVControl *sTVControl = [[SimpleTVControl alloc] initWith:miTVSystem];
+                [sTVControl onOff];
+                
+                MultifunctionTVControl *mTVControl = [[MultifunctionTVControl alloc] initWith:hwTVSystem];
+                [mTVControl setChannel:arc4random() % 100];
+            }
+                break;
+                
+            default:
+                break;
+        }
     }
 }
 
