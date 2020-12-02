@@ -15,6 +15,9 @@
 		AF38652125762B3F001D295F /* AbstractTVSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38652025762B3F001D295F /* AbstractTVSystem.m */; };
 		AF38652725762D43001D295F /* SimpleTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38652625762D43001D295F /* SimpleTVControl.m */; };
 		AF38652D25762D7B001D295F /* MultifunctionTVControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38652C25762D7B001D295F /* MultifunctionTVControl.m */; };
+		AF386534257642CC001D295F /* MultiThreadHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF386533257642CC001D295F /* MultiThreadHomeViewController.m */; };
+		AF38655325764F24001D295F /* POHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38655225764F24001D295F /* POHomeViewController.m */; };
+		AF38656D25772FAB001D295F /* OCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38656C25772FAB001D295F /* OCHomeViewController.m */; };
 		AF52D1DA2574F83400E13A6D /* WildlifeParkIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */; };
 		AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF5630B7256E041400F61828 /* Model.xcdatamodeld */; };
 		AF56322F256F969B00F61828 /* RunLoopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563202256F969B00F61828 /* RunLoopTestViewController.m */; };
@@ -108,6 +111,12 @@
 		AF38652625762D43001D295F /* SimpleTVControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTVControl.m; sourceTree = "<group>"; };
 		AF38652B25762D7B001D295F /* MultifunctionTVControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultifunctionTVControl.h; sourceTree = "<group>"; };
 		AF38652C25762D7B001D295F /* MultifunctionTVControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultifunctionTVControl.m; sourceTree = "<group>"; };
+		AF386532257642CC001D295F /* MultiThreadHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiThreadHomeViewController.h; sourceTree = "<group>"; };
+		AF386533257642CC001D295F /* MultiThreadHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiThreadHomeViewController.m; sourceTree = "<group>"; };
+		AF38655125764F24001D295F /* POHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POHomeViewController.h; sourceTree = "<group>"; };
+		AF38655225764F24001D295F /* POHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POHomeViewController.m; sourceTree = "<group>"; };
+		AF38656B25772FAB001D295F /* OCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCHomeViewController.h; sourceTree = "<group>"; };
+		AF38656C25772FAB001D295F /* OCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCHomeViewController.m; sourceTree = "<group>"; };
 		AF52D1D82574F83400E13A6D /* WildlifeParkIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WildlifeParkIterator.h; sourceTree = "<group>"; };
 		AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WildlifeParkIterator.m; sourceTree = "<group>"; };
 		AF52D1E12574FB4500E13A6D /* MyParkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyParkProtocol.h; sourceTree = "<group>"; };
@@ -297,17 +306,13 @@
 			path = "Bridge(桥接模式)";
 			sourceTree = "<group>";
 		};
-		AF5631FF256F969B00F61828 /* Comprehensive(综合) */ = {
+		AF38653125764245001D295F /* MultiThread(多线程) */ = {
 			isa = PBXGroup;
 			children = (
-				AF56320C256F969B00F61828 /* BlockTestViewController.h */,
-				AF563205256F969B00F61828 /* BlockTestViewController.m */,
+				AF386532257642CC001D295F /* MultiThreadHomeViewController.h */,
+				AF386533257642CC001D295F /* MultiThreadHomeViewController.m */,
 				AF563204256F969B00F61828 /* GCDTestViewController.h */,
 				AF56320D256F969B00F61828 /* GCDTestViewController.m */,
-				AF563206256F969B00F61828 /* MSAlgorithmViewController.h */,
-				AF56320B256F969B00F61828 /* MSAlgorithmViewController.m */,
-				AF563201256F969B00F61828 /* NetTestViewController.h */,
-				AF563208256F969B00F61828 /* NetTestViewController.m */,
 				AF563203256F969B00F61828 /* NSOperationTestViewController.h */,
 				AF563209256F969B00F61828 /* NSOperationTestViewController.m */,
 				AF563200256F969B00F61828 /* NSThreadTestViewController.h */,
@@ -315,7 +320,45 @@
 				AF56320A256F969B00F61828 /* RunLoopTestViewController.h */,
 				AF563202256F969B00F61828 /* RunLoopTestViewController.m */,
 			);
-			path = "Comprehensive(综合)";
+			path = "MultiThread(多线程)";
+			sourceTree = "<group>";
+		};
+		AF38655025764ECA001D295F /* PerformanceOptimization(性能优化) */ = {
+			isa = PBXGroup;
+			children = (
+				AF38655125764F24001D295F /* POHomeViewController.h */,
+				AF38655225764F24001D295F /* POHomeViewController.m */,
+			);
+			path = "PerformanceOptimization(性能优化)";
+			sourceTree = "<group>";
+		};
+		AF38655D25772AD1001D295F /* Net(网络相关) */ = {
+			isa = PBXGroup;
+			children = (
+				AF563201256F969B00F61828 /* NetTestViewController.h */,
+				AF563208256F969B00F61828 /* NetTestViewController.m */,
+			);
+			path = "Net(网络相关)";
+			sourceTree = "<group>";
+		};
+		AF38656125772BD3001D295F /* OC(语言部分) */ = {
+			isa = PBXGroup;
+			children = (
+				AF38656B25772FAB001D295F /* OCHomeViewController.h */,
+				AF38656C25772FAB001D295F /* OCHomeViewController.m */,
+				AF56320C256F969B00F61828 /* BlockTestViewController.h */,
+				AF563205256F969B00F61828 /* BlockTestViewController.m */,
+			);
+			path = "OC(语言部分)";
+			sourceTree = "<group>";
+		};
+		AF5631FF256F969B00F61828 /* Algorithm(算法) */ = {
+			isa = PBXGroup;
+			children = (
+				AF563206256F969B00F61828 /* MSAlgorithmViewController.h */,
+				AF56320B256F969B00F61828 /* MSAlgorithmViewController.m */,
+			);
+			path = "Algorithm(算法)";
 			sourceTree = "<group>";
 		};
 		AF56320E256F969B00F61828 /* DataPersistence(数据持久化) */ = {
@@ -386,7 +429,7 @@
 				AF38650E257627CE001D295F /* Bridge(桥接模式) */,
 				AF3864F82575E937001D295F /* Observer(观察者模式) */,
 				AF56330D2570D7F800F61828 /* FactoryMethod(工厂模式) */,
-				AF6ADEA92574DC2100FBED46 /* Iterator(迭代器) */,
+				AF6ADEA92574DC2100FBED46 /* Iterator(迭代器模式) */,
 				AF5632ED2570AF0F00F61828 /* Prototype(原型模式) */,
 				AF5632F62570AF0F00F61828 /* Singleton(单例模式) */,
 			);
@@ -541,9 +584,13 @@
 			children = (
 				AF5BE4B2256BBDB30028EB6E /* HomeViewController.h */,
 				AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */,
-				AF5631FF256F969B00F61828 /* Comprehensive(综合) */,
-				AF56320E256F969B00F61828 /* DataPersistence(数据持久化) */,
 				AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */,
+				AF38656125772BD3001D295F /* OC(语言部分) */,
+				AF56320E256F969B00F61828 /* DataPersistence(数据持久化) */,
+				AF38653125764245001D295F /* MultiThread(多线程) */,
+				AF38655D25772AD1001D295F /* Net(网络相关) */,
+				AF5631FF256F969B00F61828 /* Algorithm(算法) */,
+				AF38655025764ECA001D295F /* PerformanceOptimization(性能优化) */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -567,7 +614,7 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		AF6ADEA92574DC2100FBED46 /* Iterator(迭代器) */ = {
+		AF6ADEA92574DC2100FBED46 /* Iterator(迭代器模式) */ = {
 			isa = PBXGroup;
 			children = (
 				AF6ADEAA2574DEFA00FBED46 /* IteratorProtocol.h */,
@@ -585,7 +632,7 @@
 				AF52D1D82574F83400E13A6D /* WildlifeParkIterator.h */,
 				AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */,
 			);
-			path = "Iterator(迭代器)";
+			path = "Iterator(迭代器模式)";
 			sourceTree = "<group>";
 		};
 		C100CC4F10CB64D4C5318E06 /* Frameworks */ = {
@@ -776,6 +823,7 @@
 				AF5633002570AF0F00F61828 /* PrototypePerson.m in Sources */,
 				AF38652725762D43001D295F /* SimpleTVControl.m in Sources */,
 				AF5633062570AF0F00F61828 /* SingletonTest.m in Sources */,
+				AF386534257642CC001D295F /* MultiThreadHomeViewController.m in Sources */,
 				AF6ADE8A2574886800FBED46 /* DomesticDog.m in Sources */,
 				AF5BE4AE256BBD540028EB6E /* AppDelegate.m in Sources */,
 				AF563243256F969C00F61828 /* ClassTestModel.m in Sources */,
@@ -805,12 +853,14 @@
 				AF563234256F969B00F61828 /* MSAlgorithmViewController.m in Sources */,
 				AF56323D256F969C00F61828 /* CMAllDataListViewController.m in Sources */,
 				AF563233256F969B00F61828 /* NSOperationTestViewController.m in Sources */,
+				AF38655325764F24001D295F /* POHomeViewController.m in Sources */,
 				AF56323B256F969C00F61828 /* DataPersistenceViewController.m in Sources */,
 				AF5BE465256BB98F0028EB6E /* main.m in Sources */,
 				AF5633042570AF0F00F61828 /* HMSingleton.m in Sources */,
 				AF56323E256F969C00F61828 /* CMClassStudentViewController.m in Sources */,
 				AF5634102570EB3500F61828 /* Dog.m in Sources */,
 				AF5632FF2570AF0F00F61828 /* PrototypePersonShallowCopy.m in Sources */,
+				AF38656D25772FAB001D295F /* OCHomeViewController.m in Sources */,
 				AF38652D25762D7B001D295F /* MultifunctionTVControl.m in Sources */,
 				AF563239256F969C00F61828 /* Student2+CoreDataClass.m in Sources */,
 				AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */,

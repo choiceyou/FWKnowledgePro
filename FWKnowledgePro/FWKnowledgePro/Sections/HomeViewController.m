@@ -12,14 +12,12 @@
 
 #import "HomeViewController.h"
 #import "MSAlgorithmViewController.h"
-#import "BlockTestViewController.h"
-#import "NSThreadTestViewController.h"
-#import "GCDTestViewController.h"
-#import "NSOperationTestViewController.h"
-#import "RunLoopTestViewController.h"
 #import "NetTestViewController.h"
 #import "DataPersistenceViewController.h"
 #import "DPHomeViewController.h"
+#import "MultiThreadHomeViewController.h"
+#import "POHomeViewController.h"
+#import "OCHomeViewController.h"
 
 @interface HomeViewController ()
 
@@ -34,20 +32,16 @@
     self.navigationItem.title = @"首页";
     
     NSMutableArray *tmpArray = @[
-        @"UI相关：事件传递，图像显示，性能优化，离屏渲染",
-        @"Objective_C语言特性相关问题",
-        @"Runtime相关",
-        @"算法相关",
-        @"内存管理、自动释放池与循环引用",
-        @"Block",
-        @"多线程之NSThreed",
-        @"多线程之GCD",
-        @"多线程之NSOperation",
-        @"RunLoop",
-        @"网络相关",
-        @"数据持久化",
         @"架构模式",
         @"设计模式",
+        @"OC语言部分",
+        @"数据持久化",
+        @"多线程",
+        @"网络相关",
+        @"Runtime",
+        @"性能优化",
+        @"算法",
+        @"内存管理、自动释放池与循环引用",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -66,62 +60,47 @@
         }
             break;
         case 1: {
-            
+            tmpVC = [[DPHomeViewController alloc] init];
         }
             break;
         case 2: {
-            
+            tmpVC = [[OCHomeViewController alloc] init];
         }
             break;
         case 3: {
-            tmpVC = [[MSAlgorithmViewController alloc] init];
-        }
-            break;
-        case 4: {
-            
-        }
-            break;
-        case 5: {
-            tmpVC = [[BlockTestViewController alloc] init];
-        }
-            break;
-        case 6: {
-            tmpVC = [[NSThreadTestViewController alloc] init];
-        }
-            break;
-        case 7: {
-            tmpVC = [[GCDTestViewController alloc] init];
-        }
-            break;
-        case 8: {
-            tmpVC = [[NSOperationTestViewController alloc] init];
-        }
-            break;
-        case 9: {
-            tmpVC = [[RunLoopTestViewController alloc] init];
-        }
-            break;
-        case 10: {
-            tmpVC = [[NetTestViewController alloc] init];
-        }
-            break;
-        case 11: {
             tmpVC = [[DataPersistenceViewController alloc] init];
         }
             break;
-        case 12: {
+        case 4: {
+            tmpVC = [[MultiThreadHomeViewController alloc] init];
+        }
+            break;
+        case 5: {
+            tmpVC = [[NetTestViewController alloc] init];
+        }
+            break;
+        case 6: {
             
         }
             break;
-        case 13: {
-            tmpVC = [[DPHomeViewController alloc] init];
+        case 7: {
+            tmpVC = [[POHomeViewController alloc] init];
+        }
+            break;
+        case 8: {
+            tmpVC = [[MSAlgorithmViewController alloc] init];
+        }
+            break;
+        case 9: {
+            
         }
             
         default:
             break;
     }
-    [self.navigationController pushViewController:tmpVC animated:YES];
+    if (tmpVC) {
+        [self.navigationController pushViewController:tmpVC animated:YES];
+    }
 }
-
 
 @end
