@@ -2,7 +2,7 @@
 //  HomeViewController.m
 //  FWKnowledgePro
 //
-//  Created by xfg on 2020/11/23.
+//  Created by xfg on 2019/11/23.
 //
 
 /**
@@ -11,6 +11,7 @@
  */
 
 #import "HomeViewController.h"
+#import "FKHomeViewController.h"
 #import "MSAlgorithmViewController.h"
 #import "NetTestViewController.h"
 #import "DataPersistenceViewController.h"
@@ -18,6 +19,17 @@
 #import "MultiThreadHomeViewController.h"
 #import "POHomeViewController.h"
 #import "OCHomeViewController.h"
+#import "RuntimeHomeViewController.h"
+#import "RunloopHomeViewController.h"
+#import "MemoryHomeViewController.h"
+#import "PTHomeViewController.h"
+#import <malloc/malloc.h>
+#import <objc/runtime.h>
+
+/**
+ 公共：
+ 1、编译生成cpp文件：xcrun -sdk iphoneos clang -arch arm64 -rewrite-objc main.m -o main-arm64.cpp
+ */
 
 @interface HomeViewController ()
 
@@ -38,10 +50,13 @@
         @"数据持久化",
         @"多线程",
         @"网络相关",
-        @"Runtime",
+        @"Runtime（运行时）",
+        @"Runloop（运行循环）",
         @"性能优化",
         @"算法",
+        @"动画",
         @"内存管理、自动释放池与循环引用",
+        @"编程思想",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -56,7 +71,7 @@
     UIViewController *tmpVC = nil;
     switch (indexPath.row) {
         case 0: {
-            
+            tmpVC = [[FKHomeViewController alloc] init];
         }
             break;
         case 1: {
@@ -80,20 +95,33 @@
         }
             break;
         case 6: {
-            
+            tmpVC = [[RuntimeHomeViewController alloc] init];
         }
             break;
         case 7: {
-            tmpVC = [[POHomeViewController alloc] init];
+            tmpVC =  [[RunloopHomeViewController alloc] init];
         }
             break;
         case 8: {
-            tmpVC = [[MSAlgorithmViewController alloc] init];
+            tmpVC = [[POHomeViewController alloc] init];
         }
             break;
         case 9: {
+            tmpVC = [[MSAlgorithmViewController alloc] init];
+        }
+            break;
+        case 10: {
             
         }
+            break;
+        case 11: {
+            tmpVC = [[MemoryHomeViewController alloc] init];
+        }
+            break;
+        case 12: {
+            tmpVC = [PTHomeViewController new];
+        }
+            break;
             
         default:
             break;

@@ -2,7 +2,7 @@
 //  DPHomeViewController.m
 //  FWKnowledgePro
 //
-//  Created by xfg on 2020/11/26.
+//  Created by xfg on 2019/11/26.
 //
 
 #import "DPHomeViewController.h"
@@ -62,8 +62,8 @@ static NSString *const kModeName = @"modeName";
         @{
             kTypeName : @"一、创建型",
             kModeName : @[
-                    @"单例模式（Singleton）",
-                    @"工厂方法（Factory Method）",
+                    @"单例模式（Singleton）（常用）",
+                    @"工厂方法（Factory Method）（常用）",
                     @"抽象工厂（Abstract Factory）",
                     @"建造模式（Builder）",
                     @"原型模式（Prototype）",
@@ -73,11 +73,11 @@ static NSString *const kModeName = @"modeName";
             kTypeName : @"二、行为型",
             kModeName : @[
                     @"迭代器模式（Iterator）",
-                    @"观察者模式（Observer）",
+                    @"观察者模式（Observer）（常用）",
                     @"模板方法（Template Method）",
                     @"命令模式（Command）",
                     @"状态模式（State）",
-                    @"策略模式（Strategy）",
+                    @"策略模式（Strategy）（常用）",
                     @"职责链模式（China of Responsibility）",
                     @"中介者模式（Mediator）",
                     @"访问者模式（Visitor）",
@@ -88,9 +88,9 @@ static NSString *const kModeName = @"modeName";
         @{
             kTypeName : @"三、结构型",
             kModeName : @[
-                    @"组合模式（Composite）",
+                    @"组合模式（Composite）（常用）",
                     @"外观模式(Facade)",
-                    @"代理模式(Proxy)",
+                    @"代理模式(Proxy)（常用）",
                     @"适配器模式(Adapter)",
                     @"装饰模式(Decrator)",
                     @"桥接模式(Bridge)",

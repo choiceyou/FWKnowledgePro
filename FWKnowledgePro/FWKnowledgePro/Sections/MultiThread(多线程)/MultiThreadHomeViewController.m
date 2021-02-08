@@ -2,14 +2,13 @@
 //  MultiThreadHomeViewController.m
 //  FWKnowledgePro
 //
-//  Created by xfg on 2020/12/1.
+//  Created by xfg on 2019/12/1.
 //
 
 #import "MultiThreadHomeViewController.h"
 #import "NSThreadTestViewController.h"
 #import "NSOperationTestViewController.h"
 #import "GCDTestViewController.h"
-#import "RunLoopTestViewController.h"
 
 @interface MultiThreadHomeViewController ()
 
@@ -25,10 +24,9 @@
     self.navigationItem.title = @"多线程";
     
     NSMutableArray *tmpArray = @[
-        @"NSThread",
-        @"NSOperation",
-        @"GCD",
-        @"RunLoop"
+        @"NSThread（使用更加面向对象）",
+        @"GCD（充分利用设备的多核）",
+        @"NSOperation（基于GCD，比GCD多了一些简单实用的功能；使用更加面向对象）",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -47,15 +45,11 @@
         }
             break;
         case 1: {
-            tmpVC = [[NSOperationTestViewController alloc] init];
-        }
-            break;
-        case 2: {
             tmpVC = [[GCDTestViewController alloc] init];
         }
             break;
-        case 3: {
-            tmpVC = [[RunLoopTestViewController alloc] init];
+        case 2: {
+            tmpVC = [[NSOperationTestViewController alloc] init];
         }
             break;
             

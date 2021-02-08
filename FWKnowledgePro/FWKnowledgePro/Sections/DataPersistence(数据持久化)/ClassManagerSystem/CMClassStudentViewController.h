@@ -2,7 +2,7 @@
 //  CMClassStudentViewController.h
 //  FWKnowledgePro
 //
-//  Created by xfg on 2020/11/24.
+//  Created by xfg on 2019/11/24.
 //
 
 #import <UIKit/UIKit.h>

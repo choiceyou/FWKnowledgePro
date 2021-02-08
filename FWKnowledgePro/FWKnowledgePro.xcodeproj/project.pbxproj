@@ -18,10 +18,11 @@
 		AF386534257642CC001D295F /* MultiThreadHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF386533257642CC001D295F /* MultiThreadHomeViewController.m */; };
 		AF38655325764F24001D295F /* POHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38655225764F24001D295F /* POHomeViewController.m */; };
 		AF38656D25772FAB001D295F /* OCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38656C25772FAB001D295F /* OCHomeViewController.m */; };
+		AF507CC025C144BE00724EE2 /* RTPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF507CBF25C144BE00724EE2 /* RTPerson2.m */; };
+		AF507CCC25C15C3800724EE2 /* RTPerson3.m in Sources */ = {isa = PBXBuildFile; fileRef = AF507CCB25C15C3800724EE2 /* RTPerson3.m */; };
+		AF507CD225C1629900724EE2 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = AF507CD125C1629900724EE2 /* NSObject+KVO.m */; };
 		AF52D1DA2574F83400E13A6D /* WildlifeParkIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */; };
 		AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF5630B7256E041400F61828 /* Model.xcdatamodeld */; };
-		AF56322F256F969B00F61828 /* RunLoopTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563202256F969B00F61828 /* RunLoopTestViewController.m */; };
-		AF563230256F969B00F61828 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563205256F969B00F61828 /* BlockTestViewController.m */; };
 		AF563231256F969B00F61828 /* NSThreadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563207256F969B00F61828 /* NSThreadTestViewController.m */; };
 		AF563232256F969B00F61828 /* NetTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563208256F969B00F61828 /* NetTestViewController.m */; };
 		AF563233256F969B00F61828 /* NSOperationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563209256F969B00F61828 /* NSOperationTestViewController.m */; };
@@ -64,6 +65,9 @@
 		AF5BE4B4256BBDB30028EB6E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */; };
 		AF5BE4BB256BBE4C0028EB6E /* FWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4BA256BBE4C0028EB6E /* FWBaseViewController.m */; };
 		AF5BE4C4256BBE600028EB6E /* FWBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4C3256BBE600028EB6E /* FWBaseTableViewController.m */; };
+		AF69318325CBCE8400F9E22F /* MemoryHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF69318225CBCE8400F9E22F /* MemoryHomeViewController.m */; };
+		AF69C56925CA54CD00F579A3 /* UploadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AF69C56825CA54CD00F579A3 /* UploadTask.m */; };
+		AF69C56F25CA54F600F579A3 /* DownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AF69C56D25CA54F600F579A3 /* DownloadTask.m */; };
 		AF6ADE812574862A00FBED46 /* DomesticAnimalFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE802574862A00FBED46 /* DomesticAnimalFactory.m */; };
 		AF6ADE8A2574886800FBED46 /* DomesticDog.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE892574886800FBED46 /* DomesticDog.m */; };
 		AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADE8F2574887800FBED46 /* DomesticCat.m */; };
@@ -75,6 +79,41 @@
 		AF6ADEBC2574E14D00FBED46 /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADEBB2574E14D00FBED46 /* Monkey.m */; };
 		AF6ADF072574E75F00FBED46 /* ZooIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADF062574E75F00FBED46 /* ZooIterator.m */; };
 		AF6ADF132574EAF000FBED46 /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADF122574EAF000FBED46 /* Iterator.m */; };
+		AF6C9C3925CCCDAA002060CE /* PTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C3825CCCDAA002060CE /* PTHomeViewController.m */; };
+		AF6C9C4225CCCEFA002060CE /* NSObject+sum.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C4125CCCEFA002060CE /* NSObject+sum.m */; };
+		AF6C9C4825CCCF18002060CE /* SumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C4725CCCF18002060CE /* SumManager.m */; };
+		AF6C9C5625CCDD16002060CE /* PTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C5525CCDD16002060CE /* PTPerson.m */; };
+		AF6C9C9E25CD214D002060CE /* FKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C9025CD214D002060CE /* FKHomeViewController.m */; };
+		AF6C9C9F25CD214D002060CE /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C9425CD214D002060CE /* MVVMViewModel.m */; };
+		AF6C9CA025CD214D002060CE /* MVVMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C9825CD214D002060CE /* MVVMModel.m */; };
+		AF6C9CA125CD214D002060CE /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C9B25CD214D002060CE /* MVVMViewController.m */; };
+		AF6C9CA225CD214D002060CE /* MVVMView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C9D25CD214D002060CE /* MVVMView.m */; };
+		AF6C9CB025CD2C72002060CE /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CAF25CD2C72002060CE /* MVCViewController.m */; };
+		AF6C9CB925CD2C88002060CE /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CB825CD2C88002060CE /* MVCView.m */; };
+		AF6C9CBF25CD2C97002060CE /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CBE25CD2C97002060CE /* MVCModel.m */; };
+		AF6C9CC525CD3111002060CE /* MVPPresenter1.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CC425CD3111002060CE /* MVPPresenter1.m */; };
+		AF6C9CCB25CD311E002060CE /* MVPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CCA25CD311E002060CE /* MVPModel.m */; };
+		AF6C9CD125CD3138002060CE /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CD025CD3138002060CE /* MVPViewController.m */; };
+		AF6C9CD725CD314C002060CE /* MVPView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CD625CD314C002060CE /* MVPView.m */; };
+		AF6C9CDD25CD35C8002060CE /* MVPPresenter2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CDC25CD35C8002060CE /* MVPPresenter2.m */; };
+		AF6C9CE325CD3646002060CE /* MVPView2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CE225CD3645002060CE /* MVPView2.m */; };
+		AF6C9CF925CD4E2B002060CE /* FWTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CF825CD4E2B002060CE /* FWTestService.m */; };
+		AF6C9D0225CD4E6D002060CE /* LayeredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9D0125CD4E6D002060CE /* LayeredViewController.m */; };
+		AF6C9D0B25CD5024002060CE /* FWDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9D0A25CD5024002060CE /* FWDatabaseManager.m */; };
+		AF8FCE3C25D0DEE200A1C839 /* OCObjectSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */; };
+		AF8FCE4325D0E13800A1C839 /* KVOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4225D0E13800A1C839 /* KVOHomeViewController.m */; };
+		AF8FCE4D25D0E17F00A1C839 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */; };
+		AFCC6A1A25C01ED000E38BE6 /* MessageSendTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC6A1925C01ED000E38BE6 /* MessageSendTest.m */; };
+		AFCC6A2325C01F0900E38BE6 /* MessageSendTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC6A2225C01F0900E38BE6 /* MessageSendTest2.m */; };
+		AFCC6A2925C0F36900E38BE6 /* RuntimeHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC6A2825C0F36900E38BE6 /* RuntimeHomeViewController.m */; };
+		AFCC6A3B25C0F9FF00E38BE6 /* UIView+Swizzing.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC6A3A25C0F9FF00E38BE6 /* UIView+Swizzing.m */; };
+		AFCC6A4125C0FD7C00E38BE6 /* MessageSendTest+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC6A4025C0FD7C00E38BE6 /* MessageSendTest+Extend.m */; };
+		AFCC6A4725C1064900E38BE6 /* RTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC6A4625C1064900E38BE6 /* RTPerson.m */; };
+		AFD251A925C2546900AD2D7C /* RTPerson4.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD251A825C2546900AD2D7C /* RTPerson4.m */; };
+		AFD252DB25C263E900AD2D7C /* NSObject+KVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD252DA25C263E900AD2D7C /* NSObject+KVC.m */; };
+		AFD256D025C2BE5800AD2D7C /* RTTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD256CF25C2BE5800AD2D7C /* RTTest.m */; };
+		AFD256D825C3F07900AD2D7C /* RTPerson5.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD256D725C3F07900AD2D7C /* RTPerson5.m */; };
+		AFD256E325C4088E00AD2D7C /* RunloopHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD256E225C4088E00AD2D7C /* RunloopHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,23 +156,25 @@
 		AF38655225764F24001D295F /* POHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POHomeViewController.m; sourceTree = "<group>"; };
 		AF38656B25772FAB001D295F /* OCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCHomeViewController.h; sourceTree = "<group>"; };
 		AF38656C25772FAB001D295F /* OCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCHomeViewController.m; sourceTree = "<group>"; };
+		AF507CBE25C144BE00724EE2 /* RTPerson2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPerson2.h; sourceTree = "<group>"; };
+		AF507CBF25C144BE00724EE2 /* RTPerson2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPerson2.m; sourceTree = "<group>"; };
+		AF507CCA25C15C3800724EE2 /* RTPerson3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPerson3.h; sourceTree = "<group>"; };
+		AF507CCB25C15C3800724EE2 /* RTPerson3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPerson3.m; sourceTree = "<group>"; };
+		AF507CD025C1629900724EE2 /* NSObject+KVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		AF507CD125C1629900724EE2 /* NSObject+KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 		AF52D1D82574F83400E13A6D /* WildlifeParkIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WildlifeParkIterator.h; sourceTree = "<group>"; };
 		AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WildlifeParkIterator.m; sourceTree = "<group>"; };
 		AF52D1E12574FB4500E13A6D /* MyParkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyParkProtocol.h; sourceTree = "<group>"; };
 		AF5630B8256E041400F61828 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		AF563200256F969B00F61828 /* NSThreadTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadTestViewController.h; sourceTree = "<group>"; };
 		AF563201256F969B00F61828 /* NetTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTestViewController.h; sourceTree = "<group>"; };
-		AF563202256F969B00F61828 /* RunLoopTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopTestViewController.m; sourceTree = "<group>"; };
 		AF563203256F969B00F61828 /* NSOperationTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationTestViewController.h; sourceTree = "<group>"; };
 		AF563204256F969B00F61828 /* GCDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
-		AF563205256F969B00F61828 /* BlockTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTestViewController.m; sourceTree = "<group>"; };
 		AF563206256F969B00F61828 /* MSAlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAlgorithmViewController.h; sourceTree = "<group>"; };
 		AF563207256F969B00F61828 /* NSThreadTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadTestViewController.m; sourceTree = "<group>"; };
 		AF563208256F969B00F61828 /* NetTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetTestViewController.m; sourceTree = "<group>"; };
 		AF563209256F969B00F61828 /* NSOperationTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationTestViewController.m; sourceTree = "<group>"; };
-		AF56320A256F969B00F61828 /* RunLoopTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopTestViewController.h; sourceTree = "<group>"; };
 		AF56320B256F969B00F61828 /* MSAlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAlgorithmViewController.m; sourceTree = "<group>"; };
-		AF56320C256F969B00F61828 /* BlockTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTestViewController.h; sourceTree = "<group>"; };
 		AF56320D256F969B00F61828 /* GCDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
 		AF56320F256F969B00F61828 /* DataPersistenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataPersistenceViewController.h; sourceTree = "<group>"; };
 		AF563210256F969B00F61828 /* SQLiteTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteTestViewController.m; sourceTree = "<group>"; };
@@ -212,6 +253,12 @@
 		AF5BE4BA256BBE4C0028EB6E /* FWBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBaseViewController.m; sourceTree = "<group>"; };
 		AF5BE4C2256BBE600028EB6E /* FWBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWBaseTableViewController.h; sourceTree = "<group>"; };
 		AF5BE4C3256BBE600028EB6E /* FWBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBaseTableViewController.m; sourceTree = "<group>"; };
+		AF69318125CBCE8400F9E22F /* MemoryHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryHomeViewController.h; sourceTree = "<group>"; };
+		AF69318225CBCE8400F9E22F /* MemoryHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryHomeViewController.m; sourceTree = "<group>"; };
+		AF69C56725CA54CD00F579A3 /* UploadTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadTask.h; sourceTree = "<group>"; };
+		AF69C56825CA54CD00F579A3 /* UploadTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadTask.m; sourceTree = "<group>"; };
+		AF69C56D25CA54F600F579A3 /* DownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTask.m; sourceTree = "<group>"; };
+		AF69C56E25CA54F600F579A3 /* DownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTask.h; sourceTree = "<group>"; };
 		AF6ADE7C2574845D00FBED46 /* AbstractAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractAnimal.h; sourceTree = "<group>"; };
 		AF6ADE7D2574847A00FBED46 /* AbstractDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractDog.h; sourceTree = "<group>"; };
 		AF6ADE7E2574848D00FBED46 /* AbstractCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractCat.h; sourceTree = "<group>"; };
@@ -238,6 +285,77 @@
 		AF6ADF062574E75F00FBED46 /* ZooIterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZooIterator.m; sourceTree = "<group>"; };
 		AF6ADF112574EAF000FBED46 /* Iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Iterator.h; sourceTree = "<group>"; };
 		AF6ADF122574EAF000FBED46 /* Iterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Iterator.m; sourceTree = "<group>"; };
+		AF6C9C3725CCCDAA002060CE /* PTHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTHomeViewController.h; sourceTree = "<group>"; };
+		AF6C9C3825CCCDAA002060CE /* PTHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTHomeViewController.m; sourceTree = "<group>"; };
+		AF6C9C4025CCCEFA002060CE /* NSObject+sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+sum.h"; sourceTree = "<group>"; };
+		AF6C9C4125CCCEFA002060CE /* NSObject+sum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+sum.m"; sourceTree = "<group>"; };
+		AF6C9C4625CCCF18002060CE /* SumManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumManager.h; sourceTree = "<group>"; };
+		AF6C9C4725CCCF18002060CE /* SumManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SumManager.m; sourceTree = "<group>"; };
+		AF6C9C5425CCDD16002060CE /* PTPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTPerson.h; sourceTree = "<group>"; };
+		AF6C9C5525CCDD16002060CE /* PTPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTPerson.m; sourceTree = "<group>"; };
+		AF6C9C9025CD214D002060CE /* FKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKHomeViewController.m; sourceTree = "<group>"; };
+		AF6C9C9125CD214D002060CE /* FKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKHomeViewController.h; sourceTree = "<group>"; };
+		AF6C9C9425CD214D002060CE /* MVVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMViewModel.m; sourceTree = "<group>"; };
+		AF6C9C9525CD214D002060CE /* MVVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMViewModel.h; sourceTree = "<group>"; };
+		AF6C9C9725CD214D002060CE /* MVVMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMModel.h; sourceTree = "<group>"; };
+		AF6C9C9825CD214D002060CE /* MVVMModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMModel.m; sourceTree = "<group>"; };
+		AF6C9C9A25CD214D002060CE /* MVVMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMView.h; sourceTree = "<group>"; };
+		AF6C9C9B25CD214D002060CE /* MVVMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		AF6C9C9C25CD214D002060CE /* MVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		AF6C9C9D25CD214D002060CE /* MVVMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMView.m; sourceTree = "<group>"; };
+		AF6C9CAE25CD2C72002060CE /* MVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCViewController.h; sourceTree = "<group>"; };
+		AF6C9CAF25CD2C72002060CE /* MVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCViewController.m; sourceTree = "<group>"; };
+		AF6C9CB725CD2C88002060CE /* MVCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCView.h; sourceTree = "<group>"; };
+		AF6C9CB825CD2C88002060CE /* MVCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
+		AF6C9CBD25CD2C97002060CE /* MVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCModel.h; sourceTree = "<group>"; };
+		AF6C9CBE25CD2C97002060CE /* MVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCModel.m; sourceTree = "<group>"; };
+		AF6C9CC325CD3111002060CE /* MVPPresenter1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPPresenter1.h; sourceTree = "<group>"; };
+		AF6C9CC425CD3111002060CE /* MVPPresenter1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPPresenter1.m; sourceTree = "<group>"; };
+		AF6C9CC925CD311E002060CE /* MVPModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPModel.h; sourceTree = "<group>"; };
+		AF6C9CCA25CD311E002060CE /* MVPModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPModel.m; sourceTree = "<group>"; };
+		AF6C9CCF25CD3138002060CE /* MVPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPViewController.h; sourceTree = "<group>"; };
+		AF6C9CD025CD3138002060CE /* MVPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPViewController.m; sourceTree = "<group>"; };
+		AF6C9CD525CD314C002060CE /* MVPView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPView.h; sourceTree = "<group>"; };
+		AF6C9CD625CD314C002060CE /* MVPView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPView.m; sourceTree = "<group>"; };
+		AF6C9CDB25CD35C8002060CE /* MVPPresenter2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPPresenter2.h; sourceTree = "<group>"; };
+		AF6C9CDC25CD35C8002060CE /* MVPPresenter2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPPresenter2.m; sourceTree = "<group>"; };
+		AF6C9CE125CD3645002060CE /* MVPView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPView2.h; sourceTree = "<group>"; };
+		AF6C9CE225CD3645002060CE /* MVPView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPView2.m; sourceTree = "<group>"; };
+		AF6C9CF725CD4E2B002060CE /* FWTestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWTestService.h; sourceTree = "<group>"; };
+		AF6C9CF825CD4E2B002060CE /* FWTestService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWTestService.m; sourceTree = "<group>"; };
+		AF6C9D0025CD4E6D002060CE /* LayeredViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayeredViewController.h; sourceTree = "<group>"; };
+		AF6C9D0125CD4E6D002060CE /* LayeredViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayeredViewController.m; sourceTree = "<group>"; };
+		AF6C9D0925CD5024002060CE /* FWDatabaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWDatabaseManager.h; sourceTree = "<group>"; };
+		AF6C9D0A25CD5024002060CE /* FWDatabaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWDatabaseManager.m; sourceTree = "<group>"; };
+		AF8FCE3A25D0DEE200A1C839 /* OCObjectSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCObjectSortViewController.h; sourceTree = "<group>"; };
+		AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCObjectSortViewController.m; sourceTree = "<group>"; };
+		AF8FCE4125D0E13800A1C839 /* KVOHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOHomeViewController.h; sourceTree = "<group>"; };
+		AF8FCE4225D0E13800A1C839 /* KVOHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOHomeViewController.m; sourceTree = "<group>"; };
+		AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTestViewController.m; sourceTree = "<group>"; };
+		AF8FCE4C25D0E17F00A1C839 /* BlockTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTestViewController.h; sourceTree = "<group>"; };
+		AFA7F0B125BEA3DE00D114B5 /* BasicKnowledge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicKnowledge.h; sourceTree = "<group>"; };
+		AFCC6A1825C01ED000E38BE6 /* MessageSendTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSendTest.h; sourceTree = "<group>"; };
+		AFCC6A1925C01ED000E38BE6 /* MessageSendTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageSendTest.m; sourceTree = "<group>"; };
+		AFCC6A2125C01F0900E38BE6 /* MessageSendTest2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSendTest2.h; sourceTree = "<group>"; };
+		AFCC6A2225C01F0900E38BE6 /* MessageSendTest2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageSendTest2.m; sourceTree = "<group>"; };
+		AFCC6A2725C0F36900E38BE6 /* RuntimeHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeHomeViewController.h; sourceTree = "<group>"; };
+		AFCC6A2825C0F36900E38BE6 /* RuntimeHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeHomeViewController.m; sourceTree = "<group>"; };
+		AFCC6A3925C0F9FF00E38BE6 /* UIView+Swizzing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Swizzing.h"; sourceTree = "<group>"; };
+		AFCC6A3A25C0F9FF00E38BE6 /* UIView+Swizzing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Swizzing.m"; sourceTree = "<group>"; };
+		AFCC6A3F25C0FD7C00E38BE6 /* MessageSendTest+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageSendTest+Extend.h"; sourceTree = "<group>"; };
+		AFCC6A4025C0FD7C00E38BE6 /* MessageSendTest+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MessageSendTest+Extend.m"; sourceTree = "<group>"; };
+		AFCC6A4525C1064900E38BE6 /* RTPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPerson.h; sourceTree = "<group>"; };
+		AFCC6A4625C1064900E38BE6 /* RTPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPerson.m; sourceTree = "<group>"; };
+		AFD251A725C2546900AD2D7C /* RTPerson4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPerson4.h; sourceTree = "<group>"; };
+		AFD251A825C2546900AD2D7C /* RTPerson4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPerson4.m; sourceTree = "<group>"; };
+		AFD252D925C263E900AD2D7C /* NSObject+KVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVC.h"; sourceTree = "<group>"; };
+		AFD252DA25C263E900AD2D7C /* NSObject+KVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVC.m"; sourceTree = "<group>"; };
+		AFD256CE25C2BE5800AD2D7C /* RTTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTTest.h; sourceTree = "<group>"; };
+		AFD256CF25C2BE5800AD2D7C /* RTTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTTest.m; sourceTree = "<group>"; };
+		AFD256D625C3F07900AD2D7C /* RTPerson5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPerson5.h; sourceTree = "<group>"; };
+		AFD256D725C3F07900AD2D7C /* RTPerson5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPerson5.m; sourceTree = "<group>"; };
+		AFD256E125C4088E00AD2D7C /* RunloopHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopHomeViewController.h; sourceTree = "<group>"; };
+		AFD256E225C4088E00AD2D7C /* RunloopHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopHomeViewController.m; sourceTree = "<group>"; };
 		CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWKnowledgePro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4A85BC7664EC07AC610233 /* Pods-FWKnowledgePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWKnowledgePro.release.xcconfig"; path = "Target Support Files/Pods-FWKnowledgePro/Pods-FWKnowledgePro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -311,14 +429,12 @@
 			children = (
 				AF386532257642CC001D295F /* MultiThreadHomeViewController.h */,
 				AF386533257642CC001D295F /* MultiThreadHomeViewController.m */,
+				AF563200256F969B00F61828 /* NSThreadTestViewController.h */,
+				AF563207256F969B00F61828 /* NSThreadTestViewController.m */,
 				AF563204256F969B00F61828 /* GCDTestViewController.h */,
 				AF56320D256F969B00F61828 /* GCDTestViewController.m */,
 				AF563203256F969B00F61828 /* NSOperationTestViewController.h */,
 				AF563209256F969B00F61828 /* NSOperationTestViewController.m */,
-				AF563200256F969B00F61828 /* NSThreadTestViewController.h */,
-				AF563207256F969B00F61828 /* NSThreadTestViewController.m */,
-				AF56320A256F969B00F61828 /* RunLoopTestViewController.h */,
-				AF563202256F969B00F61828 /* RunLoopTestViewController.m */,
 			);
 			path = "MultiThread(多线程)";
 			sourceTree = "<group>";
@@ -337,6 +453,10 @@
 			children = (
 				AF563201256F969B00F61828 /* NetTestViewController.h */,
 				AF563208256F969B00F61828 /* NetTestViewController.m */,
+				AF69C56E25CA54F600F579A3 /* DownloadTask.h */,
+				AF69C56D25CA54F600F579A3 /* DownloadTask.m */,
+				AF69C56725CA54CD00F579A3 /* UploadTask.h */,
+				AF69C56825CA54CD00F579A3 /* UploadTask.m */,
 			);
 			path = "Net(网络相关)";
 			sourceTree = "<group>";
@@ -344,10 +464,13 @@
 		AF38656125772BD3001D295F /* OC(语言部分) */ = {
 			isa = PBXGroup;
 			children = (
+				AFA7F0B125BEA3DE00D114B5 /* BasicKnowledge.h */,
 				AF38656B25772FAB001D295F /* OCHomeViewController.h */,
 				AF38656C25772FAB001D295F /* OCHomeViewController.m */,
-				AF56320C256F969B00F61828 /* BlockTestViewController.h */,
-				AF563205256F969B00F61828 /* BlockTestViewController.m */,
+				AF8FCE3525D0C7C100A1C839 /* OC对象的本质 */,
+				AF8FCE3625D0C94E00A1C839 /* OC对象的分类 */,
+				AF8FCE4025D0E12300A1C839 /* KVO */,
+				AF8FCE4A25D0E17F00A1C839 /* Block */,
 			);
 			path = "OC(语言部分)";
 			sourceTree = "<group>";
@@ -584,12 +707,17 @@
 			children = (
 				AF5BE4B2256BBDB30028EB6E /* HomeViewController.h */,
 				AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */,
+				AF6C9C8F25CD214D002060CE /* Architecture(架构模式) */,
 				AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */,
 				AF38656125772BD3001D295F /* OC(语言部分) */,
 				AF56320E256F969B00F61828 /* DataPersistence(数据持久化) */,
 				AF38653125764245001D295F /* MultiThread(多线程) */,
 				AF38655D25772AD1001D295F /* Net(网络相关) */,
 				AF5631FF256F969B00F61828 /* Algorithm(算法) */,
+				AFCC6A1725C01E7900E38BE6 /* Runtime(运行时) */,
+				AFD256E025C4084700AD2D7C /* Runloop(运行循环) */,
+				AF69318025CBCE5A00F9E22F /* MemoryManage(内存管理) */,
+				AF6C9C3625CCCC02002060CE /* Thought(编程思想) */,
 				AF38655025764ECA001D295F /* PerformanceOptimization(性能优化) */,
 			);
 			path = Sections;
@@ -614,6 +742,15 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		AF69318025CBCE5A00F9E22F /* MemoryManage(内存管理) */ = {
+			isa = PBXGroup;
+			children = (
+				AF69318125CBCE8400F9E22F /* MemoryHomeViewController.h */,
+				AF69318225CBCE8400F9E22F /* MemoryHomeViewController.m */,
+			);
+			path = "MemoryManage(内存管理)";
+			sourceTree = "<group>";
+		};
 		AF6ADEA92574DC2100FBED46 /* Iterator(迭代器模式) */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,6 +770,258 @@
 				AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */,
 			);
 			path = "Iterator(迭代器模式)";
+			sourceTree = "<group>";
+		};
+		AF6C9C3625CCCC02002060CE /* Thought(编程思想) */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9C3725CCCDAA002060CE /* PTHomeViewController.h */,
+				AF6C9C3825CCCDAA002060CE /* PTHomeViewController.m */,
+				AF6C9C4025CCCEFA002060CE /* NSObject+sum.h */,
+				AF6C9C4125CCCEFA002060CE /* NSObject+sum.m */,
+				AF6C9C4625CCCF18002060CE /* SumManager.h */,
+				AF6C9C4725CCCF18002060CE /* SumManager.m */,
+				AF6C9C5425CCDD16002060CE /* PTPerson.h */,
+				AF6C9C5525CCDD16002060CE /* PTPerson.m */,
+			);
+			path = "Thought(编程思想)";
+			sourceTree = "<group>";
+		};
+		AF6C9C8F25CD214D002060CE /* Architecture(架构模式) */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9C9125CD214D002060CE /* FKHomeViewController.h */,
+				AF6C9C9025CD214D002060CE /* FKHomeViewController.m */,
+				AF6C9CAA25CD2C3F002060CE /* MVC */,
+				AF6C9CA625CD2C3F002060CE /* MVP */,
+				AF6C9C9225CD214D002060CE /* MVVM */,
+				AF6C9CF425CD4CEF002060CE /* 分层设计 */,
+			);
+			path = "Architecture(架构模式)";
+			sourceTree = "<group>";
+		};
+		AF6C9C9225CD214D002060CE /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9C9625CD214D002060CE /* Model */,
+				AF6C9C9925CD214D002060CE /* View */,
+				AF6C9C9325CD214D002060CE /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		AF6C9C9325CD214D002060CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9C9525CD214D002060CE /* MVVMViewModel.h */,
+				AF6C9C9425CD214D002060CE /* MVVMViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF6C9C9625CD214D002060CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9C9725CD214D002060CE /* MVVMModel.h */,
+				AF6C9C9825CD214D002060CE /* MVVMModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF6C9C9925CD214D002060CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9C9A25CD214D002060CE /* MVVMView.h */,
+				AF6C9C9D25CD214D002060CE /* MVVMView.m */,
+				AF6C9C9C25CD214D002060CE /* MVVMViewController.h */,
+				AF6C9C9B25CD214D002060CE /* MVVMViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF6C9CA625CD2C3F002060CE /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9CA825CD2C3F002060CE /* Model */,
+				AF6C9CA925CD2C3F002060CE /* View */,
+				AF6C9CA725CD2C3F002060CE /* Presenter */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		AF6C9CA725CD2C3F002060CE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9CC325CD3111002060CE /* MVPPresenter1.h */,
+				AF6C9CC425CD3111002060CE /* MVPPresenter1.m */,
+				AF6C9CDB25CD35C8002060CE /* MVPPresenter2.h */,
+				AF6C9CDC25CD35C8002060CE /* MVPPresenter2.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AF6C9CA825CD2C3F002060CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9CC925CD311E002060CE /* MVPModel.h */,
+				AF6C9CCA25CD311E002060CE /* MVPModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF6C9CA925CD2C3F002060CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9CCF25CD3138002060CE /* MVPViewController.h */,
+				AF6C9CD025CD3138002060CE /* MVPViewController.m */,
+				AF6C9CD525CD314C002060CE /* MVPView.h */,
+				AF6C9CD625CD314C002060CE /* MVPView.m */,
+				AF6C9CE125CD3645002060CE /* MVPView2.h */,
+				AF6C9CE225CD3645002060CE /* MVPView2.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF6C9CAA25CD2C3F002060CE /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9CAC25CD2C3F002060CE /* Model */,
+				AF6C9CAD25CD2C3F002060CE /* View */,
+				AF6C9CAB25CD2C3F002060CE /* Controller */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		AF6C9CAB25CD2C3F002060CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9CAE25CD2C72002060CE /* MVCViewController.h */,
+				AF6C9CAF25CD2C72002060CE /* MVCViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF6C9CAC25CD2C3F002060CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9CBD25CD2C97002060CE /* MVCModel.h */,
+				AF6C9CBE25CD2C97002060CE /* MVCModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF6C9CAD25CD2C3F002060CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9CB725CD2C88002060CE /* MVCView.h */,
+				AF6C9CB825CD2C88002060CE /* MVCView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF6C9CF425CD4CEF002060CE /* 分层设计 */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9D0025CD4E6D002060CE /* LayeredViewController.h */,
+				AF6C9D0125CD4E6D002060CE /* LayeredViewController.m */,
+				AF6C9CF525CD4DFF002060CE /* Data */,
+				AF6C9CF625CD4DFF002060CE /* Service */,
+			);
+			path = "分层设计";
+			sourceTree = "<group>";
+		};
+		AF6C9CF525CD4DFF002060CE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9D0925CD5024002060CE /* FWDatabaseManager.h */,
+				AF6C9D0A25CD5024002060CE /* FWDatabaseManager.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AF6C9CF625CD4DFF002060CE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C9CF725CD4E2B002060CE /* FWTestService.h */,
+				AF6C9CF825CD4E2B002060CE /* FWTestService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AF8FCE3525D0C7C100A1C839 /* OC对象的本质 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "OC对象的本质";
+			sourceTree = "<group>";
+		};
+		AF8FCE3625D0C94E00A1C839 /* OC对象的分类 */ = {
+			isa = PBXGroup;
+			children = (
+				AF8FCE3A25D0DEE200A1C839 /* OCObjectSortViewController.h */,
+				AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */,
+			);
+			path = "OC对象的分类";
+			sourceTree = "<group>";
+		};
+		AF8FCE4025D0E12300A1C839 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				AF8FCE4125D0E13800A1C839 /* KVOHomeViewController.h */,
+				AF8FCE4225D0E13800A1C839 /* KVOHomeViewController.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		AF8FCE4A25D0E17F00A1C839 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				AF8FCE4C25D0E17F00A1C839 /* BlockTestViewController.h */,
+				AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		AFCC6A1725C01E7900E38BE6 /* Runtime(运行时) */ = {
+			isa = PBXGroup;
+			children = (
+				AFCC6A2725C0F36900E38BE6 /* RuntimeHomeViewController.h */,
+				AFCC6A2825C0F36900E38BE6 /* RuntimeHomeViewController.m */,
+				AFCC6A1825C01ED000E38BE6 /* MessageSendTest.h */,
+				AFCC6A1925C01ED000E38BE6 /* MessageSendTest.m */,
+				AFCC6A2125C01F0900E38BE6 /* MessageSendTest2.h */,
+				AFCC6A2225C01F0900E38BE6 /* MessageSendTest2.m */,
+				AFCC6A3925C0F9FF00E38BE6 /* UIView+Swizzing.h */,
+				AFCC6A3A25C0F9FF00E38BE6 /* UIView+Swizzing.m */,
+				AFCC6A3F25C0FD7C00E38BE6 /* MessageSendTest+Extend.h */,
+				AFCC6A4025C0FD7C00E38BE6 /* MessageSendTest+Extend.m */,
+				AFCC6A4525C1064900E38BE6 /* RTPerson.h */,
+				AFCC6A4625C1064900E38BE6 /* RTPerson.m */,
+				AF507CBE25C144BE00724EE2 /* RTPerson2.h */,
+				AF507CBF25C144BE00724EE2 /* RTPerson2.m */,
+				AF507CCA25C15C3800724EE2 /* RTPerson3.h */,
+				AF507CCB25C15C3800724EE2 /* RTPerson3.m */,
+				AFD251A725C2546900AD2D7C /* RTPerson4.h */,
+				AFD251A825C2546900AD2D7C /* RTPerson4.m */,
+				AFD256D625C3F07900AD2D7C /* RTPerson5.h */,
+				AFD256D725C3F07900AD2D7C /* RTPerson5.m */,
+				AF507CD025C1629900724EE2 /* NSObject+KVO.h */,
+				AF507CD125C1629900724EE2 /* NSObject+KVO.m */,
+				AFD252D925C263E900AD2D7C /* NSObject+KVC.h */,
+				AFD252DA25C263E900AD2D7C /* NSObject+KVC.m */,
+				AFD256CE25C2BE5800AD2D7C /* RTTest.h */,
+				AFD256CF25C2BE5800AD2D7C /* RTTest.m */,
+			);
+			path = "Runtime(运行时)";
+			sourceTree = "<group>";
+		};
+		AFD256E025C4084700AD2D7C /* Runloop(运行循环) */ = {
+			isa = PBXGroup;
+			children = (
+				AFD256E125C4088E00AD2D7C /* RunloopHomeViewController.h */,
+				AFD256E225C4088E00AD2D7C /* RunloopHomeViewController.m */,
+			);
+			path = "Runloop(运行循环)";
 			sourceTree = "<group>";
 		};
 		C100CC4F10CB64D4C5318E06 /* Frameworks */ = {
@@ -815,6 +1204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8FCE3C25D0DEE200A1C839 /* OCObjectSortViewController.m in Sources */,
 				AF6ADEBC2574E14D00FBED46 /* Monkey.m in Sources */,
 				AF563237256F969C00F61828 /* CDHomeViewController.m in Sources */,
 				AF56341C2570EC4300F61828 /* DogFactory.m in Sources */,
@@ -824,58 +1214,96 @@
 				AF38652725762D43001D295F /* SimpleTVControl.m in Sources */,
 				AF5633062570AF0F00F61828 /* SingletonTest.m in Sources */,
 				AF386534257642CC001D295F /* MultiThreadHomeViewController.m in Sources */,
+				AF6C9CD725CD314C002060CE /* MVPView.m in Sources */,
 				AF6ADE8A2574886800FBED46 /* DomesticDog.m in Sources */,
 				AF5BE4AE256BBD540028EB6E /* AppDelegate.m in Sources */,
+				AF6C9CCB25CD311E002060CE /* MVPModel.m in Sources */,
+				AF6C9C9F25CD214D002060CE /* MVVMViewModel.m in Sources */,
 				AF563243256F969C00F61828 /* ClassTestModel.m in Sources */,
+				AFD256D825C3F07900AD2D7C /* RTPerson5.m in Sources */,
 				AF5634222570EC5800F61828 /* CatFactory.m in Sources */,
-				AF563230256F969B00F61828 /* BlockTestViewController.m in Sources */,
 				AF5BE4C4256BBE600028EB6E /* FWBaseTableViewController.m in Sources */,
 				AF563235256F969C00F61828 /* GCDTestViewController.m in Sources */,
 				AF5BE4BB256BBE4C0028EB6E /* FWBaseViewController.m in Sources */,
 				AF6ADE812574862A00FBED46 /* DomesticAnimalFactory.m in Sources */,
+				AF8FCE4D25D0E17F00A1C839 /* BlockTestViewController.m in Sources */,
 				AF5633792570DFFF00F61828 /* Cat.m in Sources */,
+				AFCC6A2325C01F0900E38BE6 /* MessageSendTest2.m in Sources */,
 				AF3864FB2575E95C001D295F /* ObserverTestViewController.m in Sources */,
 				AF563249256F971300F61828 /* DPHomeViewController.m in Sources */,
 				AF6ADE9F25748EA000FBED46 /* WildDog.m in Sources */,
 				AF56323C256F969C00F61828 /* CMHomeViewController.m in Sources */,
+				AF6C9CF925CD4E2B002060CE /* FWTestService.m in Sources */,
+				AF6C9CBF25CD2C97002060CE /* MVCModel.m in Sources */,
 				AF563232256F969B00F61828 /* NetTestViewController.m in Sources */,
 				AF563240256F969C00F61828 /* FMDBTestViewController.m in Sources */,
 				AF5633032570AF0F00F61828 /* NSObject+Singleton.m in Sources */,
+				AFD256E325C4088E00AD2D7C /* RunloopHomeViewController.m in Sources */,
+				AF6C9C3925CCCDAA002060CE /* PTHomeViewController.m in Sources */,
+				AF507CCC25C15C3800724EE2 /* RTPerson3.m in Sources */,
 				AF38652125762B3F001D295F /* AbstractTVSystem.m in Sources */,
+				AFCC6A1A25C01ED000E38BE6 /* MessageSendTest.m in Sources */,
+				AF6C9D0225CD4E6D002060CE /* LayeredViewController.m in Sources */,
 				AF563242256F969C00F61828 /* StudentTestModel.m in Sources */,
+				AFCC6A2925C0F36900E38BE6 /* RuntimeHomeViewController.m in Sources */,
+				AF6C9CDD25CD35C8002060CE /* MVPPresenter2.m in Sources */,
 				AF56323A256F969C00F61828 /* KeyChainTestViewController.m in Sources */,
+				AF6C9CC525CD3111002060CE /* MVPPresenter1.m in Sources */,
+				AF6C9CE325CD3646002060CE /* MVPView2.m in Sources */,
 				AF5BE4AD256BBD540028EB6E /* SceneDelegate.m in Sources */,
+				AF6C9CB025CD2C72002060CE /* MVCViewController.m in Sources */,
 				AF6ADF072574E75F00FBED46 /* ZooIterator.m in Sources */,
 				AF38651B25762AB5001D295F /* HUAWEITVSystem.m in Sources */,
-				AF56322F256F969B00F61828 /* RunLoopTestViewController.m in Sources */,
+				AFCC6A4725C1064900E38BE6 /* RTPerson.m in Sources */,
+				AF6C9CA125CD214D002060CE /* MVVMViewController.m in Sources */,
 				AF3865042575EA51001D295F /* ObservedModel.m in Sources */,
 				AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */,
+				AFD252DB25C263E900AD2D7C /* NSObject+KVC.m in Sources */,
 				AF563234256F969B00F61828 /* MSAlgorithmViewController.m in Sources */,
 				AF56323D256F969C00F61828 /* CMAllDataListViewController.m in Sources */,
 				AF563233256F969B00F61828 /* NSOperationTestViewController.m in Sources */,
+				AF69C56F25CA54F600F579A3 /* DownloadTask.m in Sources */,
+				AF6C9C4225CCCEFA002060CE /* NSObject+sum.m in Sources */,
 				AF38655325764F24001D295F /* POHomeViewController.m in Sources */,
+				AF6C9C5625CCDD16002060CE /* PTPerson.m in Sources */,
+				AF69318325CBCE8400F9E22F /* MemoryHomeViewController.m in Sources */,
+				AF507CD225C1629900724EE2 /* NSObject+KVO.m in Sources */,
+				AF6C9D0B25CD5024002060CE /* FWDatabaseManager.m in Sources */,
+				AF69C56925CA54CD00F579A3 /* UploadTask.m in Sources */,
+				AF507CC025C144BE00724EE2 /* RTPerson2.m in Sources */,
 				AF56323B256F969C00F61828 /* DataPersistenceViewController.m in Sources */,
 				AF5BE465256BB98F0028EB6E /* main.m in Sources */,
+				AFD251A925C2546900AD2D7C /* RTPerson4.m in Sources */,
 				AF5633042570AF0F00F61828 /* HMSingleton.m in Sources */,
 				AF56323E256F969C00F61828 /* CMClassStudentViewController.m in Sources */,
 				AF5634102570EB3500F61828 /* Dog.m in Sources */,
+				AF6C9CA225CD214D002060CE /* MVVMView.m in Sources */,
 				AF5632FF2570AF0F00F61828 /* PrototypePersonShallowCopy.m in Sources */,
 				AF38656D25772FAB001D295F /* OCHomeViewController.m in Sources */,
+				AFCC6A3B25C0F9FF00E38BE6 /* UIView+Swizzing.m in Sources */,
 				AF38652D25762D7B001D295F /* MultifunctionTVControl.m in Sources */,
 				AF563239256F969C00F61828 /* Student2+CoreDataClass.m in Sources */,
 				AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */,
+				AFCC6A4125C0FD7C00E38BE6 /* MessageSendTest+Extend.m in Sources */,
 				AF563231256F969B00F61828 /* NSThreadTestViewController.m in Sources */,
 				AF6ADEB62574E05A00FBED46 /* WildlifePark.m in Sources */,
 				AF56323F256F969C00F61828 /* FWDataBaseManager.m in Sources */,
+				AF6C9C9E25CD214D002060CE /* FKHomeViewController.m in Sources */,
 				AF5633012570AF0F00F61828 /* PrototypeJob.m in Sources */,
+				AFD256D025C2BE5800AD2D7C /* RTTest.m in Sources */,
 				AF6ADF132574EAF000FBED46 /* Iterator.m in Sources */,
+				AF8FCE4325D0E13800A1C839 /* KVOHomeViewController.m in Sources */,
 				AF6ADE9625748E1B00FBED46 /* WildAnimalFactory.m in Sources */,
+				AF6C9CB925CD2C88002060CE /* MVCView.m in Sources */,
+				AF6C9C4825CCCF18002060CE /* SumManager.m in Sources */,
 				AF6ADEAD2574E01C00FBED46 /* Zoo.m in Sources */,
 				AF563236256F969C00F61828 /* SQLiteTestViewController.m in Sources */,
 				AF52D1DA2574F83400E13A6D /* WildlifeParkIterator.m in Sources */,
 				AF563241256F969C00F61828 /* UserTestModel.m in Sources */,
 				AF563238256F969C00F61828 /* Student2+CoreDataProperties.m in Sources */,
 				AF5633052570AF0F00F61828 /* Singleton.m in Sources */,
+				AF6C9CD125CD3138002060CE /* MVPViewController.m in Sources */,
+				AF6C9CA025CD214D002060CE /* MVVMModel.m in Sources */,
 				AF5BE4B4256BBDB30028EB6E /* HomeViewController.m in Sources */,
 				AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */,
 			);
@@ -959,7 +1387,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1019,7 +1447,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1044,6 +1472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K4Y22J2KN7;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "FWKnowledgePro/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1064,6 +1493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K4Y22J2KN7;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "FWKnowledgePro/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1118,6 +1548,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = FWKnowledgeProUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1135,6 +1566,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = FWKnowledgeProUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

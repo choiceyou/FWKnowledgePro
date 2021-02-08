@@ -14,5 +14,11 @@ target 'FWKnowledgePro' do
   
   # https://github.com/ibireme/YYCache
   pod 'YYCache'
+  
+  pod 'ReactiveObjC'
+  
+  pod 'Masonry'
 
+  pod 'KVOController'
+  
 end

@@ -2,7 +2,7 @@
 //  Student2+CoreDataProperties.h
 //  FWKnowledgePro
 //
-//  Created by xfg on 2020/11/25.
+//  Created by xfg on 2019/11/25.
 //
 //
 

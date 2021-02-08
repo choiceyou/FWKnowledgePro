@@ -17,24 +17,36 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - KVOController (1.2.0)
+  - Masonry (1.1.0)
+  - ReactiveObjC (3.1.1)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking
   - FMDB
+  - KVOController
+  - Masonry
+  - ReactiveObjC
   - YYCache
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - FMDB
+    - KVOController
+    - Masonry
+    - ReactiveObjC
     - YYCache
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 8669cb9cc5a7e660d4b15ebdcf08a1960c4e57b1
+PODFILE CHECKSUM: 964eb66b362e32eefa0df6374afac6ea5f3d0b61
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1

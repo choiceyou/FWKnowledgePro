@@ -7,6 +7,22 @@
 //  参考1（主要）：https://www.jianshu.com/p/4b1d77054b35
 //  参考2：https://juejin.im/post/5e134999e51d454103545922
 
+
+/**
+ 一、NSOperationQueue的优点
+ 1、可添加完成的代码块，在操作完成后执行；
+ 2、可以添加任务依赖，方便控制执行顺序；
+ 3、可以设定操作执行的优先级；
+ 4、任务执行状态控制:isReady,isExecuting,isFinished,isCancelled；
+ 5、可以设置最大并发量；
+ 6、可以很方便的取消一个操作的执行；
+ 
+ 二、创建队列
+ 1、主队列：[NSOperationQueue mainQueue];
+ 2、自定义队列：[[NSOperationQueue alloc] init]
+ 
+ */
+
 #import "NSOperationTestViewController.h"
 
 @interface NSOperationTestViewController ()
@@ -26,22 +42,6 @@
     
     self.navigationItem.title = @"NSOperation";
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    /**
-     一、NSOperationQueue的优点
-     1、可添加完成的代码块，在操作完成后执行；
-     2、可以添加任务依赖，方便控制执行顺序；
-     3、可以设定操作执行的优先级；
-     4、任务执行状态控制:isReady,isExecuting,isFinished,isCancelled；
-     5、可以设置最大并发量；
-     6、可以很方便的取消一个操作的执行；
-     
-     二、创建队列
-     1、主队列：[NSOperationQueue mainQueue];
-     2、自定义队列：[[NSOperationQueue alloc] init]
-     
-     */
-    
     
     [self test];
 }

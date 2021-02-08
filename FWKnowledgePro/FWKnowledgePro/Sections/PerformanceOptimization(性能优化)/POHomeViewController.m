@@ -2,7 +2,7 @@
 //  POHomeViewController.m
 //  FWKnowledgePro
 //
-//  Created by xfg on 2020/12/1.
+//  Created by xfg on 2019/12/1.
 //  参考：https://www.jianshu.com/p/fe566ec32d28
 
 #import "POHomeViewController.h"
@@ -12,6 +12,11 @@
 @end
 
 @implementation POHomeViewController
+
+- (void)dealloc
+{
+    NSLog(@"POHomeViewController dealloc");
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,6 +52,11 @@
     switch (indexPath.row) {
         case 0: {
             /**
+             内存检测方法：
+             1、静态检测方法：（手动、自动）；
+             2、动态检测方法：（Instrument、第三方内存检测工具：MLeaksFinder）
+             3、析构（dealloc）；
+             
              卡顿优化：
              CPU层面：
              1、耗时操作放入子线程，如：文本的尺寸计算、绘制，图片的解码、绘制等；
