@@ -6,7 +6,7 @@
 //
 
 /**
- 消息转发三部曲：
+ 消息转发三步曲：
  
  1、动态解析方法：resolveInstanceMethod；
  2、找消息备用接收者：forwardingTargetForSelector；

@@ -7,10 +7,17 @@
 
 
 /**
- KVC valueForKey (总体规则：先找相关方法，再找相关变量)
- 1、先找先关方法：set<Key>、setIs<Key>，如果相关方法找不到往下继续找；
- 2、根据accessInstanceVariablesDirectly方法来判断，如果返回NO，直接执行KVC的valueForUndefinedKey（系统抛出一个异常，未定义key）；
- 3、根据accessInstanceVariablesDirectly方法来判断，如果返回YES（默认返回的是YES），继续找相关变量（相关变量依次有：_<key>,_is<key>,<key>,is<Key>）；
+ 总体原则是先找相关方法，再找相关成员变量；
+ 
+ KVC的赋值过程：
+ （1）先依次查找set<Key>、_set<Key>、setIs<Key>方法，如果找到直接调用，反之，没有找到则继续寻找；
+ （2）通过accessInstanceVariablesDirectly方法判断，如果为YES（默认返回YES），则依次寻找_<Key>、_Is<Key>、<Key>、is<Key>成员变量，如果找到就直接赋值，反之，没有找到调用setValue:forUndefinedKey:函数并抛出异常NSUnknownKeyException；
+ （3）通过accessInstanceVariablesDirectly方法判断，如果为NO，直接调用setValue:forUndefinedKey:函数并抛出异常NSUnknownKeyException。
+
+ KVC的取值过程：
+ （1）先依次查找get<Key>、<Key>、is<Key>、_<Key>，如果找到直接调用，反之，没有找到则继续寻找；
+ （2）通过accessInstanceVariablesDirectly方法判断，如果为YES（默认返回YES），则依次寻找_<Key>、_Is<Key>、<Key>、is<Key>成员变量，如果找到就直接取值，反之，没有找到调用valueForUndefinedKey:函数并抛出异常NSUnknownKeyException；
+ （3）通过accessInstanceVariablesDirectly方法判断，如果为NO，直接调用valueForUndefinedKey:函数并抛出异常NSUnknownKeyException。
  */
 
 #import "NSObject+KVC.h"

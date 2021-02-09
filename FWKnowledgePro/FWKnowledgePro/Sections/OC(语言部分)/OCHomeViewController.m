@@ -10,6 +10,8 @@
 #import "OCObjectSortViewController.h"
 #import "OCObjectSortViewController.h"
 #import "KVOHomeViewController.h"
+#import "KVCHomeViewController.h"
+#import "CategoryHomeViewController.h"
 
 @interface OCHomeViewController ()
 
@@ -37,6 +39,8 @@
         @"并行与并发的区别",
         @"Block",
         @"KVO",
+        @"KVC",
+        @"Category",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -165,6 +169,14 @@
             break;
         case 9: {
             tmpVC = [[KVOHomeViewController alloc] init];
+        }
+            break;
+        case 10: {
+            tmpVC = [[KVCHomeViewController alloc] init];
+        }
+            break;
+        case 11: {
+            tmpVC = [CategoryHomeViewController new];
         }
             break;
             

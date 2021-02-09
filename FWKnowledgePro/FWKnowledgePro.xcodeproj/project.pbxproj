@@ -65,6 +65,11 @@
 		AF5BE4B4256BBDB30028EB6E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */; };
 		AF5BE4BB256BBE4C0028EB6E /* FWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4BA256BBE4C0028EB6E /* FWBaseViewController.m */; };
 		AF5BE4C4256BBE600028EB6E /* FWBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5BE4C3256BBE600028EB6E /* FWBaseTableViewController.m */; };
+		AF66711125D21C40007A7951 /* CategoryHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF66710F25D21C40007A7951 /* CategoryHomeViewController.m */; };
+		AF66711A25D21FDB007A7951 /* CYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AF66711925D21FDB007A7951 /* CYPerson.m */; };
+		AF66712025D21FE9007A7951 /* CYPerson+Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = AF66711F25D21FE9007A7951 /* CYPerson+Test1.m */; };
+		AF66712625D21FF8007A7951 /* CYPerson+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF66712525D21FF8007A7951 /* CYPerson+Test2.m */; };
+		AF66716825D28215007A7951 /* CYStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = AF66716725D28215007A7951 /* CYStudent.m */; };
 		AF69318325CBCE8400F9E22F /* MemoryHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF69318225CBCE8400F9E22F /* MemoryHomeViewController.m */; };
 		AF69C56925CA54CD00F579A3 /* UploadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AF69C56825CA54CD00F579A3 /* UploadTask.m */; };
 		AF69C56F25CA54F600F579A3 /* DownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AF69C56D25CA54F600F579A3 /* DownloadTask.m */; };
@@ -103,6 +108,8 @@
 		AF8FCE3C25D0DEE200A1C839 /* OCObjectSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */; };
 		AF8FCE4325D0E13800A1C839 /* KVOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4225D0E13800A1C839 /* KVOHomeViewController.m */; };
 		AF8FCE4D25D0E17F00A1C839 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */; };
+		AF8FCE5A25D13A1100A1C839 /* KVCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE5825D13A1100A1C839 /* KVCHomeViewController.m */; };
+		AF8FCE6025D13FDF00A1C839 /* KVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE5F25D13FDF00A1C839 /* KVCPerson.m */; };
 		AFCC6A1A25C01ED000E38BE6 /* MessageSendTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC6A1925C01ED000E38BE6 /* MessageSendTest.m */; };
 		AFCC6A2325C01F0900E38BE6 /* MessageSendTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC6A2225C01F0900E38BE6 /* MessageSendTest2.m */; };
 		AFCC6A2925C0F36900E38BE6 /* RuntimeHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFCC6A2825C0F36900E38BE6 /* RuntimeHomeViewController.m */; };
@@ -253,6 +260,16 @@
 		AF5BE4BA256BBE4C0028EB6E /* FWBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBaseViewController.m; sourceTree = "<group>"; };
 		AF5BE4C2256BBE600028EB6E /* FWBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWBaseTableViewController.h; sourceTree = "<group>"; };
 		AF5BE4C3256BBE600028EB6E /* FWBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBaseTableViewController.m; sourceTree = "<group>"; };
+		AF66710F25D21C40007A7951 /* CategoryHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryHomeViewController.m; sourceTree = "<group>"; };
+		AF66711025D21C40007A7951 /* CategoryHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryHomeViewController.h; sourceTree = "<group>"; };
+		AF66711825D21FDB007A7951 /* CYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYPerson.h; sourceTree = "<group>"; };
+		AF66711925D21FDB007A7951 /* CYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYPerson.m; sourceTree = "<group>"; };
+		AF66711E25D21FE9007A7951 /* CYPerson+Test1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CYPerson+Test1.h"; sourceTree = "<group>"; };
+		AF66711F25D21FE9007A7951 /* CYPerson+Test1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CYPerson+Test1.m"; sourceTree = "<group>"; };
+		AF66712425D21FF8007A7951 /* CYPerson+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CYPerson+Test2.h"; sourceTree = "<group>"; };
+		AF66712525D21FF8007A7951 /* CYPerson+Test2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CYPerson+Test2.m"; sourceTree = "<group>"; };
+		AF66716625D28215007A7951 /* CYStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYStudent.h; sourceTree = "<group>"; };
+		AF66716725D28215007A7951 /* CYStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYStudent.m; sourceTree = "<group>"; };
 		AF69318125CBCE8400F9E22F /* MemoryHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryHomeViewController.h; sourceTree = "<group>"; };
 		AF69318225CBCE8400F9E22F /* MemoryHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryHomeViewController.m; sourceTree = "<group>"; };
 		AF69C56725CA54CD00F579A3 /* UploadTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadTask.h; sourceTree = "<group>"; };
@@ -333,6 +350,10 @@
 		AF8FCE4225D0E13800A1C839 /* KVOHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOHomeViewController.m; sourceTree = "<group>"; };
 		AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTestViewController.m; sourceTree = "<group>"; };
 		AF8FCE4C25D0E17F00A1C839 /* BlockTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTestViewController.h; sourceTree = "<group>"; };
+		AF8FCE5825D13A1100A1C839 /* KVCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCHomeViewController.m; sourceTree = "<group>"; };
+		AF8FCE5925D13A1100A1C839 /* KVCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCHomeViewController.h; sourceTree = "<group>"; };
+		AF8FCE5E25D13FDF00A1C839 /* KVCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCPerson.h; sourceTree = "<group>"; };
+		AF8FCE5F25D13FDF00A1C839 /* KVCPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCPerson.m; sourceTree = "<group>"; };
 		AFA7F0B125BEA3DE00D114B5 /* BasicKnowledge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicKnowledge.h; sourceTree = "<group>"; };
 		AFCC6A1825C01ED000E38BE6 /* MessageSendTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSendTest.h; sourceTree = "<group>"; };
 		AFCC6A1925C01ED000E38BE6 /* MessageSendTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageSendTest.m; sourceTree = "<group>"; };
@@ -470,6 +491,8 @@
 				AF8FCE3525D0C7C100A1C839 /* OC对象的本质 */,
 				AF8FCE3625D0C94E00A1C839 /* OC对象的分类 */,
 				AF8FCE4025D0E12300A1C839 /* KVO */,
+				AF8FCE5425D1378F00A1C839 /* KVC */,
+				AF66710525D21342007A7951 /* Category */,
 				AF8FCE4A25D0E17F00A1C839 /* Block */,
 			);
 			path = "OC(语言部分)";
@@ -742,6 +765,23 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		AF66710525D21342007A7951 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AF66711025D21C40007A7951 /* CategoryHomeViewController.h */,
+				AF66710F25D21C40007A7951 /* CategoryHomeViewController.m */,
+				AF66711825D21FDB007A7951 /* CYPerson.h */,
+				AF66711925D21FDB007A7951 /* CYPerson.m */,
+				AF66711E25D21FE9007A7951 /* CYPerson+Test1.h */,
+				AF66711F25D21FE9007A7951 /* CYPerson+Test1.m */,
+				AF66712425D21FF8007A7951 /* CYPerson+Test2.h */,
+				AF66712525D21FF8007A7951 /* CYPerson+Test2.m */,
+				AF66716625D28215007A7951 /* CYStudent.h */,
+				AF66716725D28215007A7951 /* CYStudent.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		AF69318025CBCE5A00F9E22F /* MemoryManage(内存管理) */ = {
 			isa = PBXGroup;
 			children = (
@@ -980,6 +1020,17 @@
 				AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */,
 			);
 			path = Block;
+			sourceTree = "<group>";
+		};
+		AF8FCE5425D1378F00A1C839 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				AF8FCE5925D13A1100A1C839 /* KVCHomeViewController.h */,
+				AF8FCE5825D13A1100A1C839 /* KVCHomeViewController.m */,
+				AF8FCE5E25D13FDF00A1C839 /* KVCPerson.h */,
+				AF8FCE5F25D13FDF00A1C839 /* KVCPerson.m */,
+			);
+			path = KVC;
 			sourceTree = "<group>";
 		};
 		AFCC6A1725C01E7900E38BE6 /* Runtime(运行时) */ = {
@@ -1221,6 +1272,7 @@
 				AF6C9C9F25CD214D002060CE /* MVVMViewModel.m in Sources */,
 				AF563243256F969C00F61828 /* ClassTestModel.m in Sources */,
 				AFD256D825C3F07900AD2D7C /* RTPerson5.m in Sources */,
+				AF66711125D21C40007A7951 /* CategoryHomeViewController.m in Sources */,
 				AF5634222570EC5800F61828 /* CatFactory.m in Sources */,
 				AF5BE4C4256BBE600028EB6E /* FWBaseTableViewController.m in Sources */,
 				AF563235256F969C00F61828 /* GCDTestViewController.m in Sources */,
@@ -1242,9 +1294,11 @@
 				AF6C9C3925CCCDAA002060CE /* PTHomeViewController.m in Sources */,
 				AF507CCC25C15C3800724EE2 /* RTPerson3.m in Sources */,
 				AF38652125762B3F001D295F /* AbstractTVSystem.m in Sources */,
+				AF66712025D21FE9007A7951 /* CYPerson+Test1.m in Sources */,
 				AFCC6A1A25C01ED000E38BE6 /* MessageSendTest.m in Sources */,
 				AF6C9D0225CD4E6D002060CE /* LayeredViewController.m in Sources */,
 				AF563242256F969C00F61828 /* StudentTestModel.m in Sources */,
+				AF8FCE6025D13FDF00A1C839 /* KVCPerson.m in Sources */,
 				AFCC6A2925C0F36900E38BE6 /* RuntimeHomeViewController.m in Sources */,
 				AF6C9CDD25CD35C8002060CE /* MVPPresenter2.m in Sources */,
 				AF56323A256F969C00F61828 /* KeyChainTestViewController.m in Sources */,
@@ -1257,7 +1311,9 @@
 				AFCC6A4725C1064900E38BE6 /* RTPerson.m in Sources */,
 				AF6C9CA125CD214D002060CE /* MVVMViewController.m in Sources */,
 				AF3865042575EA51001D295F /* ObservedModel.m in Sources */,
+				AF66716825D28215007A7951 /* CYStudent.m in Sources */,
 				AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */,
+				AF8FCE5A25D13A1100A1C839 /* KVCHomeViewController.m in Sources */,
 				AFD252DB25C263E900AD2D7C /* NSObject+KVC.m in Sources */,
 				AF563234256F969B00F61828 /* MSAlgorithmViewController.m in Sources */,
 				AF56323D256F969C00F61828 /* CMAllDataListViewController.m in Sources */,
@@ -1289,7 +1345,9 @@
 				AF6ADEB62574E05A00FBED46 /* WildlifePark.m in Sources */,
 				AF56323F256F969C00F61828 /* FWDataBaseManager.m in Sources */,
 				AF6C9C9E25CD214D002060CE /* FKHomeViewController.m in Sources */,
+				AF66711A25D21FDB007A7951 /* CYPerson.m in Sources */,
 				AF5633012570AF0F00F61828 /* PrototypeJob.m in Sources */,
+				AF66712625D21FF8007A7951 /* CYPerson+Test2.m in Sources */,
 				AFD256D025C2BE5800AD2D7C /* RTTest.m in Sources */,
 				AF6ADF132574EAF000FBED46 /* Iterator.m in Sources */,
 				AF8FCE4325D0E13800A1C839 /* KVOHomeViewController.m in Sources */,
