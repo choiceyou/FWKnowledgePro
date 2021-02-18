@@ -3,7 +3,7 @@
 //  FWKnowledgePro
 //
 //  Created by xfg on 2020/1/27.
-//
+//  给分类添加属性
 
 #import "MessageSendTest.h"
 

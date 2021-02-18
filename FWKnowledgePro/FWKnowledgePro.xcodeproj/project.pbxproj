@@ -22,6 +22,9 @@
 		AF507CCC25C15C3800724EE2 /* RTPerson3.m in Sources */ = {isa = PBXBuildFile; fileRef = AF507CCB25C15C3800724EE2 /* RTPerson3.m */; };
 		AF507CD225C1629900724EE2 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = AF507CD125C1629900724EE2 /* NSObject+KVO.m */; };
 		AF52D1DA2574F83400E13A6D /* WildlifeParkIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */; };
+		AF53004525DDF24000D5A4B8 /* RuntimeAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF53004425DDF24000D5A4B8 /* RuntimeAPIViewController.m */; };
+		AF53004E25DDF95500D5A4B8 /* RTAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = AF53004D25DDF95500D5A4B8 /* RTAnimal.m */; };
+		AF53005425DE15CC00D5A4B8 /* NSObject+FWJson.m in Sources */ = {isa = PBXBuildFile; fileRef = AF53005325DE15CC00D5A4B8 /* NSObject+FWJson.m */; };
 		AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF5630B7256E041400F61828 /* Model.xcdatamodeld */; };
 		AF563231256F969B00F61828 /* NSThreadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563207256F969B00F61828 /* NSThreadTestViewController.m */; };
 		AF563232256F969B00F61828 /* NetTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF563208256F969B00F61828 /* NetTestViewController.m */; };
@@ -172,6 +175,12 @@
 		AF52D1D82574F83400E13A6D /* WildlifeParkIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WildlifeParkIterator.h; sourceTree = "<group>"; };
 		AF52D1D92574F83400E13A6D /* WildlifeParkIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WildlifeParkIterator.m; sourceTree = "<group>"; };
 		AF52D1E12574FB4500E13A6D /* MyParkProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyParkProtocol.h; sourceTree = "<group>"; };
+		AF53004325DDF24000D5A4B8 /* RuntimeAPIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeAPIViewController.h; sourceTree = "<group>"; };
+		AF53004425DDF24000D5A4B8 /* RuntimeAPIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeAPIViewController.m; sourceTree = "<group>"; };
+		AF53004C25DDF95500D5A4B8 /* RTAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTAnimal.h; sourceTree = "<group>"; };
+		AF53004D25DDF95500D5A4B8 /* RTAnimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTAnimal.m; sourceTree = "<group>"; };
+		AF53005225DE15CC00D5A4B8 /* NSObject+FWJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FWJson.h"; sourceTree = "<group>"; };
+		AF53005325DE15CC00D5A4B8 /* NSObject+FWJson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FWJson.m"; sourceTree = "<group>"; };
 		AF5630B8256E041400F61828 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		AF563200256F969B00F61828 /* NSThreadTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadTestViewController.h; sourceTree = "<group>"; };
 		AF563201256F969B00F61828 /* NetTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTestViewController.h; sourceTree = "<group>"; };
@@ -485,7 +494,6 @@
 		AF38656125772BD3001D295F /* OC(语言部分) */ = {
 			isa = PBXGroup;
 			children = (
-				AFA7F0B125BEA3DE00D114B5 /* BasicKnowledge.h */,
 				AF38656B25772FAB001D295F /* OCHomeViewController.h */,
 				AF38656C25772FAB001D295F /* OCHomeViewController.m */,
 				AF8FCE3525D0C7C100A1C839 /* OC对象的本质 */,
@@ -676,6 +684,7 @@
 		AF5BE451256BB98D0028EB6E /* FWKnowledgePro */ = {
 			isa = PBXGroup;
 			children = (
+				AFA7F0B125BEA3DE00D114B5 /* BasicKnowledge.h */,
 				AF5BE4AB256BBD540028EB6E /* Sections */,
 				AF5BE4A6256BBD540028EB6E /* AppOthers */,
 				AF5BE4AC256BBD540028EB6E /* General */,
@@ -1038,6 +1047,8 @@
 			children = (
 				AFCC6A2725C0F36900E38BE6 /* RuntimeHomeViewController.h */,
 				AFCC6A2825C0F36900E38BE6 /* RuntimeHomeViewController.m */,
+				AF53004325DDF24000D5A4B8 /* RuntimeAPIViewController.h */,
+				AF53004425DDF24000D5A4B8 /* RuntimeAPIViewController.m */,
 				AFCC6A1825C01ED000E38BE6 /* MessageSendTest.h */,
 				AFCC6A1925C01ED000E38BE6 /* MessageSendTest.m */,
 				AFCC6A2125C01F0900E38BE6 /* MessageSendTest2.h */,
@@ -1046,6 +1057,8 @@
 				AFCC6A3A25C0F9FF00E38BE6 /* UIView+Swizzing.m */,
 				AFCC6A3F25C0FD7C00E38BE6 /* MessageSendTest+Extend.h */,
 				AFCC6A4025C0FD7C00E38BE6 /* MessageSendTest+Extend.m */,
+				AF53005225DE15CC00D5A4B8 /* NSObject+FWJson.h */,
+				AF53005325DE15CC00D5A4B8 /* NSObject+FWJson.m */,
 				AFCC6A4525C1064900E38BE6 /* RTPerson.h */,
 				AFCC6A4625C1064900E38BE6 /* RTPerson.m */,
 				AF507CBE25C144BE00724EE2 /* RTPerson2.h */,
@@ -1062,6 +1075,8 @@
 				AFD252DA25C263E900AD2D7C /* NSObject+KVC.m */,
 				AFD256CE25C2BE5800AD2D7C /* RTTest.h */,
 				AFD256CF25C2BE5800AD2D7C /* RTTest.m */,
+				AF53004C25DDF95500D5A4B8 /* RTAnimal.h */,
+				AF53004D25DDF95500D5A4B8 /* RTAnimal.m */,
 			);
 			path = "Runtime(运行时)";
 			sourceTree = "<group>";
@@ -1269,6 +1284,7 @@
 				AF6ADE8A2574886800FBED46 /* DomesticDog.m in Sources */,
 				AF5BE4AE256BBD540028EB6E /* AppDelegate.m in Sources */,
 				AF6C9CCB25CD311E002060CE /* MVPModel.m in Sources */,
+				AF53004525DDF24000D5A4B8 /* RuntimeAPIViewController.m in Sources */,
 				AF6C9C9F25CD214D002060CE /* MVVMViewModel.m in Sources */,
 				AF563243256F969C00F61828 /* ClassTestModel.m in Sources */,
 				AFD256D825C3F07900AD2D7C /* RTPerson5.m in Sources */,
@@ -1340,6 +1356,7 @@
 				AF38652D25762D7B001D295F /* MultifunctionTVControl.m in Sources */,
 				AF563239256F969C00F61828 /* Student2+CoreDataClass.m in Sources */,
 				AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */,
+				AF53005425DE15CC00D5A4B8 /* NSObject+FWJson.m in Sources */,
 				AFCC6A4125C0FD7C00E38BE6 /* MessageSendTest+Extend.m in Sources */,
 				AF563231256F969B00F61828 /* NSThreadTestViewController.m in Sources */,
 				AF6ADEB62574E05A00FBED46 /* WildlifePark.m in Sources */,
@@ -1362,6 +1379,7 @@
 				AF5633052570AF0F00F61828 /* Singleton.m in Sources */,
 				AF6C9CD125CD3138002060CE /* MVPViewController.m in Sources */,
 				AF6C9CA025CD214D002060CE /* MVVMModel.m in Sources */,
+				AF53004E25DDF95500D5A4B8 /* RTAnimal.m in Sources */,
 				AF5BE4B4256BBDB30028EB6E /* HomeViewController.m in Sources */,
 				AF5630B9256E041400F61828 /* Model.xcdatamodeld in Sources */,
 			);

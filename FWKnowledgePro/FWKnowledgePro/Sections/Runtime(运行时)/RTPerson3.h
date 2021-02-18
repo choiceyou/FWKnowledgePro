@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *nick;
 
+- (void)eat;
+
 @end
 
 NS_ASSUME_NONNULL_END

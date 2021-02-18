@@ -11,12 +11,12 @@
 
 - (void)eat
 {
-    NSLog(@"eat");
+    NSLog(@"%s", __func__);
 }
 
 - (void)sleep
 {
-    NSLog(@"sleep");
+    NSLog(@"%s", __func__);
 }
 
 @end

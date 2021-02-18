@@ -9,4 +9,9 @@
 
 @implementation RTPerson3
 
+- (void)eat
+{
+    NSLog(@"%s", __func__);
+}
+
 @end

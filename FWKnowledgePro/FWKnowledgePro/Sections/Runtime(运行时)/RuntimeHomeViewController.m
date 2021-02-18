@@ -16,6 +16,8 @@
 #import "RTTest.h"
 #import "NSObject+KVO.h"
 #import "RTPerson5.h"
+#import "RuntimeAPIViewController.h"
+#import "NSObject+FWJson.h"
 
 @interface RuntimeHomeViewController ()
 
@@ -46,6 +48,7 @@
         @"自定义kvc",
         @"动态创建类、方法、实例变量",
         @"获取实例变量、实例属性、实例方法",
+        @"Runtime常用API",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -119,10 +122,18 @@
         case 4: {
             // 字典 转 模型
             NSDictionary *tmpDict = @{@"name" : @"张三", @"nick" : @"小张"};
+            
+            // 方案一
             RTPerson2 *person = [[RTPerson2 alloc] initWithDict:tmpDict];
             NSLog(@"name = %@, nick = %@", person.name, person.nick);
             
+            // 方案二
+            RTPerson2 *p2 = [RTPerson2 fw_objectWithJson:tmpDict];
+            NSLog(@"p2.name = %@, p2.nick = %@", p2.name, p2.nick);
+            
+            // 模型 转 字典
             NSDictionary *tmpDict2 = [person modelToDict];
+            NSDictionary *tmpDict3 = [person fw_dictWithObjec];
             NSLog(@"tmpDict2 = %@", tmpDict2);
         }
             break;
@@ -221,6 +232,10 @@
                 NSLog(@"方法：%@，参数个数：%d", NSStringFromSelector(sel), arg);
             }
             free(methods);
+        }
+            break;
+        case 9: {
+            tmpVC = [[RuntimeAPIViewController alloc] init];
         }
             break;
             
