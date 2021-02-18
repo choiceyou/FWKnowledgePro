@@ -100,6 +100,50 @@ KVC的取值过程：
     b. 再初始化子类（可能最终调用的是父类的initialize方法）；
 
 
+13、block的原理是怎么样的？本质是什么？
+答：封装了函数调用及函数调用环境的OC对象；
+
+
+14、__block的作用是什么？使用是有什么注意点？
+答：__block可以用于解决block内部无法修改auto变量值的问题；
+
+
+15、block的属性修饰词为什么是copy？使用block有哪些使用注意？
+答：
+1、block一旦没有进行copy操作就只会在堆上；
+2、使用注意：注意循环引用问题；
+
+
+16、block在修改NSMutableArray时，需不需要加上__block？
+答：
+1、如果修改的是NSMutableArray的存储内容的话，是不需要添加__block修饰的；
+2、如果修改的是NSMutableArray对象的本身，那必须添加__block修饰。
+
+
+17、讲一下OC的消息机制
+答：OC中的方法调用其实都是转成了objc_msgSend函数调用，给receiver（方法调用者）发送一条消息（selector方法名）；
+objc_msgSend大致分为三大阶段：
+1、消息发送（当前类、父类的缓存列表、方法列表中查找）；
+2、动态方法解析；
+3、消息转发；
+
+
+18、描述一下消息转发机制
+答：
+1、调用forwardingTargetForSelector:方法，如果返回值不为nil，执行objc_msgSend方法，反之，继续往下；
+2、调用methodSignatureForSelector:方法，如果返回值为nil，执行错误方法doesNotRecognizeSelector:方法，反之，继续往下执行；
+3、调用forwardInvocation:方法；
+
+
+19、什么是Runtime？平时项目中有用过么？
+答：
+Runtime：OC是一门动态性比较强的编程语言，允许很多操作推迟到程序运行时再进行，OC的动态性就是由Runtime来支撑和实现的。Runtime是一套C语言的API，封装了很多动态性相关的函数。平时编写的OC代码，底层都是转换成RuntimeAPI进行调用的；
+具体应用：
+1、交换方法实现：method_exchangeImplementations（如：可以交换系统自带的某个方法）；
+2、关联对象：给分类添加属性：objc_setAssociatedObject、objc_getAssociatedObject；
+3、遍历类的所有成员变量（可以访问他的私有成员变量，如：字典转模型，自动归档、解档，修改textfield的占位文字颜色等等）；
+4、利用消息转发机制解决方法找不到的问题；
+5、等等；
 
 
 

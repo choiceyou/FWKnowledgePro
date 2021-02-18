@@ -12,8 +12,14 @@
 
 + (void)load
 {
-    Method m1 = class_getInstanceMethod([self class], @selector(setBackgroundColor:));
-    Method m2 = class_getInstanceMethod([self class], @selector(fw_setBackgroundColor:));
+    // 类簇（如：NSString、NSArray、NSDictionary ）的真实类型可能是其它，如：
+    //    NSMutableArray *array = @[].mutableCopy;
+    //    NSLog(@"%@", [array class]); // 结果为：__NSArrayM
+    // 因此：传入第一个参数时需要特别注意
+    
+    Method m1 = class_getInstanceMethod(self, @selector(setBackgroundColor:));
+    Method m2 = class_getInstanceMethod(self, @selector(fw_setBackgroundColor:));
+    // 一旦调用这个方法，会去清空方法缓存
     method_exchangeImplementations(m1, m2);
 }
 
