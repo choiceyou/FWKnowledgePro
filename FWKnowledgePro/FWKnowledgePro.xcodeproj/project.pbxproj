@@ -110,6 +110,9 @@
 		AF6C9D0225CD4E6D002060CE /* LayeredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9D0125CD4E6D002060CE /* LayeredViewController.m */; };
 		AF6C9D0B25CD5024002060CE /* FWDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9D0A25CD5024002060CE /* FWDatabaseManager.m */; };
 		AF76225525E091260039FD1E /* FWPermanentThread.m in Sources */ = {isa = PBXBuildFile; fileRef = AF76225425E091260039FD1E /* FWPermanentThread.m */; };
+		AF76225B25E104440039FD1E /* ThreadSyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF76225A25E104440039FD1E /* ThreadSyncViewController.m */; };
+		AF76226125E116DB0039FD1E /* BaseLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF76226025E116DB0039FD1E /* BaseLockDemo.m */; };
+		AF76226725E117610039FD1E /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF76226625E117610039FD1E /* OSSpinLockDemo.m */; };
 		AF8FCE3C25D0DEE200A1C839 /* OCObjectSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */; };
 		AF8FCE4325D0E13800A1C839 /* KVOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4225D0E13800A1C839 /* KVOHomeViewController.m */; };
 		AF8FCE4D25D0E17F00A1C839 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */; };
@@ -359,6 +362,12 @@
 		AF6C9D0A25CD5024002060CE /* FWDatabaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWDatabaseManager.m; sourceTree = "<group>"; };
 		AF76225325E091260039FD1E /* FWPermanentThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWPermanentThread.h; sourceTree = "<group>"; };
 		AF76225425E091260039FD1E /* FWPermanentThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWPermanentThread.m; sourceTree = "<group>"; };
+		AF76225925E104440039FD1E /* ThreadSyncViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSyncViewController.h; sourceTree = "<group>"; };
+		AF76225A25E104440039FD1E /* ThreadSyncViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSyncViewController.m; sourceTree = "<group>"; };
+		AF76225F25E116DB0039FD1E /* BaseLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseLockDemo.h; sourceTree = "<group>"; };
+		AF76226025E116DB0039FD1E /* BaseLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseLockDemo.m; sourceTree = "<group>"; };
+		AF76226525E117610039FD1E /* OSSpinLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo.h; sourceTree = "<group>"; };
+		AF76226625E117610039FD1E /* OSSpinLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo.m; sourceTree = "<group>"; };
 		AF8FCE3A25D0DEE200A1C839 /* OCObjectSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCObjectSortViewController.h; sourceTree = "<group>"; };
 		AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCObjectSortViewController.m; sourceTree = "<group>"; };
 		AF8FCE4125D0E13800A1C839 /* KVOHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOHomeViewController.h; sourceTree = "<group>"; };
@@ -471,6 +480,12 @@
 				AF56320D256F969B00F61828 /* GCDTestViewController.m */,
 				AF563203256F969B00F61828 /* NSOperationTestViewController.h */,
 				AF563209256F969B00F61828 /* NSOperationTestViewController.m */,
+				AF76225925E104440039FD1E /* ThreadSyncViewController.h */,
+				AF76225A25E104440039FD1E /* ThreadSyncViewController.m */,
+				AF76225F25E116DB0039FD1E /* BaseLockDemo.h */,
+				AF76226025E116DB0039FD1E /* BaseLockDemo.m */,
+				AF76226525E117610039FD1E /* OSSpinLockDemo.h */,
+				AF76226625E117610039FD1E /* OSSpinLockDemo.m */,
 			);
 			path = "MultiThread(多线程)";
 			sourceTree = "<group>";
@@ -1309,6 +1324,7 @@
 				AFCC6A2325C01F0900E38BE6 /* MessageSendTest2.m in Sources */,
 				AF3864FB2575E95C001D295F /* ObserverTestViewController.m in Sources */,
 				AF563249256F971300F61828 /* DPHomeViewController.m in Sources */,
+				AF76226725E117610039FD1E /* OSSpinLockDemo.m in Sources */,
 				AF6ADE9F25748EA000FBED46 /* WildDog.m in Sources */,
 				AF56323C256F969C00F61828 /* CMHomeViewController.m in Sources */,
 				AF6C9CF925CD4E2B002060CE /* FWTestService.m in Sources */,
@@ -1366,6 +1382,7 @@
 				AFCC6A3B25C0F9FF00E38BE6 /* UIView+Swizzing.m in Sources */,
 				AF38652D25762D7B001D295F /* MultifunctionTVControl.m in Sources */,
 				AF563239256F969C00F61828 /* Student2+CoreDataClass.m in Sources */,
+				AF76226125E116DB0039FD1E /* BaseLockDemo.m in Sources */,
 				AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */,
 				AF53005425DE15CC00D5A4B8 /* NSObject+FWJson.m in Sources */,
 				AFCC6A4125C0FD7C00E38BE6 /* MessageSendTest+Extend.m in Sources */,
@@ -1380,6 +1397,7 @@
 				AFD256D025C2BE5800AD2D7C /* RTTest.m in Sources */,
 				AF6ADF132574EAF000FBED46 /* Iterator.m in Sources */,
 				AF8FCE4325D0E13800A1C839 /* KVOHomeViewController.m in Sources */,
+				AF76225B25E104440039FD1E /* ThreadSyncViewController.m in Sources */,
 				AF6ADE9625748E1B00FBED46 /* WildAnimalFactory.m in Sources */,
 				AF6C9CB925CD2C88002060CE /* MVCView.m in Sources */,
 				AF6C9C4825CCCF18002060CE /* SumManager.m in Sources */,

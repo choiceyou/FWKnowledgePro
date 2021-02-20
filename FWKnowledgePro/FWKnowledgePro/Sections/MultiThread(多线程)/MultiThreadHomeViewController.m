@@ -9,6 +9,7 @@
 #import "NSThreadTestViewController.h"
 #import "NSOperationTestViewController.h"
 #import "GCDTestViewController.h"
+#import "ThreadSyncViewController.h"
 
 @interface MultiThreadHomeViewController ()
 
@@ -27,6 +28,7 @@
         @"NSThread（使用更加面向对象）",
         @"GCD（充分利用设备的多核）",
         @"NSOperation（基于GCD，比GCD多了一些简单实用的功能；使用更加面向对象）",
+        @"iOS中线程同步方案",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -50,6 +52,10 @@
             break;
         case 2: {
             tmpVC = [[NSOperationTestViewController alloc] init];
+        }
+            break;
+        case 3: {
+            tmpVC = [[ThreadSyncViewController alloc] init];
         }
             break;
             

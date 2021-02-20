@@ -12,11 +12,13 @@
  GCD：Grand Centeral Dispatch（有人翻译：牛逼的中枢调度器）
  线程安全概念：如果一个数据被多个线程读写，出现的结果是可预见的，那么它就是线程安全的
  
+ GCD源码下载地址：https://github.com/apple/swift-corelibs-libdispatch
+ 
  1、队列：
  （1）串行队列：FIFO先进先出；
  （2）并发队列：
- （3）主列队：dispatch_get_main_queue，属于串行队列；
- （4）全局队列：dispatch_get_global_queue，属于并发队列；
+ （3）主列队：dispatch_get_main_queue，属于特殊的串行队列；
+ （4）全局队列：dispatch_get_global_queue，属于特殊的并发队列；
  2、任务：block里面的代码块；
  3、同步：会阻塞当前线程，且不会开辟新线程；
  4、异步：不会阻塞当前线程；
@@ -26,17 +28,18 @@
  7、栅栏函数：dispatch_barrier_async
  8、队列组：dispatch_group_async
  9、信号量：Dispatch Semaphore
- 10、锁的机制：确保只有一条线程在读写数据；锁的作用：保护线程安全；
- （1）semaphore 属于自旋锁：某个线程正在执行我们锁定的代码，那么其他线程就会进入死循环等待；
- （2）synchronized 属于互斥锁：某个线程正在执行我们锁定的代码，那么其他线程就会进入休眠；
  
  --------------------------------------------------------------------------------------------
- |    区别    |          串行队列           |          并发队列        |          主队列         |
+ |    区别    |       手动创建的串行队列      |          并发队列        |          主队列         |
  --------------------------------------------------------------------------------------------
  | 同步(sync) | 没有开启新线程，串行执行任务    | 没有开启新线程，串行执行任务 |       死锁卡住不执行     |
  --------------------------------------------------------------------------------------------
  |异步(async) | 有开启新线程(1条)，串行执行任务 |  有开启新线程，并发执行任务  | 没有开启新线程，串行执行任务|
  --------------------------------------------------------------------------------------------
+ 
+ 11、执行
+ （1）dispatch_sync：立马在当前线程执行任务，执行完毕才能往下执行；
+ （2）dispatch_async：不会立马在当前线程执行任务；
  
  */
 
@@ -106,6 +109,8 @@ static GCDTestViewController *_instance;
         @"semaphore 线程同步",
         @"模拟各地异步售卖火车票",
         @"GCD定时器",
+        @"测试题1",
+        @"测试题2",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -195,6 +200,14 @@ static GCDTestViewController *_instance;
             break;
         case 15: {
             [self gcdTimer];
+        }
+            break;
+        case 16: {
+            [self test];
+        }
+            break;
+        case 17: {
+            [self test2];
         }
             break;
             
@@ -326,17 +339,55 @@ static GCDTestViewController *_instance;
 #pragma mark 死锁
 - (void)deallock
 {
+    /**
+     总结：使用”sync函数“往”当前“”串行“队列中添加任务，会卡住当前的串行队列（产生死锁）；
+     */
+    
+    /**
+     死锁一：分析
+     1、单条队列的特点：FIFO（先进先出）；
+     2、当前主线程中已经有一个方法（deallock）正在执行中；
+     3、dispatch_sync表示block块中的任务需要立马执行，执行完毕才能往下执行；
+     4、因此 deallock 在等待 block块代码执行完毕，block块代码 在等待 deallock 执行完毕，造成了相互等待；
+     
+     如果将dispatch_sync换成dispatch_async，就不会造成死锁了；
+     */
+    
+    NSLog(@"执行任务1");
     dispatch_sync(dispatch_get_main_queue(), ^{
-        NSLog(@"deallock");
+        NSLog(@"执行任务2");
+    });
+    NSLog(@"执行任务3");
+    
+    
+    /**
+     死锁二：分析
+     1、单条队列的特点：FIFO（先进先出）；
+     2、异步+串行执行时会生成一条子线程；
+     3、当前子线程中已经有一个方法（block0）正在执行中；
+     4、dispatch_sync表示block1块中的任务需要立马执行，执行完毕才能往下执行；
+     5、因此 block0 在等待 block1 执行完毕，block1 在等待 block0 执行完毕，造成了相互等待；
+     */
+    dispatch_queue_t queue = dispatch_queue_create("com.xx.queue", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue, ^{     // 假设这是block0
+        NSLog(@"执行任务4");
+        dispatch_sync(queue, ^{  // 假设这是block1
+            NSLog(@"执行任务5 -- %@",[NSThread currentThread]);
+        });
+        NSLog(@"执行任务6");
     });
     
-    dispatch_queue_t queue = dispatch_queue_create("com.xx.queue", DISPATCH_QUEUE_SERIAL);
-    dispatch_async(queue, ^{    // 异步执行 + 串行队列
-        dispatch_sync(queue, ^{  // 同步执行 + 当前串行队列
-            // 追加任务 1
-            [NSThread sleepForTimeInterval:2];              // 模拟耗时操作
-            NSLog(@"1---%@",[NSThread currentThread]);      // 打印当前线程
+    
+    /**
+     如果将队列改成并发队列，这里是不会产生死锁的，因为并发队列可以同时从队列中拿出多个任务执行
+     */
+    dispatch_queue_t queue2 = dispatch_queue_create("com.xx.queue", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queue2, ^{     // 假设这是block0
+        NSLog(@"执行任务4");
+        dispatch_sync(queue2, ^{  // 假设这是block1
+            NSLog(@"执行任务5 -- %@",[NSThread currentThread]);
         });
+        NSLog(@"执行任务6");
     });
 }
 
@@ -400,9 +451,18 @@ static GCDTestViewController *_instance;
         [self task:2 taskCount:3];
     });
     
+    // 等前面的方法执行完毕后会执行这个
     dispatch_group_notify(group, queue, ^{
-        NSLog(@"异步任务全部执行完成通知");
+        // 回到主队列执行任务
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"异步任务全部执行完成通知");
+        });
     });
+    
+    // 上面代码其实可以直接这样子写
+    //    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+    //        NSLog(@"异步任务全部执行完成通知");
+    //    });
 }
 
 #pragma mark 队列组：dispatchGroupWait
@@ -517,6 +577,46 @@ static GCDTestViewController *_instance;
     });
     
     dispatch_resume(self.timer);
+}
+
+
+#pragma mark -
+#pragma mark - 其它测试题目
+
+#pragma mark 测试题1
+- (void)test
+{
+    /**
+     题目：打印结果是什么？
+     
+     答：打印结果是1、3
+     因为：performSelector:withObject:afterDelay: 的本质是往RunLoop中添加定时器，子线程是默认没有启动RunLoop；
+     */
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+    dispatch_async(queue, ^{
+        NSLog(@"1");
+        [self performSelector:@selector(otherTest) withObject:nil afterDelay:.0];
+        NSLog(@"3");
+    });
+}
+
+- (void)otherTest
+{
+    NSLog(@"2");
+}
+
+#pragma mark 测试题2
+- (void)test2
+{
+    /**
+     题目：打印结果是什么？
+     
+     答：程序会卡住。原因：往一个已经退出了的线程中发添加任务；
+     */
+    NSThread *thread = [[NSThread alloc] initWithBlock:^{
+        NSLog(@"1");
+    }];
+    [self performSelector:@selector(otherTest) onThread:thread withObject:nil waitUntilDone:YES];
 }
 
 

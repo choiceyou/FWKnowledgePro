@@ -29,6 +29,7 @@
 /**
  公共：
  1、编译生成cpp文件：xcrun -sdk iphoneos clang -arch arm64 -rewrite-objc main.m -o main-arm64.cpp
+ 2、GNUstep是GNU计划的项目之一，它将Cocoa的OC库重新实现了一遍（不是苹果官方源码，但还是具有一定的参考价值），源码地址：http://www.gnustep.org/resources/downloads.php
  */
 
 @interface HomeViewController ()
