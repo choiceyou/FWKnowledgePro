@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		524E1FF8D0ACE3ADBAAAFBB8 /* Pods_FWKnowledgePro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */; };
+		AF1E35B825DF9CF200D2A7FE /* FWThread.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1E35B725DF9CF200D2A7FE /* FWThread.m */; };
 		AF3864FB2575E95C001D295F /* ObserverTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3864FA2575E95C001D295F /* ObserverTestViewController.m */; };
 		AF3865042575EA51001D295F /* ObservedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3865032575EA51001D295F /* ObservedModel.m */; };
 		AF38651525762A04001D295F /* MITVSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38651425762A04001D295F /* MITVSystem.m */; };
@@ -108,6 +109,7 @@
 		AF6C9CF925CD4E2B002060CE /* FWTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9CF825CD4E2B002060CE /* FWTestService.m */; };
 		AF6C9D0225CD4E6D002060CE /* LayeredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9D0125CD4E6D002060CE /* LayeredViewController.m */; };
 		AF6C9D0B25CD5024002060CE /* FWDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9D0A25CD5024002060CE /* FWDatabaseManager.m */; };
+		AF76225525E091260039FD1E /* FWPermanentThread.m in Sources */ = {isa = PBXBuildFile; fileRef = AF76225425E091260039FD1E /* FWPermanentThread.m */; };
 		AF8FCE3C25D0DEE200A1C839 /* OCObjectSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */; };
 		AF8FCE4325D0E13800A1C839 /* KVOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4225D0E13800A1C839 /* KVOHomeViewController.m */; };
 		AF8FCE4D25D0E17F00A1C839 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */; };
@@ -145,6 +147,8 @@
 
 /* Begin PBXFileReference section */
 		72FB8F3DDE2EAD5F61852F6B /* Pods-FWKnowledgePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWKnowledgePro.debug.xcconfig"; path = "Target Support Files/Pods-FWKnowledgePro/Pods-FWKnowledgePro.debug.xcconfig"; sourceTree = "<group>"; };
+		AF1E35B625DF9CF200D2A7FE /* FWThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWThread.h; sourceTree = "<group>"; };
+		AF1E35B725DF9CF200D2A7FE /* FWThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWThread.m; sourceTree = "<group>"; };
 		AF3864F92575E95C001D295F /* ObserverTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserverTestViewController.h; sourceTree = "<group>"; };
 		AF3864FA2575E95C001D295F /* ObserverTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserverTestViewController.m; sourceTree = "<group>"; };
 		AF3865022575EA51001D295F /* ObservedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObservedModel.h; sourceTree = "<group>"; };
@@ -353,6 +357,8 @@
 		AF6C9D0125CD4E6D002060CE /* LayeredViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayeredViewController.m; sourceTree = "<group>"; };
 		AF6C9D0925CD5024002060CE /* FWDatabaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWDatabaseManager.h; sourceTree = "<group>"; };
 		AF6C9D0A25CD5024002060CE /* FWDatabaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWDatabaseManager.m; sourceTree = "<group>"; };
+		AF76225325E091260039FD1E /* FWPermanentThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWPermanentThread.h; sourceTree = "<group>"; };
+		AF76225425E091260039FD1E /* FWPermanentThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWPermanentThread.m; sourceTree = "<group>"; };
 		AF8FCE3A25D0DEE200A1C839 /* OCObjectSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCObjectSortViewController.h; sourceTree = "<group>"; };
 		AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCObjectSortViewController.m; sourceTree = "<group>"; };
 		AF8FCE4125D0E13800A1C839 /* KVOHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOHomeViewController.h; sourceTree = "<group>"; };
@@ -1086,6 +1092,10 @@
 			children = (
 				AFD256E125C4088E00AD2D7C /* RunloopHomeViewController.h */,
 				AFD256E225C4088E00AD2D7C /* RunloopHomeViewController.m */,
+				AF1E35B625DF9CF200D2A7FE /* FWThread.h */,
+				AF1E35B725DF9CF200D2A7FE /* FWThread.m */,
+				AF76225325E091260039FD1E /* FWPermanentThread.h */,
+				AF76225425E091260039FD1E /* FWPermanentThread.m */,
 			);
 			path = "Runloop(运行循环)";
 			sourceTree = "<group>";
@@ -1305,6 +1315,7 @@
 				AF6C9CBF25CD2C97002060CE /* MVCModel.m in Sources */,
 				AF563232256F969B00F61828 /* NetTestViewController.m in Sources */,
 				AF563240256F969C00F61828 /* FMDBTestViewController.m in Sources */,
+				AF76225525E091260039FD1E /* FWPermanentThread.m in Sources */,
 				AF5633032570AF0F00F61828 /* NSObject+Singleton.m in Sources */,
 				AFD256E325C4088E00AD2D7C /* RunloopHomeViewController.m in Sources */,
 				AF6C9C3925CCCDAA002060CE /* PTHomeViewController.m in Sources */,
@@ -1362,6 +1373,7 @@
 				AF6ADEB62574E05A00FBED46 /* WildlifePark.m in Sources */,
 				AF56323F256F969C00F61828 /* FWDataBaseManager.m in Sources */,
 				AF6C9C9E25CD214D002060CE /* FKHomeViewController.m in Sources */,
+				AF1E35B825DF9CF200D2A7FE /* FWThread.m in Sources */,
 				AF66711A25D21FDB007A7951 /* CYPerson.m in Sources */,
 				AF5633012570AF0F00F61828 /* PrototypeJob.m in Sources */,
 				AF66712625D21FF8007A7951 /* CYPerson+Test2.m in Sources */,

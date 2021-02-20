@@ -5,6 +5,10 @@
 //  Created by xfg on 2019/12/2.
 //
 
+/**
+ OC对象本质上就是结构体指针
+ */
+
 #import "OCHomeViewController.h"
 #import "BlockTestViewController.h"
 #import "OCObjectSortViewController.h"

@@ -110,41 +110,121 @@ KVC的取值过程：
 
 15、block的属性修饰词为什么是copy？使用block有哪些使用注意？
 答：
-1、block一旦没有进行copy操作就只会在堆上；
-2、使用注意：注意循环引用问题；
+（1）block一旦没有进行copy操作就只会在堆上；
+（2）使用注意：注意循环引用问题；
 
 
 16、block在修改NSMutableArray时，需不需要加上__block？
 答：
-1、如果修改的是NSMutableArray的存储内容的话，是不需要添加__block修饰的；
-2、如果修改的是NSMutableArray对象的本身，那必须添加__block修饰。
+（1）如果修改的是NSMutableArray的存储内容的话，是不需要添加__block修饰的；
+（2）如果修改的是NSMutableArray对象的本身，那必须添加__block修饰。
 
 
 17、讲一下OC的消息机制
 答：OC中的方法调用其实都是转成了objc_msgSend函数调用，给receiver（方法调用者）发送一条消息（selector方法名）；
 objc_msgSend大致分为三大阶段：
-1、消息发送（当前类、父类的缓存列表、方法列表中查找）；
-2、动态方法解析；
-3、消息转发；
+（1）消息发送（当前类、父类的缓存列表、方法列表中查找）；
+（2）动态方法解析；
+（3）消息转发；
 
 
 18、描述一下消息转发机制
 答：
-1、调用forwardingTargetForSelector:方法，如果返回值不为nil，执行objc_msgSend方法，反之，继续往下；
-2、调用methodSignatureForSelector:方法，如果返回值为nil，执行错误方法doesNotRecognizeSelector:方法，反之，继续往下执行；
-3、调用forwardInvocation:方法；
+（1）调用forwardingTargetForSelector:方法，如果返回值不为nil，执行objc_msgSend方法，反之，继续往下；
+（2）调用methodSignatureForSelector:方法，如果返回值为nil，执行错误方法doesNotRecognizeSelector:方法，反之，继续往下执行；
+（3）调用forwardInvocation:方法；
 
 
 19、什么是Runtime？平时项目中有用过么？
 答：
 Runtime：OC是一门动态性比较强的编程语言，允许很多操作推迟到程序运行时再进行，OC的动态性就是由Runtime来支撑和实现的。Runtime是一套C语言的API，封装了很多动态性相关的函数。平时编写的OC代码，底层都是转换成RuntimeAPI进行调用的；
 具体应用：
-1、交换方法实现：method_exchangeImplementations（如：可以交换系统自带的某个方法）；
-2、关联对象：给分类添加属性：objc_setAssociatedObject、objc_getAssociatedObject；
-3、遍历类的所有成员变量（可以访问他的私有成员变量，如：字典转模型，自动归档、解档，修改textfield的占位文字颜色等等）；
-4、利用消息转发机制解决方法找不到的问题；
-5、等等；
+（1）交换方法实现：method_exchangeImplementations（如：可以交换系统自带的某个方法）；
+（2）关联对象：给分类添加属性：objc_setAssociatedObject、objc_getAssociatedObject；
+（3）遍历类的所有成员变量（ 可以访问他的私有成员变量，如：字典转模型，自动归档、解档，修改textfield的占位文字颜色等等）；
+（4）利用消息转发机制解决方法找不到的问题，等等；
 
+
+20、讲讲Runloop，项目中有用到吗？
+答：RunLoop 翻译过来是运行循环，指的是在程序运行过程中循环做一些事情。
+
+基本作用:
+（1）保持程序的持续运行
+（2）处理App中的各种事件
+（3）节省CPU资源,提高程序性能(该做事时做事,该休息时休息)
+
+应用范畴有:
+（1）定时器(NSTimer),PerformSelector
+（2）GCD Async Main Queue
+（3）时间响应,手势识别,界面刷新
+（4）网络请求
+（5）AutoreleasePool
+
+
+21、Runloop内部实现逻辑？
+答：（详细请参考截图：RunLoop的运行逻辑_图形版）
+    01.通知Observers: 进入Loop
+    02.通知Observers: 即将处理Timers
+    03.通知Observers: 即将处理Sources
+    04.处理Blocks
+    05.处理Source0(可能再次处理Blocks)
+    06.如果存在Source1,就直接跳第8步
+    07.通知Observers: 开始休眠(等待消息唤醒)
+    08.通知Observers:结束休眠(被某个消息唤醒)
+    处理Timer
+    处理GCD Async To Main Queue
+    处理Sourcel
+    09.处理blocks
+    10.根据前面的执行结果,决定如何操作
+        a> 回到第02步
+        b> 退出Loop
+    11.通知Observers: 退出Loop
+
+
+22、Runloop和线程的关系？
+答：
+（1）每条线程都有唯一的一个与之相对应的RunLoop对象；
+（2）RunLoop保存在一个全局的Dictionary里，线程作为key，RunLoop作为value；
+（3）线程刚创建时并没有RunLoop对象，RunLoop会在第一次获取它时创建；
+（4）RunLoop会在线程结束时销毁；
+（5）主线程的RunLoop已经自动获取（创建），子线程默认没有开启RunLoop。
+
+
+23、Timer和Runloop的关系？
+答：
+（1）RunLoop的Mode结构中含有一个_timers数组，因此，可以接收定时源；
+（2）Timer可以唤醒线程；
+
+
+24、程序中添加每3秒响应一次的NSTimer，当拖动tableView时timer可能无法响应要怎么解决？
+答：将定时器添加到RunLoop中，并将mode设置为NSRunLoopCommonModes。
+
+
+25、Runloop是怎么响应用户操作的，具体流程是怎么样的？
+答：先由Sourcel1进行捕捉，然后交于Source0进行处理。
+
+
+26、说说Runloop的几种状态？
+答：
+kCFRunLoopEntry = (1UL << 0), // 进入Loop
+kCFRunLoopBeforeTimers = (1UL << 1), // 即将处理NSTimer
+kCFRunLoopBeforeSources = (1UL << 2), // 即将处理Sources
+kCFRunLoopBeforeWaiting = (1UL << 5), // 即将休眠
+kCFRunLoopAfterWaiting = (1UL << 6), // 即将被唤醒
+kCFRunLoopExit = (1UL << 7), // 退出
+kCFRunLoopAllActivities = 0x0FFFFFFFU // 所有状态
+
+
+27、Runloop的mode作用是什么？
+答：一个RunLoop包含若干的Mode,每个Mode又包含若干个Source0/Source1/Timers/Observers
+常见的mode有两种：
+（1）kCFRunLoopDefaultMode App的默认mode,通常主线程是在这个Mode下运行；
+（2）UITrackingRunLoopMode: 界面追踪Mode,用于ScrollView追踪触摸滑动,保证界面滑动时候不受其他的Mode影响。
+
+注意
+（1）NSDefaultRunLoopMode 和 UITrackingRunLoopMode 是真正存在的模式；
+（2）NSRunLoopCommonModes并不是一个真的模式，它只是一个占位；
+（3）timer能在_commonModes数组中存放的模式下工作。
 
 
 
