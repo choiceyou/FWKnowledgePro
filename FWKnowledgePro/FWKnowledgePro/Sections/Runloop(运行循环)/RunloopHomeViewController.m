@@ -51,6 +51,7 @@
 #import "RunloopHomeViewController.h"
 #import "FWThread.h"
 #import "FWPermanentThread.h"
+#import "FWProxy.h"
 
 @interface RunloopHomeViewController ()
 {
@@ -72,6 +73,15 @@
 {
     NSLog(@"%s", __func__);
     
+    // 注意：初始化timer时使用了FWProxy的方法，因此dealloc方法必须添加停止定时器代码，否则会崩溃
+    if (_timer) {
+        [_timer invalidate];
+    }
+    
+    if (_permanentThread) {
+        [_permanentThread stop];
+    }
+    
     if (_thread) {
         self.stopped = YES;
         [self performSelector:@selector(stopRunLoop) onThread:self.thread withObject:nil waitUntilDone:YES];
@@ -88,12 +98,6 @@
         // 释放
         CFRelease(_obsever);
         _obsever = nil;
-    }
-    
-    // 停止定时器
-    if (_timer) {
-        [self.timer invalidate];
-        self.timer = nil;
     }
     
     // 停止GCD定时器
@@ -129,12 +133,12 @@
 {
     switch (indexPath.row) {
         case 0: {
-            self.timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(timeMethod) userInfo:nil repeats:YES];
+            self.timer = [NSTimer timerWithTimeInterval:1.0 target:[FWProxy proxyWithTarget:self] selector:@selector(timeMethod) userInfo:nil repeats:YES];
             [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
             
             
             // 保证Runloop在不休眠
-            [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(timeMethod2) userInfo:nil repeats:YES];
+//            [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(timeMethod2) userInfo:nil repeats:YES];
             
             // [self startGcdTimer];
         }

@@ -30,25 +30,38 @@
 {
     self = [super init];
     if (self) {
-        __weak typeof(self) weakSelf = self;
-        self.innerThread = [[NSThread alloc] initWithBlock:^{
-            // 方法一：使用OC-API实现
-            [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
-            while (weakSelf && !weakSelf.isStopped) {
-                [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-            }
-            
-            // 方案二：使用C-API实现
-            // CFRunLoopSourceContext context = {0};
-            // CFRunLoopSourceRef source = CFRunLoopSourceCreate(kCFAllocatorDefault, 0, &context);
-            // CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
-            // CFRelease(source);
-            //
-            // // 1.0e10是一个很大的数字（源码中使用这个）
-            // CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0e10, false);
-        }];
+        if (@available(iOS 10.0, *)) {
+            __weak typeof(self) weakSelf = self;
+            self.innerThread = [[NSThread alloc] initWithBlock:^{
+                [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+                while (weakSelf && !weakSelf.isStopped) {
+                    [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+                }
+            }];
+        } else {
+            self.innerThread = [[NSThread alloc] initWithTarget:self selector:@selector(permanent) object:nil];
+        }
     }
     return self;
+}
+
+- (void)permanent
+{
+    // 方法一：使用OC-API实现
+    [[NSRunLoop currentRunLoop] addPort:[NSPort port] forMode:NSDefaultRunLoopMode];
+    while (self && !self.isStopped) {
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+    }
+    
+    
+    // 方案二：使用C-API实现
+    //    CFRunLoopSourceContext context = {0};
+    //    CFRunLoopSourceRef source = CFRunLoopSourceCreate(kCFAllocatorDefault, 0, &context);
+    //    CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
+    //    CFRelease(source);
+    //
+    //    // 1.0e10是一个很大的数字（源码中使用这个）
+    //    CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0e10, false);
 }
 
 

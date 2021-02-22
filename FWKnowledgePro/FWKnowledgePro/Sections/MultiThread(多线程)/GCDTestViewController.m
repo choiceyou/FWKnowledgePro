@@ -45,6 +45,7 @@
 
 
 #import "GCDTestViewController.h"
+#import "FWGCDTimer.h"
 
 @interface GCDTestViewController ()
 {
@@ -55,6 +56,8 @@
 @property (nonatomic, assign) NSUInteger ticketSurplusCount;
 /// GCD定时器
 @property (nonatomic, strong) dispatch_source_t timer;
+/// 自定义的GCD定时器标识符
+@property (nonatomic, copy) NSString *gcdTimerTag;
 
 @end
 
@@ -85,6 +88,15 @@ static GCDTestViewController *_instance;
 //}
 
 
+- (void)dealloc
+{
+    NSLog(@"%s", __func__);
+    
+    if (_gcdTimerTag) {
+        [FWGCDTimer cancelTask:_gcdTimerTag];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -108,7 +120,8 @@ static GCDTestViewController *_instance;
         @"队列组：dispatch_group_enter、dispatch_group_leave",
         @"semaphore 线程同步",
         @"模拟各地异步售卖火车票",
-        @"GCD定时器",
+        @"开启自定义GCD定时器",
+        @"关闭自定义GCD定时器",
         @"测试题1",
         @"测试题2",
     ].mutableCopy;
@@ -199,14 +212,20 @@ static GCDTestViewController *_instance;
         }
             break;
         case 15: {
-            [self gcdTimer];
+            self.gcdTimerTag = [FWGCDTimer executeTask:^{
+                NSLog(@"-----%@", [NSThread currentThread]);
+            } start:0 interval:1 repeats:YES async:YES];
         }
             break;
         case 16: {
-            [self test];
+            [FWGCDTimer cancelTask:self.gcdTimerTag];
         }
             break;
         case 17: {
+            [self test];
+        }
+            break;
+        case 18: {
             [self test2];
         }
             break;
