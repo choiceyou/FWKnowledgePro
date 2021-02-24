@@ -522,7 +522,7 @@
 			path = "Net(网络相关)";
 			sourceTree = "<group>";
 		};
-		AF38656125772BD3001D295F /* OC(语言部分) */ = {
+		AF38656125772BD3001D295F /* OC(语法部分) */ = {
 			isa = PBXGroup;
 			children = (
 				AF38656B25772FAB001D295F /* OCHomeViewController.h */,
@@ -534,7 +534,7 @@
 				AF66710525D21342007A7951 /* Category */,
 				AF8FCE4A25D0E17F00A1C839 /* Block */,
 			);
-			path = "OC(语言部分)";
+			path = "OC(语法部分)";
 			sourceTree = "<group>";
 		};
 		AF5631FF256F969B00F61828 /* Algorithm(算法) */ = {
@@ -772,7 +772,7 @@
 				AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */,
 				AF6C9C8F25CD214D002060CE /* Architecture(架构模式) */,
 				AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */,
-				AF38656125772BD3001D295F /* OC(语言部分) */,
+				AF38656125772BD3001D295F /* OC(语法部分) */,
 				AF56320E256F969B00F61828 /* DataPersistence(数据持久化) */,
 				AF38653125764245001D295F /* MultiThread(多线程) */,
 				AF38655D25772AD1001D295F /* Net(网络相关) */,

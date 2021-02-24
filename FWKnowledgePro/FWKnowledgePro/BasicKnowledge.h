@@ -227,6 +227,44 @@ kCFRunLoopAllActivities = 0x0FFFFFFFU // 所有状态
 （3）timer能在_commonModes数组中存放的模式下工作。
 
 
+28、使用CADisplayLink、NSTimer有什么注意点？
+答：需要注意循环引用导致的内存泄漏问题。CADisplayLink、NSTimer调用的某些方法会对传入的对象进行强引用，那么，此时如果该对象又强引用了CADisplayLink、NSTimer对象时就会造成循环引用。处理方法：可以引入第三方对象，让第三方对象弱指向该对象。
+
+
+29、介绍一下内存的几大区域？
+地址值由低到高分别为：
+（1）保留；
+（2）代码段（_TEXT）：编译之后的代码；
+（3）数据段（_DATA）：字符串常量，已初始化的全局变量、静态变量等，未初始化的全局变量、静态变量等；
+（4）堆（heap）：通过alloc、malloc、calloc等动态分配的空间。分配的空间地址越来越大；
+（5）栈（stack）：函数调用开销，比如局部变量。分配的空间地址越来越小；
+（6）内核区；
+
+
+30、讲讲你对iOS内存管理的理解？
+答：
+（1）小数据对象类型：采用TaggedPointer方式（小数据对象类型：NSNumber、NSString、NSDate等）；
+（2）其它对象类型：系统通过“引用计数器”来判断当前对象是否可以被释放，当对象“引用计数”为0时会被释放；
+    a. arm64系统下，对象的引用计数存放在isa中，当isa不够存放后，
+
+
+31、ARC都帮我们做了什么？
+答：
+
+32、weak指针的实现原理？
+
+
+33、autorelease对象在什么时机会被调用release？
+答：
+（1）如果对象被@autoreleasepool{}包裹住，那么当“}”结束时（即：autoreleasepool调用pop方法时），就会调用对象的release方法；
+（2）如果对象没有被@autoreleasepool{}包裹住，那么它什么时候释放是由Runloop控制的。它有可能是在某次Runloop循环中，Runloop休眠之前调用了release。
+
+34、方法里有局部对象，出了方法会立即释放吗？
+答：
+（1）ARC中：马上释放；
+（2）MRC中：如果通过aotorelease方式自动释放的话，那么它什么时候释放是由Runloop控制的。它有可能是在某次Runloop循环中，Runloop休眠之前调用了release。
+
+
 
 ===========
 
