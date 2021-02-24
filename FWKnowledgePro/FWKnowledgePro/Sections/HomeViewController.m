@@ -5,11 +5,6 @@
 //  Created by xfg on 2019/11/23.
 //
 
-/**
- 1、简单的demo；
- 2、代码洁癖；
- */
-
 #import "HomeViewController.h"
 #import "FKHomeViewController.h"
 #import "MSAlgorithmViewController.h"
@@ -30,6 +25,22 @@
  公共：
  1、编译生成cpp文件：xcrun -sdk iphoneos clang -arch arm64 -rewrite-objc main.m -o main-arm64.cpp
  2、GNUstep是GNU计划的项目之一，它将Cocoa的OC库重新实现了一遍（不是苹果官方源码，但还是具有一定的参考价值），源码地址：http://www.gnustep.org/resources/downloads.php
+ 
+ 
+ ======================
+ 推荐：
+ 
+ 数据结构与算法：
+ （1）《数据结构》-- 严蔚敏；
+ （2）《大话数据结构与算法》；
+
+ 网络：
+ 《HTTP权威指南》
+ 《TCP/IP详解卷1：协议》
+
+ 架构与设计模式：
+ （1）https://github.com/skyming/Trip-to-iOS-Design-Patterns
+ （2）https://design-patterns.readthedocs.io/zh_CN/latest/
  */
 
 @interface HomeViewController ()
