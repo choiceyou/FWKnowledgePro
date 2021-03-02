@@ -21,17 +21,6 @@
 
 #import "MSAlgorithmViewController.h"
 
-// 重用标识符
-static NSString *const kCellIdentifier = @"kCellIdentifier";
-
-
-@interface MSAlgorithmViewController ()
-
-@property (nonatomic, strong) NSMutableArray *titleArray;
-
-@end
-
-
 @implementation MSAlgorithmViewController
 
 - (void)viewDidLoad
@@ -40,8 +29,15 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
     
     self.navigationItem.title = @"算法";
     
-    self.tableView.estimatedRowHeight = 44.f;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
+    NSMutableArray *tmpArray = @[
+        @"选择排序",
+        @"冒泡算法",
+        @"快速排序",
+        @"二分法查找",
+        @"字符串逆序输出",
+    ].mutableCopy;
+    
+    [self.titleArray addObjectsFromArray:tmpArray];
 }
 
 
@@ -147,27 +143,6 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
 #pragma mark -
 #pragma mark - UITableViewDataSource/UITableViewDelegate
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.titleArray.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
-    NSString *tmpTitle = [NSString stringWithFormat:@"%ld、", indexPath.row];
-    tmpTitle = [tmpTitle stringByAppendingString:[self.titleArray objectAtIndex:indexPath.row]];
-    cell.textLabel.text = tmpTitle;
-    cell.textLabel.numberOfLines = 0;
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    return cell;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.row) {
@@ -204,18 +179,6 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
         default:
             break;
     }
-}
-
-
-#pragma mark -
-#pragma mark - GET/SET
-
-- (NSMutableArray *)titleArray
-{
-    if (!_titleArray) {
-        _titleArray = @[@"选择排序", @"冒泡算法", @"快速排序", @"二分法查找", @"字符串逆序输出"].mutableCopy;
-    }
-    return _titleArray;
 }
 
 @end

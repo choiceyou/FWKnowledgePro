@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"OC语言部分";
+    self.navigationItem.title = @"OC语法部分";
     
     NSMutableArray *tmpArray = @[
         @"OC对象的本质",

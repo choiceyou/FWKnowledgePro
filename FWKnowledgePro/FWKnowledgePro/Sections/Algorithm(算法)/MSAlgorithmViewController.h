@@ -6,11 +6,11 @@
 //  Copyright © 2020 xfg. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FWBaseTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MSAlgorithmViewController : UITableViewController
+@interface MSAlgorithmViewController : FWBaseTableViewController
 
 @end
 

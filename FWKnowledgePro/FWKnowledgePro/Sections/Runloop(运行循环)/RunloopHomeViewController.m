@@ -52,6 +52,7 @@
 #import "FWThread.h"
 #import "FWPermanentThread.h"
 #import "FWProxy.h"
+#import "RLTestViewController.h"
 
 @interface RunloopHomeViewController ()
 {
@@ -120,6 +121,7 @@
         @"停止常驻线程",
         @"开启封装好的常驻线程",
         @"停止封装好的常驻线程",
+        @"RunLoop优化Collection实战",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -131,6 +133,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIViewController *tmpVC = nil;
     switch (indexPath.row) {
         case 0: {
             self.timer = [NSTimer timerWithTimeInterval:1.0 target:[FWProxy proxyWithTarget:self] selector:@selector(timeMethod) userInfo:nil repeats:YES];
@@ -198,9 +201,17 @@
             self.permanentThread = nil;
         }
             break;
+        case 6: {
+            tmpVC = [[RLTestViewController alloc] init];
+        }
+            break;
             
         default:
             break;
+    }
+    
+    if (tmpVC) {
+        [self.navigationController pushViewController:tmpVC animated:YES];
     }
 }
 

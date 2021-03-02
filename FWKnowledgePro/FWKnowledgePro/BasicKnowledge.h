@@ -251,7 +251,11 @@ kCFRunLoopAllActivities = 0x0FFFFFFFU // 所有状态
 31、ARC都帮我们做了什么？
 答：
 
+
 32、weak指针的实现原理？
+答：
+（1）当一个对象objc被weak指针指向时，这个weak指针会以objc作为key，被存储到sideTable类的weak_table这个散列表上对应的一个weak指针数组里面；
+（2）当一个对象objc的dealloc方法被调用时，Runtime会以objc为key，从sideTable的weak_table散列表中，找出对应的weak指针列表，然后将里面的weak指针逐个置为nil。
 
 
 33、autorelease对象在什么时机会被调用release？

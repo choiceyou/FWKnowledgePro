@@ -85,7 +85,12 @@
             NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
             NSString *filePath = [documentPath stringByAppendingString:@"/user.plist"];
             
-            NSData *data = [NSKeyedArchiver archivedDataWithRootObject:tmpUser requiringSecureCoding:YES error:nil];
+            NSData *data;
+            if (@available(iOS 11.0, *)) {
+                data = [NSKeyedArchiver archivedDataWithRootObject:tmpUser requiringSecureCoding:YES error:nil];
+            } else {
+                data = [NSKeyedArchiver archivedDataWithRootObject:tmpUser];
+            }
             [data writeToFile:filePath atomically:NO];
         }
             break;
@@ -96,8 +101,12 @@
             if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
                 NSData *data = [NSData dataWithContentsOfFile:filePath];
                 NSError *error;
-                UserTestModel *testModel = [NSKeyedUnarchiver unarchivedObjectOfClass:[UserTestModel class] fromData:data error:&error];
-                NSLog(@"====:%@", testModel);
+                if (@available(iOS 11.0, *)) {
+                    UserTestModel *testModel = [NSKeyedUnarchiver unarchivedObjectOfClass:[UserTestModel class] fromData:data error:&error];
+                    NSLog(@"====:%@", testModel);
+                } else {
+                    // Fallback on earlier versions
+                }
             }
         }
             break;

@@ -44,8 +44,8 @@
 - (void)requestData
 {
     self.model = [[MVVMModel alloc] init];
-    self.model.iconName = @"MVVM";
-    self.model.title = @"MVVM -- 请点击测试";
+    self.model.iconName = @"05_MVVM";
+    self.model.title = @"MVVM -- 请点击图片测试";
     
     self.iconName = self.model.iconName;
     self.title = self.model.title;

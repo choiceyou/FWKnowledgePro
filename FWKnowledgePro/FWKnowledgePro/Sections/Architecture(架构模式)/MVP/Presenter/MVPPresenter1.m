@@ -28,7 +28,7 @@
         
         [self.mView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.center.equalTo(self.mView.superview);
-            make.size.mas_equalTo(CGSizeMake([UIScreen mainScreen].bounds.size.width, 168.f));
+            make.size.mas_equalTo(CGSizeMake([UIScreen mainScreen].bounds.size.width, 240.f));
         }];
         
         [self requestData];
@@ -40,7 +40,7 @@
 - (void)requestData
 {
     MVPModel *model = [[MVPModel alloc] init];
-    model.iconName = @"MVP";
+    model.iconName = @"04_MVP";
     model.title = @"MVP";
     
     self.mView.iconImgView.image = [UIImage imageNamed:model.iconName];

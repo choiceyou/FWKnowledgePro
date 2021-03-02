@@ -68,5 +68,4 @@
     OSSpinLockUnlock(&_lock2);
 }
 
-
 @end

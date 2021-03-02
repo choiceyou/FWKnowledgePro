@@ -18,8 +18,8 @@
 #import "RunloopHomeViewController.h"
 #import "MemoryHomeViewController.h"
 #import "PTHomeViewController.h"
-#import <malloc/malloc.h>
-#import <objc/runtime.h>
+#import "AnimationHomeViewController.h"
+#import "BasicHomeViewController.h"
 
 /**
  公共：
@@ -58,17 +58,18 @@
     NSMutableArray *tmpArray = @[
         @"架构模式",
         @"设计模式",
-        @"OC语言部分",
+        @"基础知识",
+        @"语法部分（底层）",
         @"数据持久化",
         @"多线程",
         @"网络相关",
         @"Runtime（运行时）",
         @"Runloop（运行循环）",
-        @"性能优化",
-        @"算法",
-        @"动画",
         @"内存管理",
+        @"性能优化",
+        @"动画",
         @"编程思想",
+        @"算法",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -83,55 +84,73 @@
     UIViewController *tmpVC = nil;
     switch (indexPath.row) {
         case 0: {
+            // 架构模式
             tmpVC = [[FKHomeViewController alloc] init];
         }
             break;
         case 1: {
+            // 设计模式
             tmpVC = [[DPHomeViewController alloc] init];
         }
             break;
         case 2: {
-            tmpVC = [[OCHomeViewController alloc] init];
+            // 基础知识
+            tmpVC = [[BasicHomeViewController alloc] init];
         }
             break;
         case 3: {
-            tmpVC = [[DataPersistenceViewController alloc] init];
+            // 语法部分（底层）
+            tmpVC = [[OCHomeViewController alloc] init];
         }
             break;
         case 4: {
-            tmpVC = [[MultiThreadHomeViewController alloc] init];
+            // 数据持久化
+            tmpVC = [[DataPersistenceViewController alloc] init];
         }
             break;
         case 5: {
-            tmpVC = [[NetTestViewController alloc] init];
+            // 多线程
+            tmpVC = [[MultiThreadHomeViewController alloc] init];
         }
             break;
         case 6: {
-            tmpVC = [[RuntimeHomeViewController alloc] init];
+            // 网络相关
+            tmpVC = [[NetTestViewController alloc] init];
         }
             break;
         case 7: {
-            tmpVC =  [[RunloopHomeViewController alloc] init];
+            // Runtime（运行时）
+            tmpVC = [[RuntimeHomeViewController alloc] init];
         }
             break;
         case 8: {
-            tmpVC = [[POHomeViewController alloc] init];
+            // Runloop（运行循环）
+            tmpVC =  [[RunloopHomeViewController alloc] init];
         }
             break;
         case 9: {
-            tmpVC = [[MSAlgorithmViewController alloc] init];
-        }
-            break;
-        case 10: {
-            
-        }
-            break;
-        case 11: {
+            // 内存管理
             tmpVC = [[MemoryHomeViewController alloc] init];
         }
             break;
+        case 10: {
+            // 性能优化
+            tmpVC = [[POHomeViewController alloc] init];
+        }
+            break;
+        case 11: {
+            // 动画
+            tmpVC = [[AnimationHomeViewController alloc] init];
+        }
+            break;
         case 12: {
-            tmpVC = [PTHomeViewController new];
+            // 编程思想
+            tmpVC = [[PTHomeViewController alloc] init];
+        }
+            break;
+        case 13: {
+            // 算法
+            tmpVC = [[MSAlgorithmViewController alloc] init];
         }
             break;
             

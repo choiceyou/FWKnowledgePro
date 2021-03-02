@@ -35,7 +35,7 @@
 - (void)requestData
 {
     MVCModel *model = [[MVCModel alloc] init];
-    model.iconName = @"MVC_变种";
+    model.iconName = @"03_MVC – 变种";
     model.title = @"MVC-变种";
     
     [self.mView setupView:model];
