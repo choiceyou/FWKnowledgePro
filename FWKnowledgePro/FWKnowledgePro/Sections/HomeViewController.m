@@ -43,6 +43,18 @@
  （2）https://design-patterns.readthedocs.io/zh_CN/latest/
  */
 
+/**
+ 1、内存管理；
+ 2、面向对象：
+ （1）三大特性：封装、继承、多态；
+ （2）重写、重载；
+ 3、进程：
+ 4、网络：TCP、UDP；
+ 5、数据持久化：数据库、SQL；
+ 6、编程思想：函数式编程、响应式编程、链式编程；
+ 7、UML；
+ */
+
 @interface HomeViewController ()
 
 @end

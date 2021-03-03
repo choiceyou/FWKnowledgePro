@@ -92,8 +92,6 @@
 		AF6ADF072574E75F00FBED46 /* ZooIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADF062574E75F00FBED46 /* ZooIterator.m */; };
 		AF6ADF132574EAF000FBED46 /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6ADF122574EAF000FBED46 /* Iterator.m */; };
 		AF6C9C3925CCCDAA002060CE /* PTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C3825CCCDAA002060CE /* PTHomeViewController.m */; };
-		AF6C9C4225CCCEFA002060CE /* NSObject+sum.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C4125CCCEFA002060CE /* NSObject+sum.m */; };
-		AF6C9C4825CCCF18002060CE /* SumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C4725CCCF18002060CE /* SumManager.m */; };
 		AF6C9C5625CCDD16002060CE /* PTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C5525CCDD16002060CE /* PTPerson.m */; };
 		AF6C9C9E25CD214D002060CE /* FKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C9025CD214D002060CE /* FKHomeViewController.m */; };
 		AF6C9C9F25CD214D002060CE /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9C9425CD214D002060CE /* MVVMViewModel.m */; };
@@ -136,6 +134,10 @@
 		AFD256D825C3F07900AD2D7C /* RTPerson5.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD256D725C3F07900AD2D7C /* RTPerson5.m */; };
 		AFD256E325C4088E00AD2D7C /* RunloopHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD256E225C4088E00AD2D7C /* RunloopHomeViewController.m */; };
 		AFED0A7825EC90C500D25C62 /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0A7725EC90C500D25C62 /* OSUnfairLockDemo.m */; };
+		AFED0AB525EDEA6500D25C62 /* MMPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0AB425EDEA6500D25C62 /* MMPropertyViewController.m */; };
+		AFED0ABB25EE3E6F00D25C62 /* MPPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0ABA25EE3E6F00D25C62 /* MPPerson.m */; };
+		AFED0AE525EF37AE00D25C62 /* SumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0AE125EF37AE00D25C62 /* SumManager.m */; };
+		AFED0AE625EF37AE00D25C62 /* NSObject+sum.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0AE225EF37AE00D25C62 /* NSObject+sum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -333,10 +335,6 @@
 		AF6ADF122574EAF000FBED46 /* Iterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Iterator.m; sourceTree = "<group>"; };
 		AF6C9C3725CCCDAA002060CE /* PTHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTHomeViewController.h; sourceTree = "<group>"; };
 		AF6C9C3825CCCDAA002060CE /* PTHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTHomeViewController.m; sourceTree = "<group>"; };
-		AF6C9C4025CCCEFA002060CE /* NSObject+sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+sum.h"; sourceTree = "<group>"; };
-		AF6C9C4125CCCEFA002060CE /* NSObject+sum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+sum.m"; sourceTree = "<group>"; };
-		AF6C9C4625CCCF18002060CE /* SumManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumManager.h; sourceTree = "<group>"; };
-		AF6C9C4725CCCF18002060CE /* SumManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SumManager.m; sourceTree = "<group>"; };
 		AF6C9C5425CCDD16002060CE /* PTPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTPerson.h; sourceTree = "<group>"; };
 		AF6C9C5525CCDD16002060CE /* PTPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTPerson.m; sourceTree = "<group>"; };
 		AF6C9C9025CD214D002060CE /* FKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKHomeViewController.m; sourceTree = "<group>"; };
@@ -422,6 +420,14 @@
 		AFD256E225C4088E00AD2D7C /* RunloopHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopHomeViewController.m; sourceTree = "<group>"; };
 		AFED0A7625EC90C500D25C62 /* OSUnfairLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSUnfairLockDemo.h; sourceTree = "<group>"; };
 		AFED0A7725EC90C500D25C62 /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
+		AFED0AB325EDEA6500D25C62 /* MMPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMPropertyViewController.h; sourceTree = "<group>"; };
+		AFED0AB425EDEA6500D25C62 /* MMPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPropertyViewController.m; sourceTree = "<group>"; };
+		AFED0AB925EE3E6F00D25C62 /* MPPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPerson.h; sourceTree = "<group>"; };
+		AFED0ABA25EE3E6F00D25C62 /* MPPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPPerson.m; sourceTree = "<group>"; };
+		AFED0AE125EF37AE00D25C62 /* SumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SumManager.m; sourceTree = "<group>"; };
+		AFED0AE225EF37AE00D25C62 /* NSObject+sum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+sum.m"; sourceTree = "<group>"; };
+		AFED0AE325EF37AE00D25C62 /* SumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SumManager.h; sourceTree = "<group>"; };
+		AFED0AE425EF37AE00D25C62 /* NSObject+sum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+sum.h"; sourceTree = "<group>"; };
 		CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWKnowledgePro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4A85BC7664EC07AC610233 /* Pods-FWKnowledgePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWKnowledgePro.release.xcconfig"; path = "Target Support Files/Pods-FWKnowledgePro/Pods-FWKnowledgePro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -872,6 +878,10 @@
 			children = (
 				AF69318125CBCE8400F9E22F /* MemoryHomeViewController.h */,
 				AF69318225CBCE8400F9E22F /* MemoryHomeViewController.m */,
+				AFED0AB325EDEA6500D25C62 /* MMPropertyViewController.h */,
+				AFED0AB425EDEA6500D25C62 /* MMPropertyViewController.m */,
+				AFED0AB925EE3E6F00D25C62 /* MPPerson.h */,
+				AFED0ABA25EE3E6F00D25C62 /* MPPerson.m */,
 			);
 			path = "MemoryManage(内存管理)";
 			sourceTree = "<group>";
@@ -902,12 +912,9 @@
 			children = (
 				AF6C9C3725CCCDAA002060CE /* PTHomeViewController.h */,
 				AF6C9C3825CCCDAA002060CE /* PTHomeViewController.m */,
-				AF6C9C4025CCCEFA002060CE /* NSObject+sum.h */,
-				AF6C9C4125CCCEFA002060CE /* NSObject+sum.m */,
-				AF6C9C4625CCCF18002060CE /* SumManager.h */,
-				AF6C9C4725CCCF18002060CE /* SumManager.m */,
 				AF6C9C5425CCDD16002060CE /* PTPerson.h */,
 				AF6C9C5525CCDD16002060CE /* PTPerson.m */,
+				AFED0AE025EF37AE00D25C62 /* 链式编程 */,
 			);
 			path = "Thought(编程思想)";
 			sourceTree = "<group>";
@@ -1174,6 +1181,17 @@
 			path = "Runloop(运行循环)";
 			sourceTree = "<group>";
 		};
+		AFED0AE025EF37AE00D25C62 /* 链式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				AFED0AE325EF37AE00D25C62 /* SumManager.h */,
+				AFED0AE125EF37AE00D25C62 /* SumManager.m */,
+				AFED0AE425EF37AE00D25C62 /* NSObject+sum.h */,
+				AFED0AE225EF37AE00D25C62 /* NSObject+sum.m */,
+			);
+			path = "链式编程";
+			sourceTree = "<group>";
+		};
 		C100CC4F10CB64D4C5318E06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1399,6 +1417,7 @@
 				AF507CCC25C15C3800724EE2 /* RTPerson3.m in Sources */,
 				AF38652125762B3F001D295F /* AbstractTVSystem.m in Sources */,
 				AF66712025D21FE9007A7951 /* CYPerson+Test1.m in Sources */,
+				AFED0ABB25EE3E6F00D25C62 /* MPPerson.m in Sources */,
 				AFCC6A1A25C01ED000E38BE6 /* MessageSendTest.m in Sources */,
 				AF6C9D0225CD4E6D002060CE /* LayeredViewController.m in Sources */,
 				AF563242256F969C00F61828 /* StudentTestModel.m in Sources */,
@@ -1414,6 +1433,7 @@
 				AF38651B25762AB5001D295F /* HUAWEITVSystem.m in Sources */,
 				AFCC6A4725C1064900E38BE6 /* RTPerson.m in Sources */,
 				AF6C9CA125CD214D002060CE /* MVVMViewController.m in Sources */,
+				AFED0AE525EF37AE00D25C62 /* SumManager.m in Sources */,
 				AF3865042575EA51001D295F /* ObservedModel.m in Sources */,
 				AF66716825D28215007A7951 /* CYStudent.m in Sources */,
 				AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */,
@@ -1425,7 +1445,6 @@
 				AF56323D256F969C00F61828 /* CMAllDataListViewController.m in Sources */,
 				AF563233256F969B00F61828 /* NSOperationTestViewController.m in Sources */,
 				AF69C56F25CA54F600F579A3 /* DownloadTask.m in Sources */,
-				AF6C9C4225CCCEFA002060CE /* NSObject+sum.m in Sources */,
 				AF38655325764F24001D295F /* POHomeViewController.m in Sources */,
 				AF6C9C5625CCDD16002060CE /* PTPerson.m in Sources */,
 				AF69318325CBCE8400F9E22F /* MemoryHomeViewController.m in Sources */,
@@ -1436,6 +1455,7 @@
 				AF56323B256F969C00F61828 /* DataPersistenceViewController.m in Sources */,
 				AF5BE465256BB98F0028EB6E /* main.m in Sources */,
 				AFD251A925C2546900AD2D7C /* RTPerson4.m in Sources */,
+				AFED0AE625EF37AE00D25C62 /* NSObject+sum.m in Sources */,
 				AF5633042570AF0F00F61828 /* HMSingleton.m in Sources */,
 				AF56323E256F969C00F61828 /* CMClassStudentViewController.m in Sources */,
 				AF17738525E7A04100F4DE95 /* FWProxy.m in Sources */,
@@ -1456,6 +1476,7 @@
 				AF56323F256F969C00F61828 /* FWDataBaseManager.m in Sources */,
 				AF6C9C9E25CD214D002060CE /* FKHomeViewController.m in Sources */,
 				AF1E35B825DF9CF200D2A7FE /* FWThread.m in Sources */,
+				AFED0AB525EDEA6500D25C62 /* MMPropertyViewController.m in Sources */,
 				AF66711A25D21FDB007A7951 /* CYPerson.m in Sources */,
 				AF5633012570AF0F00F61828 /* PrototypeJob.m in Sources */,
 				AF66712625D21FF8007A7951 /* CYPerson+Test2.m in Sources */,
@@ -1466,7 +1487,6 @@
 				AF76225B25E104440039FD1E /* ThreadSyncViewController.m in Sources */,
 				AF6ADE9625748E1B00FBED46 /* WildAnimalFactory.m in Sources */,
 				AF6C9CB925CD2C88002060CE /* MVCView.m in Sources */,
-				AF6C9C4825CCCF18002060CE /* SumManager.m in Sources */,
 				AF6ADEAD2574E01C00FBED46 /* Zoo.m in Sources */,
 				AF563236256F969C00F61828 /* SQLiteTestViewController.m in Sources */,
 				AF52D1DA2574F83400E13A6D /* WildlifeParkIterator.m in Sources */,

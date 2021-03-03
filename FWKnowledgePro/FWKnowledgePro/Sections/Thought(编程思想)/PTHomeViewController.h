@@ -5,11 +5,11 @@
 //  Created by xfg on 2020/2/5.
 //
 
-#import "FWBaseTableViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PTHomeViewController : FWBaseTableViewController
+@interface PTHomeViewController : UITableViewController
 
 @end
 

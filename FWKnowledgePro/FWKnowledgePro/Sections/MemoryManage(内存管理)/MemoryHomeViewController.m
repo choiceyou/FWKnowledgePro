@@ -27,9 +27,13 @@
  深拷贝和浅拷贝：
  （1）深拷贝：内容拷贝，产生新的对象；
  （2）浅拷贝：指针拷贝，没有产生新的对象；
+ 
+ 野指针错误（EXC_BAD_ACCESS）：指向僵尸对象（不可用内存）的指针；
+ 
  */
 
 #import "MemoryHomeViewController.h"
+#import "MMPropertyViewController.h"
 
 @interface MemoryHomeViewController ()
 
@@ -45,7 +49,7 @@
     self.navigationItem.title = @"MemoryManage";
     
     NSMutableArray *tmpArray = @[
-        
+        @"属性修饰符",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -57,7 +61,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIViewController *tmpVC = nil;
+    switch (indexPath.row) {
+        case 0: {
+            tmpVC = [[MMPropertyViewController alloc] init];
+        }
+            break;
+            
+        default:
+            break;
+    }
     
+    if (tmpVC) {
+        [self.navigationController pushViewController:tmpVC animated:YES];
+    }
 }
 
 @end
