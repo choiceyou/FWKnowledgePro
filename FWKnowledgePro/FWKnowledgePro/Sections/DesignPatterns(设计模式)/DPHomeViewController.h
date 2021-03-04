@@ -5,11 +5,11 @@
 //  Created by xfg on 2019/11/26.
 //
 
-#import <UIKit/UIKit.h>
+#import "FWBaseLevelTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPHomeViewController : UITableViewController
+@interface DPHomeViewController : FWBaseLevelTableViewController
 
 @end
 

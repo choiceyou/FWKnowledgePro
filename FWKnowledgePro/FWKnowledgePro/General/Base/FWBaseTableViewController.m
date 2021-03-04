@@ -18,6 +18,11 @@ static NSString *const kCellIdentifier = @"kCellIdentifier";
 
 @implementation FWBaseTableViewController
 
+- (void)dealloc
+{
+    NSLog(@"%s", __func__);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

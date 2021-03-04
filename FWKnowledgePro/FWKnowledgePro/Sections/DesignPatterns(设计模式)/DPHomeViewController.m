@@ -23,22 +23,6 @@
 #import "MITVSystem.h"
 #import "HUAWEITVSystem.h"
 
-
-// 重用标识符
-static NSString *const kCellIdentifier = @"kCellIdentifier";
-
-static NSString *const kTypeName = @"typeName";
-static NSString *const kModeName = @"modeName";
-
-
-@interface DPHomeViewController ()
-
-/// 数据源
-@property (nonatomic, strong) NSMutableArray *dataArray;
-
-@end
-
-
 @implementation DPHomeViewController
 
 - (void)viewDidLoad
@@ -49,8 +33,8 @@ static NSString *const kModeName = @"modeName";
     
     NSMutableArray *tmpArray = @[
         @{
-            kTypeName : @"面向对象五个基本原则(SOLID) + 1条法则",
-            kModeName : @[
+            kFirstLevel : @"面向对象五个基本原则(SOLID) + 一条法则",
+            kSecondLevel : @[
                     @"单一职责原则（Single Responsibility Principle）：一个类有且仅有一个职责，只有一个引起它变化的原因",
                     @"开闭原则（Open Closed Principle）：软件中的对象（类，模块，函数等）应该对于扩展是开放的，但是对于修改是封闭的。具体来说就是你应该通过扩展来实现变化，而不是通过修改原有的代码来实现变化",
                     @"里氏替换原则（Liskov Substitution Principle）：派生类（子类）对象可以在程序中代替其基类（超类）对象",
@@ -62,8 +46,8 @@ static NSString *const kModeName = @"modeName";
         
         // 大致有23种设计模式
         @{
-            kTypeName : @"一、创建型",
-            kModeName : @[
+            kFirstLevel : @"一、设计模式 - 创建型",
+            kSecondLevel : @[
                     @"单例模式（Singleton）（常用）",
                     @"工厂方法（Factory Method）（常用）",
                     @"抽象工厂（Abstract Factory）",
@@ -72,8 +56,8 @@ static NSString *const kModeName = @"modeName";
             ]
         },
         @{
-            kTypeName : @"二、行为型",
-            kModeName : @[
+            kFirstLevel : @"二、设计模式 - 行为型",
+            kSecondLevel : @[
                     @"迭代器模式（Iterator）",
                     @"观察者模式（Observer）（常用）",
                     @"模板方法（Template Method）",
@@ -88,8 +72,8 @@ static NSString *const kModeName = @"modeName";
             ]
         },
         @{
-            kTypeName : @"三、结构型",
-            kModeName : @[
+            kFirstLevel : @"三、设计模式 - 结构型",
+            kSecondLevel : @[
                     @"组合模式（Composite）（常用）",
                     @"外观模式(Facade)",
                     @"代理模式(Proxy)（常用）",
@@ -102,45 +86,11 @@ static NSString *const kModeName = @"modeName";
     ].mutableCopy;
     
     [self.dataArray addObjectsFromArray:tmpArray];
-    
-    self.tableView.estimatedRowHeight = 44.f;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
 }
 
 
 #pragma mark -
 #pragma mark - UITableViewDataSource/UITableViewDelegate
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return self.dataArray.count;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    NSDictionary *tmpDict = [self.dataArray objectAtIndex:section];
-    NSArray *tmpArray = [tmpDict objectForKey:kModeName];
-    return tmpArray.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
-    NSDictionary *tmpDict = [self.dataArray objectAtIndex:indexPath.section];
-    NSArray *tmpArray = [tmpDict objectForKey:kModeName];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld、%@", indexPath.row + 1, [tmpArray objectAtIndex:indexPath.row]];
-    cell.textLabel.numberOfLines = 0;
-    
-    return cell;
-}
-
-- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    NSDictionary *tmpDict = [self.dataArray objectAtIndex:section];
-    return [tmpDict objectForKey:kTypeName];
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -259,18 +209,6 @@ static NSString *const kModeName = @"modeName";
                 break;
         }
     }
-}
-
-
-#pragma mark -
-#pragma mark - GET/SET
-
-- (NSMutableArray<NSString *> *)dataArray
-{
-    if (!_dataArray) {
-        _dataArray = @[].mutableCopy;
-    }
-    return _dataArray;
 }
 
 @end

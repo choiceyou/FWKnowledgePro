@@ -11,17 +11,8 @@
 #import <NSObject+RACKVOWrapper.h>
 #import <ReactiveObjC.h>
 
-// 重用标识符
-static NSString *const kCellIdentifier = @"kCellIdentifier";
-
-static NSString *const kTypeName = @"typeName";
-static NSString *const kModeName = @"modeName";
-
-
 @interface PTHomeViewController ()
 
-/// 数据源
-@property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) PTPerson *person;
 
 @end
@@ -41,8 +32,8 @@ static NSString *const kModeName = @"modeName";
     
     NSMutableArray *tmpArray = @[
         @{
-            kTypeName : @"一、编程思想",
-            kModeName : @[
+            kFirstLevel : @"一、编程思想",
+            kSecondLevel : @[
                     @"面向对象编程（Object Oriented Programming，简称：OOP）",
                     @"面向过程编程（Process Oriented programming，简称：POP）",
                     @"面向切面编程（Aspect Oriented Programming，简称：AOP）",
@@ -50,16 +41,23 @@ static NSString *const kModeName = @"modeName";
             ]
         },
         @{
-            kTypeName : @"二、面向对象的三大特性",
-            kModeName : @[
+            kFirstLevel : @"二、面向对象的三大特性",
+            kSecondLevel : @[
                     @"封装：将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问，常见的实现方式就是：getter、setter；",
                     @"继承：继承是类与类的一种关系，子类拥有父类的所有属性和方法（除了private修饰的属性不能拥有）从而实现了实现代码的复用；",
-                    @"多态：多态一般都要跟继承结合起来说，其本质是子类通过重写或重载父类的方法，来使得对同一类对象同一方法的调用产生不同的结果（简单定义就是：父类类型的指针指向子类对象）。",
+                    @"多态：多态一般都要跟继承结合起来说，其本质是子类通过覆盖或重载父类的方法，来使得对同一类对象同一方法的调用产生不同的结果（简单定义就是：父类类型的指针指向子类对象）。",
             ]
         },
         @{
-            kTypeName : @"三、其它编程思想",
-            kModeName : @[
+            kFirstLevel : @"三、面向对象重写、重载",
+            kSecondLevel : @[
+                    @"重写：在父子类当中，子类拥有与父类同名、同参、同返回类型的方法，可以改变父类的行为；",
+                    @"重载：重载一定是在同一个类当中，有一组方法名字相同，功能是类似的，但参数不同。",
+            ]
+        },
+        @{
+            kFirstLevel : @"四、其它编程思想",
+            kSecondLevel : @[
                     @"链式编程",
                     @"响应式编程",
                     @"函数式编程",
@@ -68,9 +66,6 @@ static NSString *const kModeName = @"modeName";
     ].mutableCopy;
     
     [self.dataArray addObjectsFromArray:tmpArray];
-    
-    self.tableView.estimatedRowHeight = 44.f;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
     
     
     PTPerson *p = [PTPerson new];
@@ -84,40 +79,6 @@ static NSString *const kModeName = @"modeName";
 
 #pragma mark -
 #pragma mark - UITableViewDataSource/UITableViewDelegate
-
-#pragma mark -
-#pragma mark - UITableViewDataSource/UITableViewDelegate
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return self.dataArray.count;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    NSDictionary *tmpDict = [self.dataArray objectAtIndex:section];
-    NSArray *tmpArray = [tmpDict objectForKey:kModeName];
-    return tmpArray.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
-    NSDictionary *tmpDict = [self.dataArray objectAtIndex:indexPath.section];
-    NSArray *tmpArray = [tmpDict objectForKey:kModeName];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld、%@", indexPath.row + 1, [tmpArray objectAtIndex:indexPath.row]];
-    cell.textLabel.numberOfLines = 0;
-    
-    return cell;
-}
-
-- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    NSDictionary *tmpDict = [self.dataArray objectAtIndex:section];
-    return [tmpDict objectForKey:kTypeName];
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -184,18 +145,6 @@ static NSString *const kModeName = @"modeName";
                 break;
         }
     }
-}
-
-
-#pragma mark -
-#pragma mark - GET/SET
-
-- (NSMutableArray<NSString *> *)dataArray
-{
-    if (!_dataArray) {
-        _dataArray = @[].mutableCopy;
-    }
-    return _dataArray;
 }
 
 @end

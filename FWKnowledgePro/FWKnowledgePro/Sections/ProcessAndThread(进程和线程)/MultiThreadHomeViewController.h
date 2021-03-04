@@ -5,11 +5,11 @@
 //  Created by xfg on 2019/12/1.
 //
 
-#import "FWBaseTableViewController.h"
+#import "FWBaseLevelTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MultiThreadHomeViewController : FWBaseTableViewController
+@interface MultiThreadHomeViewController : FWBaseLevelTableViewController
 
 @end
 
