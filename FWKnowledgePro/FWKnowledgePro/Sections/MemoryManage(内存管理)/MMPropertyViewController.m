@@ -7,6 +7,8 @@
 
 
 /**
+ 
+ 几个常见的比较：
  1、assign与weak的区别？
  相同点：
  （1）都可以修饰OC对象；
@@ -36,6 +38,9 @@
 @property (nonatomic, copy) UIImageView *imgView;
 /// atomic能保证该属性的setter、getter方法内部是线程同步的，但是无法保证array添加、删除元素是线程同步的
 @property (atomic, strong) NSMutableArray *dataArray;
+
+/// 测试setter方法
+@property (nonatomic, strong) MPPerson *person2;
 
 @end
 
@@ -71,11 +76,18 @@
     switch (indexPath.row) {
         case 0: {
             /**
-             copy的目的：拷贝一份副本对象（实现副本对象与源对象互不影响）；
+             拷贝的目的：产生一个副本对象，跟源对象互不影响（实现副本对象与源对象互不影响）；
+             iOS提供了2个拷贝方法：
+             （1）copy：不可变拷贝，产生不可变副本；
+             （2）mutableCopy：可变拷贝，产生可变副本；
+             
+             深拷贝和浅拷贝概念：
+             （1）深拷贝：内容拷贝，产生新的对象；
+             （2）浅拷贝：指针拷贝，没有产生新的对象；
              
              注意：NSString、NSArray、NSDictionary、NSData、NSSet等类有默认实现了<NSCopying>协议，如果是自定义类，默认未实现该协议，因此，使用该协议修饰的话会崩溃；
              
-             深拷贝、浅拷贝（具体参考图：10_copy和mutableCopy）：
+             深拷贝、浅拷贝情形（具体参考图：10_copy和mutableCopy）：
              （1）copy修饰不可变对象：浅拷贝（指针拷贝，未产生新的对象）；
              （2）copy修饰可变对象：深拷贝（产生新的对象）；
              （3）mutableCopy修饰不可变对象：深拷贝（产生新的对象）；
@@ -117,6 +129,13 @@
              strong表示对对象的强引用，一般在ARC模式下使用，相当于retain
              注意：两个对象之间相互强引用造成循环引用，内存泄漏。
              */
+            
+            MPPerson *p = [[MPPerson alloc] init];
+            p.name = @"李四";
+            p.age = 16;
+            
+            // 仔细查看该属性的setter方法
+            self.person2 = p;
         }
             break;
         case 4: {
@@ -173,6 +192,24 @@
         default:
             break;
     }
+}
+
+
+#pragma mark -
+#pragma mark - GET/SET
+
+- (void)setPerson2:(MPPerson *)person2
+{
+#if 0 // MRC中OC对象的setter方法
+    if (_person2 != person2) {
+        [_person2 release];
+        _person2 = [person2 retain];
+    }
+#endif
+    
+#if 1 // ARC中OC对象的setter方法
+    _person2 = person2;
+#endif
 }
 
 @end

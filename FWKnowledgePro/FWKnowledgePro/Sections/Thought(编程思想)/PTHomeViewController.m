@@ -31,7 +31,7 @@ static NSString *const kModeName = @"modeName";
 
 - (void)dealloc
 {
-    
+    NSLog(@"%s", __func__);
 }
 
 - (void)viewDidLoad {
@@ -50,7 +50,15 @@ static NSString *const kModeName = @"modeName";
             ]
         },
         @{
-            kTypeName : @"二、编程思想",
+            kTypeName : @"二、面向对象的三大特性",
+            kModeName : @[
+                    @"封装：将类的某些信息隐藏在类内部，不允许外部程序直接访问，而是通过该类提供的方法来实现对隐藏信息的操作和访问，常见的实现方式就是：getter、setter；",
+                    @"继承：继承是类与类的一种关系，子类拥有父类的所有属性和方法（除了private修饰的属性不能拥有）从而实现了实现代码的复用；",
+                    @"多态：多态一般都要跟继承结合起来说，其本质是子类通过重写或重载父类的方法，来使得对同一类对象同一方法的调用产生不同的结果（简单定义就是：父类类型的指针指向子类对象）。",
+            ]
+        },
+        @{
+            kTypeName : @"三、其它编程思想",
             kModeName : @[
                     @"链式编程",
                     @"响应式编程",
@@ -132,6 +140,27 @@ static NSString *const kModeName = @"modeName";
                 break;
         }
     } else if (indexPath.section == 1) {
+        switch (indexPath.row) {
+            case 0: {
+                
+            }
+                break;
+            case 1: {
+                
+            }
+                break;
+            case 2: {
+                /**
+                 多态的好处：如果函数参数（方法）中使用的是父类类型，可以传入父类、子类对象；
+                 多态的局限性：父类类型的变量不能直接调用子类特有的方法。必须强转为子类类型变量后，才能直接调用子类特有的方法；
+                 */
+            }
+                break;
+                
+            default:
+                break;
+        }
+    } else if (indexPath.section == 2) {
         switch (indexPath.row) {
             case 0: {
                 // 链式编程思想：自定义类似Masonry
