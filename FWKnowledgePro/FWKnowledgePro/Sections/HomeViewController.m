@@ -8,7 +8,7 @@
 #import "HomeViewController.h"
 #import "FKHomeViewController.h"
 #import "MSAlgorithmViewController.h"
-#import "NetTestViewController.h"
+#import "NetHomeViewController.h"
 #import "DataPersistenceViewController.h"
 #import "DPHomeViewController.h"
 #import "MultiThreadHomeViewController.h"
@@ -44,6 +44,7 @@
  */
 
 /**
+ 一、临时
  1、内存管理；
  2、面向对象：
  （1）三大特性：封装、继承、多态；
@@ -53,6 +54,11 @@
  5、数据持久化：数据库、SQL；
  6、编程思想：函数式编程、响应式编程、链式编程；
  7、UML；
+ 
+ 二、长期
+ 1、Swift；
+ 2、算法；
+ 3、RAC；
  */
 
 @interface HomeViewController ()
@@ -68,8 +74,6 @@
     self.navigationItem.title = @"首页";
     
     NSMutableArray *tmpArray = @[
-        @"架构模式",
-        @"设计模式",
         @"基础知识",
         @"语法部分（底层）",
         @"数据持久化",
@@ -78,8 +82,10 @@
         @"Runtime（运行时）",
         @"Runloop（运行循环）",
         @"内存管理",
-        @"性能优化",
         @"动画",
+        @"性能优化",
+        @"设计模式",
+        @"架构模式",
         @"编程思想",
         @"算法",
     ].mutableCopy;
@@ -96,63 +102,63 @@
     UIViewController *tmpVC = nil;
     switch (indexPath.row) {
         case 0: {
-            // 架构模式
-            tmpVC = [[FKHomeViewController alloc] init];
-        }
-            break;
-        case 1: {
-            // 设计模式
-            tmpVC = [[DPHomeViewController alloc] init];
-        }
-            break;
-        case 2: {
             // 基础知识
             tmpVC = [[BasicHomeViewController alloc] init];
         }
             break;
-        case 3: {
+        case 1: {
             // 语法部分（底层）
             tmpVC = [[OCHomeViewController alloc] init];
         }
             break;
-        case 4: {
+        case 2: {
             // 数据持久化
             tmpVC = [[DataPersistenceViewController alloc] init];
         }
             break;
-        case 5: {
+        case 3: {
             // 进程和线程
             tmpVC = [[MultiThreadHomeViewController alloc] init];
         }
             break;
-        case 6: {
+        case 4: {
             // 网络相关
-            tmpVC = [[NetTestViewController alloc] init];
+            tmpVC = [[NetHomeViewController alloc] init];
         }
             break;
-        case 7: {
+        case 5: {
             // Runtime（运行时）
             tmpVC = [[RuntimeHomeViewController alloc] init];
         }
             break;
-        case 8: {
+        case 6: {
             // Runloop（运行循环）
             tmpVC =  [[RunloopHomeViewController alloc] init];
         }
             break;
-        case 9: {
+        case 7: {
             // 内存管理
             tmpVC = [[MemoryHomeViewController alloc] init];
         }
             break;
-        case 10: {
+        case 8: {
+            // 动画
+            tmpVC = [[AnimationHomeViewController alloc] init];
+        }
+            break;
+        case 9: {
             // 性能优化
             tmpVC = [[POHomeViewController alloc] init];
         }
             break;
+        case 10: {
+            // 设计模式
+            tmpVC = [[DPHomeViewController alloc] init];
+        }
+            break;
         case 11: {
-            // 动画
-            tmpVC = [[AnimationHomeViewController alloc] init];
+            // 架构模式
+            tmpVC = [[FKHomeViewController alloc] init];
         }
             break;
         case 12: {

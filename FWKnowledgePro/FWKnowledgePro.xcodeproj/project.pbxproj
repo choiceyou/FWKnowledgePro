@@ -141,6 +141,7 @@
 		AFED0B1125F08B6E00D25C62 /* FWBaseLevelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0B1025F08B6E00D25C62 /* FWBaseLevelTableViewController.m */; };
 		AFED0B1D25F0CA0D00D25C62 /* FWBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0B1C25F0CA0D00D25C62 /* FWBaseWebViewController.m */; };
 		AFED0B2325F0D0D300D25C62 /* FWTools.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0B2225F0D0D300D25C62 /* FWTools.m */; };
+		AFED0B2925F0D8FB00D25C62 /* NetHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0B2825F0D8FB00D25C62 /* NetHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -437,6 +438,8 @@
 		AFED0B1C25F0CA0D00D25C62 /* FWBaseWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWBaseWebViewController.m; sourceTree = "<group>"; };
 		AFED0B2125F0D0D300D25C62 /* FWTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWTools.h; sourceTree = "<group>"; };
 		AFED0B2225F0D0D300D25C62 /* FWTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWTools.m; sourceTree = "<group>"; };
+		AFED0B2725F0D8FB00D25C62 /* NetHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetHomeViewController.h; sourceTree = "<group>"; };
+		AFED0B2825F0D8FB00D25C62 /* NetHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetHomeViewController.m; sourceTree = "<group>"; };
 		CDAA706BCE158FB31BA8152E /* Pods_FWKnowledgePro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FWKnowledgePro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4A85BC7664EC07AC610233 /* Pods-FWKnowledgePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FWKnowledgePro.release.xcconfig"; path = "Target Support Files/Pods-FWKnowledgePro/Pods-FWKnowledgePro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -550,6 +553,8 @@
 		AF38655D25772AD1001D295F /* Net(网络相关) */ = {
 			isa = PBXGroup;
 			children = (
+				AFED0B2725F0D8FB00D25C62 /* NetHomeViewController.h */,
+				AFED0B2825F0D8FB00D25C62 /* NetHomeViewController.m */,
 				AF563201256F969B00F61828 /* NetTestViewController.h */,
 				AF563208256F969B00F61828 /* NetTestViewController.m */,
 				AF69C56E25CA54F600F579A3 /* DownloadTask.h */,
@@ -1524,6 +1529,7 @@
 				AF6ADEB62574E05A00FBED46 /* WildlifePark.m in Sources */,
 				AF56323F256F969C00F61828 /* FWDataBaseManager.m in Sources */,
 				AF6C9C9E25CD214D002060CE /* FKHomeViewController.m in Sources */,
+				AFED0B2925F0D8FB00D25C62 /* NetHomeViewController.m in Sources */,
 				AF1E35B825DF9CF200D2A7FE /* FWThread.m in Sources */,
 				AFED0AB525EDEA6500D25C62 /* MMPropertyViewController.m in Sources */,
 				AF66711A25D21FDB007A7951 /* CYPerson.m in Sources */,

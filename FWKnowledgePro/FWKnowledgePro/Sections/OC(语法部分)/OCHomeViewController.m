@@ -5,10 +5,6 @@
 //  Created by xfg on 2019/12/2.
 //
 
-/**
- OC对象本质上就是结构体指针
- */
-
 #import "OCHomeViewController.h"
 #import "BlockTestViewController.h"
 #import "OCObjectSortViewController.h"
@@ -30,7 +26,7 @@
     self.navigationItem.title = @"OC语法部分";
     
     NSMutableArray *tmpArray = @[
-        @"OC对象的本质",
+        @"OC对象的本质：结构体指针；",
         @"OC对象的分类",
         @"对象消息机制",
         @"响应者链",

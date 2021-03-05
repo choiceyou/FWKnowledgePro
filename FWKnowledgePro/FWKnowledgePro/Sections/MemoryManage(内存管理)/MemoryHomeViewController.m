@@ -42,14 +42,43 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"MemoryManage";
+    self.navigationItem.title = @"内存管理";
     
     NSMutableArray *tmpArray = @[
-        @"属性修饰符",
-        @"autoreleasepool",
+        @{
+            kFirstLevel : @"一、内存布局，内存地址由低到高分别为：",
+            kSecondLevel : @[
+                    @"保留",
+                    @"代码段（_TEXT）：编译之后的代码；",
+                    @"数据段（_DATA）：字符串常量、已初始化的全局变量、静态变量等、未初始化的全局变量、静态变量等；",
+                    @"堆：通过alloc、malloc、calloc等动态分配的空间，分配的内存空间地址越来越大",
+                    @"栈：函数调用开销，比如局部变量。分配的内存空间地址越来越小",
+                    @"内核区",
+            ]
+        },
+        @{
+            kFirstLevel : @"二、属性修饰符",
+            kSecondLevel : @[
+                    @"属性修饰符",
+                    @"引用计数的存储：在64bit中，引用计数可以直接存储在优化过的isa指针中，也可能存储在SideTable类中",
+            ]
+        },
+        @{
+            kFirstLevel : @"三、Tagged Pointer",
+            kSecondLevel : @[
+                    @"从64bit开始，iOS引入了Tagged Pointer技术，用于优化NSNumber、NSDate、NSString等小对象的存储；",
+            ]
+        },
+        @{
+            kFirstLevel : @"四、自动释放池（autoreleasepool）",
+            kSecondLevel : @[
+                    @"AutoreleasePoolPage：调用了autorelease的对象最终都是通过AutoreleasePoolPage对象来管理的",
+            ]
+        },
+        
     ].mutableCopy;
     
-    [self.titleArray addObjectsFromArray:tmpArray];
+    [self.dataArray addObjectsFromArray:tmpArray];
 }
 
 
@@ -59,14 +88,48 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIViewController *tmpVC = nil;
-    switch (indexPath.row) {
-        case 0: {
-            tmpVC = [[MMPropertyViewController alloc] init];
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0: {
+                
+            }
+                break;
+            case 1: {
+                
+            }
+                break;
+            case 2: {
+                
+            }
+                break;
+                
+            default:
+                break;
         }
-            break;
-            
-        default:
-            break;
+    } else if (indexPath.section == 1) {
+        switch (indexPath.row) {
+            case 0: {
+                tmpVC = [[MMPropertyViewController alloc] init];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    } else if (indexPath.section == 2) {
+        switch (indexPath.row) {
+            case 0: {
+                
+            }
+                break;
+            case 1: {
+                
+            }
+                break;
+                
+            default:
+                break;
+        }
     }
     
     if (tmpVC) {
