@@ -21,4 +21,6 @@ target 'FWKnowledgePro' do
 
   pod 'KVOController'
   
+  pod 'SDWebImage', '~> 5.0'
+  
 end

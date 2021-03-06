@@ -22,6 +22,9 @@
 		AF38655325764F24001D295F /* POHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38655225764F24001D295F /* POHomeViewController.m */; };
 		AF38656D25772FAB001D295F /* OCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38656C25772FAB001D295F /* OCHomeViewController.m */; };
 		AF405D6625E655D600D6A56B /* AnimationHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF405D6525E655D600D6A56B /* AnimationHomeViewController.m */; };
+		AF4B5A4825F2255C00EBF353 /* ThirdPartyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4B5A4725F2255C00EBF353 /* ThirdPartyHomeViewController.m */; };
+		AF4B5A4E25F3224E00EBF353 /* FWOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4B5A4D25F3224E00EBF353 /* FWOperation.m */; };
+		AF4B5AAE25F3765D00EBF353 /* NSCacheTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4B5AAD25F3765D00EBF353 /* NSCacheTestViewController.m */; };
 		AF507CC025C144BE00724EE2 /* RTPerson2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF507CBF25C144BE00724EE2 /* RTPerson2.m */; };
 		AF507CCC25C15C3800724EE2 /* RTPerson3.m in Sources */ = {isa = PBXBuildFile; fileRef = AF507CCB25C15C3800724EE2 /* RTPerson3.m */; };
 		AF507CD225C1629900724EE2 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = AF507CD125C1629900724EE2 /* NSObject+KVO.m */; };
@@ -192,6 +195,12 @@
 		AF38656C25772FAB001D295F /* OCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCHomeViewController.m; sourceTree = "<group>"; };
 		AF405D6425E655D600D6A56B /* AnimationHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationHomeViewController.h; sourceTree = "<group>"; };
 		AF405D6525E655D600D6A56B /* AnimationHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationHomeViewController.m; sourceTree = "<group>"; };
+		AF4B5A4625F2255C00EBF353 /* ThirdPartyHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdPartyHomeViewController.h; sourceTree = "<group>"; };
+		AF4B5A4725F2255C00EBF353 /* ThirdPartyHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyHomeViewController.m; sourceTree = "<group>"; };
+		AF4B5A4C25F3224E00EBF353 /* FWOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWOperation.h; sourceTree = "<group>"; };
+		AF4B5A4D25F3224E00EBF353 /* FWOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWOperation.m; sourceTree = "<group>"; };
+		AF4B5AAC25F3765D00EBF353 /* NSCacheTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCacheTestViewController.h; sourceTree = "<group>"; };
+		AF4B5AAD25F3765D00EBF353 /* NSCacheTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCacheTestViewController.m; sourceTree = "<group>"; };
 		AF507CBE25C144BE00724EE2 /* RTPerson2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPerson2.h; sourceTree = "<group>"; };
 		AF507CBF25C144BE00724EE2 /* RTPerson2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPerson2.m; sourceTree = "<group>"; };
 		AF507CCA25C15C3800724EE2 /* RTPerson3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPerson3.h; sourceTree = "<group>"; };
@@ -589,6 +598,15 @@
 			path = "Animation(动画)";
 			sourceTree = "<group>";
 		};
+		AF4B5A4525F2254300EBF353 /* ThirdParty(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+				AF4B5A4625F2255C00EBF353 /* ThirdPartyHomeViewController.h */,
+				AF4B5A4725F2255C00EBF353 /* ThirdPartyHomeViewController.m */,
+			);
+			path = "ThirdParty(第三方)";
+			sourceTree = "<group>";
+		};
 		AF5631FF256F969B00F61828 /* Algorithm(算法) */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +627,8 @@
 				AF563219256F969B00F61828 /* KeyChainTestViewController.m */,
 				AF56321A256F969B00F61828 /* SQLiteTestViewController.h */,
 				AF563210256F969B00F61828 /* SQLiteTestViewController.m */,
+				AF4B5AAC25F3765D00EBF353 /* NSCacheTestViewController.h */,
+				AF4B5AAD25F3765D00EBF353 /* NSCacheTestViewController.m */,
 				AF56321C256F969B00F61828 /* ClassManagerSystem */,
 				AF563211256F969B00F61828 /* CoreDataTest */,
 				AF563226256F969B00F61828 /* Model */,
@@ -822,8 +842,6 @@
 			children = (
 				AF5BE4B2256BBDB30028EB6E /* HomeViewController.h */,
 				AF5BE4B3256BBDB30028EB6E /* HomeViewController.m */,
-				AF6C9C8F25CD214D002060CE /* Architecture(架构模式) */,
-				AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */,
 				AF17738C25E7A54B00F4DE95 /* Basic(基础知识) */,
 				AF38656125772BD3001D295F /* OC(语法部分) */,
 				AF56320E256F969B00F61828 /* DataPersistence(数据持久化) */,
@@ -832,10 +850,13 @@
 				AFCC6A1725C01E7900E38BE6 /* Runtime(运行时) */,
 				AFD256E025C4084700AD2D7C /* Runloop(运行循环) */,
 				AF69318025CBCE5A00F9E22F /* MemoryManage(内存管理) */,
-				AF38655025764ECA001D295F /* PerformanceOptimization(性能优化) */,
 				AF405D6325E655BB00D6A56B /* Animation(动画) */,
+				AF38655025764ECA001D295F /* PerformanceOptimization(性能优化) */,
+				AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */,
+				AF6C9C8F25CD214D002060CE /* Architecture(架构模式) */,
 				AF6C9C3625CCCC02002060CE /* Thought(编程思想) */,
 				AF5631FF256F969B00F61828 /* Algorithm(算法) */,
+				AF4B5A4525F2254300EBF353 /* ThirdParty(第三方) */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -1240,6 +1261,8 @@
 			children = (
 				AFED0AFF25F0816200D25C62 /* NSOperationTestViewController.h */,
 				AFED0B0025F0816200D25C62 /* NSOperationTestViewController.m */,
+				AF4B5A4C25F3224E00EBF353 /* FWOperation.h */,
+				AF4B5A4D25F3224E00EBF353 /* FWOperation.m */,
 			);
 			path = NSOperation;
 			sourceTree = "<group>";
@@ -1461,6 +1484,7 @@
 				AF6ADE9F25748EA000FBED46 /* WildDog.m in Sources */,
 				AF56323C256F969C00F61828 /* CMHomeViewController.m in Sources */,
 				AF6C9CF925CD4E2B002060CE /* FWTestService.m in Sources */,
+				AF4B5A4825F2255C00EBF353 /* ThirdPartyHomeViewController.m in Sources */,
 				AF6C9CBF25CD2C97002060CE /* MVCModel.m in Sources */,
 				AF563232256F969B00F61828 /* NetTestViewController.m in Sources */,
 				AF563240256F969C00F61828 /* FMDBTestViewController.m in Sources */,
@@ -1493,6 +1517,7 @@
 				AF3865042575EA51001D295F /* ObservedModel.m in Sources */,
 				AF66716825D28215007A7951 /* CYStudent.m in Sources */,
 				AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */,
+				AF4B5A4E25F3224E00EBF353 /* FWOperation.m in Sources */,
 				AF8FCE5A25D13A1100A1C839 /* KVCHomeViewController.m in Sources */,
 				AF7EFF5F25E77FD5008EF1A7 /* RLTestViewController.m in Sources */,
 				AFD252DB25C263E900AD2D7C /* NSObject+KVC.m in Sources */,
@@ -1527,6 +1552,7 @@
 				AF53005425DE15CC00D5A4B8 /* NSObject+FWJson.m in Sources */,
 				AFCC6A4125C0FD7C00E38BE6 /* MessageSendTest+Extend.m in Sources */,
 				AF6ADEB62574E05A00FBED46 /* WildlifePark.m in Sources */,
+				AF4B5AAE25F3765D00EBF353 /* NSCacheTestViewController.m in Sources */,
 				AF56323F256F969C00F61828 /* FWDataBaseManager.m in Sources */,
 				AF6C9C9E25CD214D002060CE /* FKHomeViewController.m in Sources */,
 				AFED0B2925F0D8FB00D25C62 /* NetHomeViewController.m in Sources */,

@@ -20,6 +20,7 @@
 #import "PTHomeViewController.h"
 #import "AnimationHomeViewController.h"
 #import "BasicHomeViewController.h"
+#import "ThirdPartyHomeViewController.h"
 
 /**
  公共：
@@ -88,6 +89,7 @@
         @"架构模式",
         @"编程思想",
         @"算法",
+        @"第三方",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -169,6 +171,11 @@
         case 13: {
             // 算法
             tmpVC = [[MSAlgorithmViewController alloc] init];
+        }
+            break;
+        case 14: {
+            // 第三方
+            tmpVC = [[ThirdPartyHomeViewController alloc] init];
         }
             break;
             

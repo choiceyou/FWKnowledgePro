@@ -5,11 +5,11 @@
 //  Created by xfg on 2021/2/25.
 //
 
-#import "FWBaseTableViewController.h"
+#import "FWBaseLevelTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BasicHomeViewController : FWBaseTableViewController
+@interface BasicHomeViewController : FWBaseLevelTableViewController
 
 @end
 

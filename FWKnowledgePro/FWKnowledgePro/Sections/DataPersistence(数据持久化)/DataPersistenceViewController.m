@@ -13,6 +13,7 @@
 #import "FMDBTestViewController.h"
 #import "CMHomeViewController.h"
 #import "CDHomeViewController.h"
+#import "NSCacheTestViewController.h"
 
 @interface DataPersistenceViewController ()
 
@@ -38,7 +39,8 @@
         @"FMDB（数据库）",
         @"FMDB实践（学生管理）",
         @"Core Data",
-        @"YYCache"
+        @"YYCache",
+        @"NSCache（官方缓存类）",
     ].mutableCopy;
     
     [self.titleArray addObjectsFromArray:tmpArray];
@@ -164,6 +166,14 @@
             break;
         case 9: {
             tmpVC = [[CDHomeViewController alloc] init];
+        }
+            break;
+        case 10: {
+            
+        }
+            break;
+        case 11: {
+            tmpVC = [[NSCacheTestViewController alloc] init];
         }
             break;
             

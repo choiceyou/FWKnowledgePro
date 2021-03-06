@@ -6,11 +6,11 @@
 //  Copyright © 2020 xfg. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FWBaseLevelTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSOperationTestViewController : UIViewController
+@interface NSOperationTestViewController : FWBaseLevelTableViewController
 
 @end
 
