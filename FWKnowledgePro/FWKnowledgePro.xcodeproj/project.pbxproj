@@ -111,8 +111,17 @@
 		AF6C9D0225CD4E6D002060CE /* LayeredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9D0125CD4E6D002060CE /* LayeredViewController.m */; };
 		AF6C9D0B25CD5024002060CE /* FWDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6C9D0A25CD5024002060CE /* FWDatabaseManager.m */; };
 		AF76225525E091260039FD1E /* FWPermanentThread.m in Sources */ = {isa = PBXBuildFile; fileRef = AF76225425E091260039FD1E /* FWPermanentThread.m */; };
+		AF79FDC0261D88FE00629675 /* BCDrawingBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79FDB9261D88FE00629675 /* BCDrawingBoardViewController.m */; };
+		AF79FDC1261D88FE00629675 /* BCGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79FDBC261D88FE00629675 /* BCGestureLockView.m */; };
+		AF79FDC2261D88FE00629675 /* BCGestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79FDBF261D88FE00629675 /* BCGestureLockViewController.m */; };
+		AF79FDCB261D898500629675 /* BCDrawingBoardHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79FDCA261D898500629675 /* BCDrawingBoardHeadView.m */; };
+		AF79FDD1261D899400629675 /* BCDrawingBoardBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79FDD0261D899400629675 /* BCDrawingBoardBottomView.m */; };
+		AF79FDD7261D899A00629675 /* BCDrawingBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79FDD6261D899A00629675 /* BCDrawingBoardView.m */; };
+		AF79FDE0261DB37D00629675 /* BCBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = AF79FDDF261DB37D00629675 /* BCBezierPath.m */; };
 		AF7EFF5F25E77FD5008EF1A7 /* RLTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7EFF5E25E77FD5008EF1A7 /* RLTestViewController.m */; };
 		AF7EFF6525E78128008EF1A7 /* RLTestViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7EFF6425E78128008EF1A7 /* RLTestViewCell.m */; };
+		AF80A943261BEC9E009F0D2A /* BCScatteredHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF80A942261BEC9E009F0D2A /* BCScatteredHomeController.m */; };
+		AF80A949261BEE03009F0D2A /* BCQuartz2DHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF80A948261BEE03009F0D2A /* BCQuartz2DHomeController.m */; };
 		AF8FCE3C25D0DEE200A1C839 /* OCObjectSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */; };
 		AF8FCE4325D0E13800A1C839 /* KVOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4225D0E13800A1C839 /* KVOHomeViewController.m */; };
 		AF8FCE4D25D0E17F00A1C839 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */; };
@@ -380,10 +389,28 @@
 		AF6C9D0A25CD5024002060CE /* FWDatabaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWDatabaseManager.m; sourceTree = "<group>"; };
 		AF76225325E091260039FD1E /* FWPermanentThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWPermanentThread.h; sourceTree = "<group>"; };
 		AF76225425E091260039FD1E /* FWPermanentThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWPermanentThread.m; sourceTree = "<group>"; };
+		AF79FDB9261D88FE00629675 /* BCDrawingBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCDrawingBoardViewController.m; sourceTree = "<group>"; };
+		AF79FDBA261D88FE00629675 /* BCDrawingBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCDrawingBoardViewController.h; sourceTree = "<group>"; };
+		AF79FDBC261D88FE00629675 /* BCGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCGestureLockView.m; sourceTree = "<group>"; };
+		AF79FDBD261D88FE00629675 /* BCGestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCGestureLockViewController.h; sourceTree = "<group>"; };
+		AF79FDBE261D88FE00629675 /* BCGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCGestureLockView.h; sourceTree = "<group>"; };
+		AF79FDBF261D88FE00629675 /* BCGestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCGestureLockViewController.m; sourceTree = "<group>"; };
+		AF79FDC9261D898500629675 /* BCDrawingBoardHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDrawingBoardHeadView.h; sourceTree = "<group>"; };
+		AF79FDCA261D898500629675 /* BCDrawingBoardHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDrawingBoardHeadView.m; sourceTree = "<group>"; };
+		AF79FDCF261D899400629675 /* BCDrawingBoardBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDrawingBoardBottomView.h; sourceTree = "<group>"; };
+		AF79FDD0261D899400629675 /* BCDrawingBoardBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDrawingBoardBottomView.m; sourceTree = "<group>"; };
+		AF79FDD5261D899A00629675 /* BCDrawingBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCDrawingBoardView.h; sourceTree = "<group>"; };
+		AF79FDD6261D899A00629675 /* BCDrawingBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCDrawingBoardView.m; sourceTree = "<group>"; };
+		AF79FDDE261DB37D00629675 /* BCBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCBezierPath.h; sourceTree = "<group>"; };
+		AF79FDDF261DB37D00629675 /* BCBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCBezierPath.m; sourceTree = "<group>"; };
 		AF7EFF5D25E77FD5008EF1A7 /* RLTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLTestViewController.h; sourceTree = "<group>"; };
 		AF7EFF5E25E77FD5008EF1A7 /* RLTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLTestViewController.m; sourceTree = "<group>"; };
 		AF7EFF6325E78128008EF1A7 /* RLTestViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLTestViewCell.h; sourceTree = "<group>"; };
 		AF7EFF6425E78128008EF1A7 /* RLTestViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLTestViewCell.m; sourceTree = "<group>"; };
+		AF80A941261BEC9E009F0D2A /* BCScatteredHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCScatteredHomeController.h; sourceTree = "<group>"; };
+		AF80A942261BEC9E009F0D2A /* BCScatteredHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCScatteredHomeController.m; sourceTree = "<group>"; };
+		AF80A947261BEE03009F0D2A /* BCQuartz2DHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCQuartz2DHomeController.h; sourceTree = "<group>"; };
+		AF80A948261BEE03009F0D2A /* BCQuartz2DHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCQuartz2DHomeController.m; sourceTree = "<group>"; };
 		AF8FCE3A25D0DEE200A1C839 /* OCObjectSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCObjectSortViewController.h; sourceTree = "<group>"; };
 		AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCObjectSortViewController.m; sourceTree = "<group>"; };
 		AF8FCE4125D0E13800A1C839 /* KVOHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOHomeViewController.h; sourceTree = "<group>"; };
@@ -504,6 +531,8 @@
 			children = (
 				AF17738D25E7A57100F4DE95 /* BasicHomeViewController.h */,
 				AF17738E25E7A57100F4DE95 /* BasicHomeViewController.m */,
+				AF80A93F261BEC53009F0D2A /* Scattered */,
+				AF80A940261BEC53009F0D2A /* Quartz2D */,
 			);
 			path = "Basic(基础知识)";
 			sourceTree = "<group>";
@@ -1109,6 +1138,54 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		AF79FDB8261D88FE00629675 /* BCDrawingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				AF79FDBA261D88FE00629675 /* BCDrawingBoardViewController.h */,
+				AF79FDB9261D88FE00629675 /* BCDrawingBoardViewController.m */,
+				AF79FDC9261D898500629675 /* BCDrawingBoardHeadView.h */,
+				AF79FDCA261D898500629675 /* BCDrawingBoardHeadView.m */,
+				AF79FDD5261D899A00629675 /* BCDrawingBoardView.h */,
+				AF79FDD6261D899A00629675 /* BCDrawingBoardView.m */,
+				AF79FDCF261D899400629675 /* BCDrawingBoardBottomView.h */,
+				AF79FDD0261D899400629675 /* BCDrawingBoardBottomView.m */,
+				AF79FDDE261DB37D00629675 /* BCBezierPath.h */,
+				AF79FDDF261DB37D00629675 /* BCBezierPath.m */,
+			);
+			path = BCDrawingBoard;
+			sourceTree = "<group>";
+		};
+		AF79FDBB261D88FE00629675 /* BCGestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				AF79FDBD261D88FE00629675 /* BCGestureLockViewController.h */,
+				AF79FDBF261D88FE00629675 /* BCGestureLockViewController.m */,
+				AF79FDBE261D88FE00629675 /* BCGestureLockView.h */,
+				AF79FDBC261D88FE00629675 /* BCGestureLockView.m */,
+			);
+			path = BCGestureLock;
+			sourceTree = "<group>";
+		};
+		AF80A93F261BEC53009F0D2A /* Scattered */ = {
+			isa = PBXGroup;
+			children = (
+				AF80A941261BEC9E009F0D2A /* BCScatteredHomeController.h */,
+				AF80A942261BEC9E009F0D2A /* BCScatteredHomeController.m */,
+			);
+			path = Scattered;
+			sourceTree = "<group>";
+		};
+		AF80A940261BEC53009F0D2A /* Quartz2D */ = {
+			isa = PBXGroup;
+			children = (
+				AF80A947261BEE03009F0D2A /* BCQuartz2DHomeController.h */,
+				AF80A948261BEE03009F0D2A /* BCQuartz2DHomeController.m */,
+				AF79FDBB261D88FE00629675 /* BCGestureLock */,
+				AF79FDB8261D88FE00629675 /* BCDrawingBoard */,
+			);
+			path = Quartz2D;
+			sourceTree = "<group>";
+		};
 		AF8FCE3525D0C7C100A1C839 /* OC对象的本质 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1466,6 +1543,7 @@
 				AF6C9CCB25CD311E002060CE /* MVPModel.m in Sources */,
 				AF53004525DDF24000D5A4B8 /* RuntimeAPIViewController.m in Sources */,
 				AFED0B1125F08B6E00D25C62 /* FWBaseLevelTableViewController.m in Sources */,
+				AF80A949261BEE03009F0D2A /* BCQuartz2DHomeController.m in Sources */,
 				AF6C9C9F25CD214D002060CE /* MVVMViewModel.m in Sources */,
 				AFED0B0125F0816200D25C62 /* NSThreadTestViewController.m in Sources */,
 				AF563243256F969C00F61828 /* ClassTestModel.m in Sources */,
@@ -1476,6 +1554,7 @@
 				AF5BE4BB256BBE4C0028EB6E /* FWBaseViewController.m in Sources */,
 				AF6ADE812574862A00FBED46 /* DomesticAnimalFactory.m in Sources */,
 				AF8FCE4D25D0E17F00A1C839 /* BlockTestViewController.m in Sources */,
+				AF79FDD1261D899400629675 /* BCDrawingBoardBottomView.m in Sources */,
 				AF5633792570DFFF00F61828 /* Cat.m in Sources */,
 				AFCC6A2325C01F0900E38BE6 /* MessageSendTest2.m in Sources */,
 				AF3864FB2575E95C001D295F /* ObserverTestViewController.m in Sources */,
@@ -1496,8 +1575,11 @@
 				AF507CCC25C15C3800724EE2 /* RTPerson3.m in Sources */,
 				AF38652125762B3F001D295F /* AbstractTVSystem.m in Sources */,
 				AF66712025D21FE9007A7951 /* CYPerson+Test1.m in Sources */,
+				AF79FDCB261D898500629675 /* BCDrawingBoardHeadView.m in Sources */,
+				AF79FDE0261DB37D00629675 /* BCBezierPath.m in Sources */,
 				AFED0ABB25EE3E6F00D25C62 /* MPPerson.m in Sources */,
 				AFCC6A1A25C01ED000E38BE6 /* MessageSendTest.m in Sources */,
+				AF79FDC1261D88FE00629675 /* BCGestureLockView.m in Sources */,
 				AF6C9D0225CD4E6D002060CE /* LayeredViewController.m in Sources */,
 				AF563242256F969C00F61828 /* StudentTestModel.m in Sources */,
 				AFED0B0425F0816200D25C62 /* OSSpinLockDemo.m in Sources */,
@@ -1511,9 +1593,11 @@
 				AF6C9CB025CD2C72002060CE /* MVCViewController.m in Sources */,
 				AF6ADF072574E75F00FBED46 /* ZooIterator.m in Sources */,
 				AF38651B25762AB5001D295F /* HUAWEITVSystem.m in Sources */,
+				AF79FDC0261D88FE00629675 /* BCDrawingBoardViewController.m in Sources */,
 				AFCC6A4725C1064900E38BE6 /* RTPerson.m in Sources */,
 				AF6C9CA125CD214D002060CE /* MVVMViewController.m in Sources */,
 				AFED0AE525EF37AE00D25C62 /* SumManager.m in Sources */,
+				AF79FDD7261D899A00629675 /* BCDrawingBoardView.m in Sources */,
 				AF3865042575EA51001D295F /* ObservedModel.m in Sources */,
 				AF66716825D28215007A7951 /* CYStudent.m in Sources */,
 				AF6ADE902574887800FBED46 /* DomesticCat.m in Sources */,
@@ -1548,8 +1632,10 @@
 				AFCC6A3B25C0F9FF00E38BE6 /* UIView+Swizzing.m in Sources */,
 				AF38652D25762D7B001D295F /* MultifunctionTVControl.m in Sources */,
 				AF563239256F969C00F61828 /* Student2+CoreDataClass.m in Sources */,
+				AF79FDC2261D88FE00629675 /* BCGestureLockViewController.m in Sources */,
 				AF6ADEA525748EAF00FBED46 /* WildCat.m in Sources */,
 				AF53005425DE15CC00D5A4B8 /* NSObject+FWJson.m in Sources */,
+				AF80A943261BEC9E009F0D2A /* BCScatteredHomeController.m in Sources */,
 				AFCC6A4125C0FD7C00E38BE6 /* MessageSendTest+Extend.m in Sources */,
 				AF6ADEB62574E05A00FBED46 /* WildlifePark.m in Sources */,
 				AF4B5AAE25F3765D00EBF353 /* NSCacheTestViewController.m in Sources */,
