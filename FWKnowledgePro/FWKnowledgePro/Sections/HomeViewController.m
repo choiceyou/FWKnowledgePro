@@ -18,7 +18,6 @@
 #import "RunloopHomeViewController.h"
 #import "MemoryHomeViewController.h"
 #import "PTHomeViewController.h"
-#import "AnimationHomeViewController.h"
 #import "BasicHomeViewController.h"
 #import "ThirdPartyHomeViewController.h"
 
@@ -83,7 +82,6 @@
         @"Runtime（运行时）",
         @"Runloop（运行循环）",
         @"内存管理",
-        @"动画",
         @"性能优化",
         @"设计模式",
         @"架构模式",
@@ -144,36 +142,31 @@
         }
             break;
         case 8: {
-            // 动画
-            tmpVC = [[AnimationHomeViewController alloc] init];
-        }
-            break;
-        case 9: {
             // 性能优化
             tmpVC = [[POHomeViewController alloc] init];
         }
             break;
-        case 10: {
+        case 9: {
             // 设计模式
             tmpVC = [[DPHomeViewController alloc] init];
         }
             break;
-        case 11: {
+        case 10: {
             // 架构模式
             tmpVC = [[FKHomeViewController alloc] init];
         }
             break;
-        case 12: {
+        case 11: {
             // 编程思想
             tmpVC = [[PTHomeViewController alloc] init];
         }
             break;
-        case 13: {
+        case 12: {
             // 算法
             tmpVC = [[MSAlgorithmViewController alloc] init];
         }
             break;
-        case 14: {
+        case 13: {
             // 第三方
             tmpVC = [[ThirdPartyHomeViewController alloc] init];
         }

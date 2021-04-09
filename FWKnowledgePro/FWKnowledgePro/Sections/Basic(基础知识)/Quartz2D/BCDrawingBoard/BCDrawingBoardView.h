@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param type 操作类型
 - (void)headBtnActionWithType:(BCDBHeadActionType)type;
 
+/// 选择照片
+/// @param image 照片
+- (void)selectPhoto:(UIImage *)image;
+
 /// 底部按钮改变
 /// @param color 按钮颜色
 - (void)bottomBtnClicked:(UIColor *)color;

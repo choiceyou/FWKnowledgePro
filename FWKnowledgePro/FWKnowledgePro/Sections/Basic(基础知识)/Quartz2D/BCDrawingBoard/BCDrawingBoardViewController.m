@@ -10,6 +10,7 @@
 #import <Masonry/Masonry.h>
 #import "BCDrawingBoardBottomView.h"
 #import "BCDrawingBoardView.h"
+#import "BCHandleView.h"
 
 // 状态栏高度
 #define kStatusBarHeight ([UIApplication sharedApplication].statusBarFrame.size.height)
@@ -17,7 +18,7 @@
 #define kNavigationBarHeight 44.0
 
 
-@interface BCDrawingBoardViewController ()
+@interface BCDrawingBoardViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 /// 头部视图
 @property (nonatomic, weak) BCDrawingBoardHeadView *dBoardHeadView;
@@ -25,6 +26,8 @@
 @property (nonatomic, weak) BCDrawingBoardBottomView *dBoardBottomView;
 /// 画图视图
 @property (nonatomic, weak) BCDrawingBoardView *drawingBoardView;
+/// 处理从相册中选择的图片
+@property (nonatomic, weak) BCHandleView *handleView;
 
 @end
 
@@ -36,9 +39,15 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"画板";
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     
     [self setupConstraints];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -70,6 +79,23 @@
 
 
 #pragma mark -
+#pragma mark - UINavigationControllerDelegate/UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *)info
+{
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    self.handleView.image = image;
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+#pragma mark -
 #pragma mark - GET/SET
 
 - (BCDrawingBoardHeadView *)dBoardHeadView
@@ -81,7 +107,18 @@
         
         __weak typeof(self) weakSelf = self;
         _dBoardHeadView.headBtnActionBlock = ^(BCDBHeadActionType type) {
-            [weakSelf.drawingBoardView headBtnActionWithType:type];
+            if (type == BCDBHeadActionTypeSelectPhoto) {
+                UIImagePickerController *pickerVC = [[UIImagePickerController alloc] init];
+                pickerVC.delegate = self;
+                pickerVC.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+                pickerVC.modalPresentationStyle = UIModalPresentationFullScreen;
+                if (@available(iOS 11, *)) {
+                    UIScrollView.appearance.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAutomatic;
+                }
+                [weakSelf presentViewController:pickerVC animated:YES completion:nil];
+            } else {
+                [weakSelf.drawingBoardView headBtnActionWithType:type];
+            }
         };
     }
     return _dBoardHeadView;
@@ -114,6 +151,22 @@
         };
     }
     return _dBoardBottomView;
+}
+
+- (BCHandleView *)handleView
+{
+    if (!_handleView) {
+        BCHandleView *tmpView = [[BCHandleView alloc] initWithFrame:self.drawingBoardView.frame];
+        [self.view addSubview:tmpView];
+        _handleView = tmpView;
+        
+        __weak typeof(self) weakSelf = self;
+        _handleView.handleBlock = ^(UIImage * _Nonnull image) {
+            [weakSelf.drawingBoardView selectPhoto:image];
+            [weakSelf.handleView removeFromSuperview];
+        };
+    }
+    return _handleView;
 }
 
 @end

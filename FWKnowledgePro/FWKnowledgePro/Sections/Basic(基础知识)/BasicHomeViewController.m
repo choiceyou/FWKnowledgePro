@@ -9,6 +9,7 @@
 #import "BasicHomeViewController.h"
 #import "BCScatteredHomeController.h"
 #import "BCQuartz2DHomeController.h"
+#import "BCQuartzCoreHomeController.h"
 
 @interface BasicHomeViewController ()
 
@@ -30,9 +31,15 @@
             ]
         },
         @{
-            kFirstLevel : @"一、Quartz2D库相关",
+            kFirstLevel : @"二、Quartz2D",
             kSecondLevel : @[
                     @"Quartz2D库相关",
+            ]
+        },
+        @{
+            kFirstLevel : @"三、QuartzCore",
+            kSecondLevel : @[
+                    @"QuartzCore库相关",
             ]
         },
     ].mutableCopy;
@@ -70,11 +77,7 @@
     } else if (indexPath.section == 2) {
         switch (indexPath.row) {
             case 0: {
-                
-            }
-                break;
-            case 1: {
-                
+                tmpVC = [[BCQuartzCoreHomeController alloc] init];
             }
                 break;
                 

@@ -21,7 +21,6 @@
 		AF386534257642CC001D295F /* MultiThreadHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF386533257642CC001D295F /* MultiThreadHomeViewController.m */; };
 		AF38655325764F24001D295F /* POHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38655225764F24001D295F /* POHomeViewController.m */; };
 		AF38656D25772FAB001D295F /* OCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF38656C25772FAB001D295F /* OCHomeViewController.m */; };
-		AF405D6625E655D600D6A56B /* AnimationHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF405D6525E655D600D6A56B /* AnimationHomeViewController.m */; };
 		AF4B5A4825F2255C00EBF353 /* ThirdPartyHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4B5A4725F2255C00EBF353 /* ThirdPartyHomeViewController.m */; };
 		AF4B5A4E25F3224E00EBF353 /* FWOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4B5A4D25F3224E00EBF353 /* FWOperation.m */; };
 		AF4B5AAE25F3765D00EBF353 /* NSCacheTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4B5AAD25F3765D00EBF353 /* NSCacheTestViewController.m */; };
@@ -122,6 +121,9 @@
 		AF7EFF6525E78128008EF1A7 /* RLTestViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7EFF6425E78128008EF1A7 /* RLTestViewCell.m */; };
 		AF80A943261BEC9E009F0D2A /* BCScatteredHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF80A942261BEC9E009F0D2A /* BCScatteredHomeController.m */; };
 		AF80A949261BEE03009F0D2A /* BCQuartz2DHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF80A948261BEE03009F0D2A /* BCQuartz2DHomeController.m */; };
+		AF85859626202D4A0028A42D /* BCQuartzCoreHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF85859526202D4A0028A42D /* BCQuartzCoreHomeController.m */; };
+		AF8585A0262030520028A42D /* BCClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF85859F262030520028A42D /* BCClockViewController.m */; };
+		AF8585A6262030790028A42D /* BCClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8585A5262030790028A42D /* BCClockView.m */; };
 		AF8FCE3C25D0DEE200A1C839 /* OCObjectSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */; };
 		AF8FCE4325D0E13800A1C839 /* KVOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4225D0E13800A1C839 /* KVOHomeViewController.m */; };
 		AF8FCE4D25D0E17F00A1C839 /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8FCE4B25D0E17F00A1C839 /* BlockTestViewController.m */; };
@@ -138,6 +140,7 @@
 		AFD256D025C2BE5800AD2D7C /* RTTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD256CF25C2BE5800AD2D7C /* RTTest.m */; };
 		AFD256D825C3F07900AD2D7C /* RTPerson5.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD256D725C3F07900AD2D7C /* RTPerson5.m */; };
 		AFD256E325C4088E00AD2D7C /* RunloopHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD256E225C4088E00AD2D7C /* RunloopHomeViewController.m */; };
+		AFDF2150261EE77000C2F402 /* BCHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDF214F261EE77000C2F402 /* BCHandleView.m */; };
 		AFED0AB525EDEA6500D25C62 /* MMPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0AB425EDEA6500D25C62 /* MMPropertyViewController.m */; };
 		AFED0ABB25EE3E6F00D25C62 /* MPPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0ABA25EE3E6F00D25C62 /* MPPerson.m */; };
 		AFED0AE525EF37AE00D25C62 /* SumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED0AE125EF37AE00D25C62 /* SumManager.m */; };
@@ -202,8 +205,6 @@
 		AF38655225764F24001D295F /* POHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POHomeViewController.m; sourceTree = "<group>"; };
 		AF38656B25772FAB001D295F /* OCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCHomeViewController.h; sourceTree = "<group>"; };
 		AF38656C25772FAB001D295F /* OCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCHomeViewController.m; sourceTree = "<group>"; };
-		AF405D6425E655D600D6A56B /* AnimationHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimationHomeViewController.h; sourceTree = "<group>"; };
-		AF405D6525E655D600D6A56B /* AnimationHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationHomeViewController.m; sourceTree = "<group>"; };
 		AF4B5A4625F2255C00EBF353 /* ThirdPartyHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdPartyHomeViewController.h; sourceTree = "<group>"; };
 		AF4B5A4725F2255C00EBF353 /* ThirdPartyHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyHomeViewController.m; sourceTree = "<group>"; };
 		AF4B5A4C25F3224E00EBF353 /* FWOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWOperation.h; sourceTree = "<group>"; };
@@ -411,6 +412,12 @@
 		AF80A942261BEC9E009F0D2A /* BCScatteredHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCScatteredHomeController.m; sourceTree = "<group>"; };
 		AF80A947261BEE03009F0D2A /* BCQuartz2DHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCQuartz2DHomeController.h; sourceTree = "<group>"; };
 		AF80A948261BEE03009F0D2A /* BCQuartz2DHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCQuartz2DHomeController.m; sourceTree = "<group>"; };
+		AF85859426202D4A0028A42D /* BCQuartzCoreHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCQuartzCoreHomeController.h; sourceTree = "<group>"; };
+		AF85859526202D4A0028A42D /* BCQuartzCoreHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCQuartzCoreHomeController.m; sourceTree = "<group>"; };
+		AF85859E262030520028A42D /* BCClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCClockViewController.h; sourceTree = "<group>"; };
+		AF85859F262030520028A42D /* BCClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCClockViewController.m; sourceTree = "<group>"; };
+		AF8585A4262030790028A42D /* BCClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCClockView.h; sourceTree = "<group>"; };
+		AF8585A5262030790028A42D /* BCClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCClockView.m; sourceTree = "<group>"; };
 		AF8FCE3A25D0DEE200A1C839 /* OCObjectSortViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCObjectSortViewController.h; sourceTree = "<group>"; };
 		AF8FCE3B25D0DEE200A1C839 /* OCObjectSortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCObjectSortViewController.m; sourceTree = "<group>"; };
 		AF8FCE4125D0E13800A1C839 /* KVOHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOHomeViewController.h; sourceTree = "<group>"; };
@@ -444,6 +451,8 @@
 		AFD256D725C3F07900AD2D7C /* RTPerson5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPerson5.m; sourceTree = "<group>"; };
 		AFD256E125C4088E00AD2D7C /* RunloopHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopHomeViewController.h; sourceTree = "<group>"; };
 		AFD256E225C4088E00AD2D7C /* RunloopHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopHomeViewController.m; sourceTree = "<group>"; };
+		AFDF214E261EE77000C2F402 /* BCHandleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCHandleView.h; sourceTree = "<group>"; };
+		AFDF214F261EE77000C2F402 /* BCHandleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCHandleView.m; sourceTree = "<group>"; };
 		AFED0AB325EDEA6500D25C62 /* MMPropertyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMPropertyViewController.h; sourceTree = "<group>"; };
 		AFED0AB425EDEA6500D25C62 /* MMPropertyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPropertyViewController.m; sourceTree = "<group>"; };
 		AFED0AB925EE3E6F00D25C62 /* MPPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPPerson.h; sourceTree = "<group>"; };
@@ -533,6 +542,7 @@
 				AF17738E25E7A57100F4DE95 /* BasicHomeViewController.m */,
 				AF80A93F261BEC53009F0D2A /* Scattered */,
 				AF80A940261BEC53009F0D2A /* Quartz2D */,
+				AF85859326202CE10028A42D /* QuartzCore */,
 			);
 			path = "Basic(基础知识)";
 			sourceTree = "<group>";
@@ -616,15 +626,6 @@
 				AF8FCE4A25D0E17F00A1C839 /* Block */,
 			);
 			path = "OC(语法部分)";
-			sourceTree = "<group>";
-		};
-		AF405D6325E655BB00D6A56B /* Animation(动画) */ = {
-			isa = PBXGroup;
-			children = (
-				AF405D6425E655D600D6A56B /* AnimationHomeViewController.h */,
-				AF405D6525E655D600D6A56B /* AnimationHomeViewController.m */,
-			);
-			path = "Animation(动画)";
 			sourceTree = "<group>";
 		};
 		AF4B5A4525F2254300EBF353 /* ThirdParty(第三方) */ = {
@@ -879,7 +880,6 @@
 				AFCC6A1725C01E7900E38BE6 /* Runtime(运行时) */,
 				AFD256E025C4084700AD2D7C /* Runloop(运行循环) */,
 				AF69318025CBCE5A00F9E22F /* MemoryManage(内存管理) */,
-				AF405D6325E655BB00D6A56B /* Animation(动画) */,
 				AF38655025764ECA001D295F /* PerformanceOptimization(性能优化) */,
 				AF56322E256F969B00F61828 /* DesignPatterns(设计模式) */,
 				AF6C9C8F25CD214D002060CE /* Architecture(架构模式) */,
@@ -1151,6 +1151,8 @@
 				AF79FDD0261D899400629675 /* BCDrawingBoardBottomView.m */,
 				AF79FDDE261DB37D00629675 /* BCBezierPath.h */,
 				AF79FDDF261DB37D00629675 /* BCBezierPath.m */,
+				AFDF214E261EE77000C2F402 /* BCHandleView.h */,
+				AFDF214F261EE77000C2F402 /* BCHandleView.m */,
 			);
 			path = BCDrawingBoard;
 			sourceTree = "<group>";
@@ -1184,6 +1186,27 @@
 				AF79FDB8261D88FE00629675 /* BCDrawingBoard */,
 			);
 			path = Quartz2D;
+			sourceTree = "<group>";
+		};
+		AF85859326202CE10028A42D /* QuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				AF85859426202D4A0028A42D /* BCQuartzCoreHomeController.h */,
+				AF85859526202D4A0028A42D /* BCQuartzCoreHomeController.m */,
+				AF85859D262030280028A42D /* Clock */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		AF85859D262030280028A42D /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				AF85859E262030520028A42D /* BCClockViewController.h */,
+				AF85859F262030520028A42D /* BCClockViewController.m */,
+				AF8585A4262030790028A42D /* BCClockView.h */,
+				AF8585A5262030790028A42D /* BCClockView.m */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 		AF8FCE3525D0C7C100A1C839 /* OC对象的本质 */ = {
@@ -1528,6 +1551,7 @@
 				AFED0B2325F0D0D300D25C62 /* FWTools.m in Sources */,
 				AF6ADEBC2574E14D00FBED46 /* Monkey.m in Sources */,
 				AFED0B0225F0816200D25C62 /* BaseLockDemo.m in Sources */,
+				AF8585A6262030790028A42D /* BCClockView.m in Sources */,
 				AF563237256F969C00F61828 /* CDHomeViewController.m in Sources */,
 				AF56341C2570EC4300F61828 /* DogFactory.m in Sources */,
 				AF17738F25E7A57100F4DE95 /* BasicHomeViewController.m in Sources */,
@@ -1605,7 +1629,7 @@
 				AF8FCE5A25D13A1100A1C839 /* KVCHomeViewController.m in Sources */,
 				AF7EFF5F25E77FD5008EF1A7 /* RLTestViewController.m in Sources */,
 				AFD252DB25C263E900AD2D7C /* NSObject+KVC.m in Sources */,
-				AF405D6625E655D600D6A56B /* AnimationHomeViewController.m in Sources */,
+				AFDF2150261EE77000C2F402 /* BCHandleView.m in Sources */,
 				AF563234256F969B00F61828 /* MSAlgorithmViewController.m in Sources */,
 				AF56323D256F969C00F61828 /* CMAllDataListViewController.m in Sources */,
 				AF69C56F25CA54F600F579A3 /* DownloadTask.m in Sources */,
@@ -1628,6 +1652,7 @@
 				AF5634102570EB3500F61828 /* Dog.m in Sources */,
 				AF6C9CA225CD214D002060CE /* MVVMView.m in Sources */,
 				AF5632FF2570AF0F00F61828 /* PrototypePersonShallowCopy.m in Sources */,
+				AF85859626202D4A0028A42D /* BCQuartzCoreHomeController.m in Sources */,
 				AF38656D25772FAB001D295F /* OCHomeViewController.m in Sources */,
 				AFCC6A3B25C0F9FF00E38BE6 /* UIView+Swizzing.m in Sources */,
 				AF38652D25762D7B001D295F /* MultifunctionTVControl.m in Sources */,
@@ -1659,6 +1684,7 @@
 				AF563238256F969C00F61828 /* Student2+CoreDataProperties.m in Sources */,
 				AFED0B0625F0816200D25C62 /* FWGCDTimer.m in Sources */,
 				AF5633052570AF0F00F61828 /* Singleton.m in Sources */,
+				AF8585A0262030520028A42D /* BCClockViewController.m in Sources */,
 				AFED0B0325F0816200D25C62 /* OSUnfairLockDemo.m in Sources */,
 				AFED0B0525F0816200D25C62 /* ThreadSyncViewController.m in Sources */,
 				AF6C9CD125CD3138002060CE /* MVPViewController.m in Sources */,

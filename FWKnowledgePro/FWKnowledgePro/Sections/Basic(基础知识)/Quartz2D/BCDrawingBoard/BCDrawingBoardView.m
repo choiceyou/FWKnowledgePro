@@ -10,8 +10,8 @@
 
 @interface BCDrawingBoardView ()
 
-/// 存放绘制的路径
-@property (nonatomic, strong) NSMutableArray<UIBezierPath *> *allPathArray;
+/// 存放绘制的路径（也有可能是选择的图片）
+@property (nonatomic, strong) NSMutableArray *allPathArray;
 /// 当前绘制路径
 @property (nonatomic, strong) BCBezierPath *currentPath;
 /// 当前线宽
@@ -69,8 +69,13 @@
 - (void)drawRect:(CGRect)rect
 {
     for (BCBezierPath *path in self.allPathArray) {
-        [path.color set];
-        [path stroke];
+        if ([path isKindOfClass:[BCBezierPath class]]) {
+            [path.color set];
+            [path stroke];
+        } else if ([path isKindOfClass:[UIImage class]]) {
+            UIImage *image = (UIImage *)path;
+            [image drawInRect:rect];
+        }
     }
 }
 
@@ -90,9 +95,6 @@
             break;
         case BCDBHeadActionTypeEraser:
             [self eraserAction];
-            break;
-        case BCDBHeadActionTypeSelectPhoto:
-            [self selectPhotoAction];
             break;
         case BCDBHeadActionTypeSave:
             [self saveAction];
@@ -140,17 +142,22 @@
 }
 
 #pragma mark 选择照片
-- (void)selectPhotoAction
+- (void)selectPhoto:(UIImage *)image
 {
-    
+    [self.allPathArray addObject:image];
+    [self setNeedsDisplay];
 }
 
 #pragma mark 保存
 - (void)saveAction
 {
+    // 1、开启一个位图上下文
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0.f);
+    // 2、把画板的内容渲染到当前上下文中
     [self.layer drawInContext:UIGraphicsGetCurrentContext()];
+    // 3、从当前上下文中取出一张图片
     UIImage *newImg = UIGraphicsGetImageFromCurrentImageContext();
+    // 4、关闭上下文
     UIGraphicsEndImageContext();
     
     UIImageWriteToSavedPhotosAlbum(newImg, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
@@ -164,13 +171,14 @@
     } else {
         msg = @"保存图片成功";
     }
+    NSLog(@"保存图片结果：%@", msg);
 }
 
 
 #pragma mark -
 #pragma mark - GET/SET
 
-- (NSMutableArray<UIBezierPath *> *)allPathArray
+- (NSMutableArray *)allPathArray
 {
     if (!_allPathArray) {
         _allPathArray = @[].mutableCopy;
